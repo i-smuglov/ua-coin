@@ -2,6 +2,10 @@
     font-family: "Ermilov";
     src: url("/fonts/Ermilov.otf") format("opentype");
 }
+@font-face {
+    font-family: "Hiragino";
+    src: url("/fonts/hiragino.otf") format("opentype");
+}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 body {
     font-family: "Ermilov";

@@ -107,6 +107,10 @@ h6 {
   font-family: "Ermilov";
   src: url("/fonts/Ermilov.otf") format("opentype"); }
 
+@font-face {
+  font-family: "Hiragino";
+  src: url("/fonts/hiragino.otf") format("opentype"); }
+
 body {
   font-family: "Ermilov";
   font-style: normal;
@@ -368,112 +372,6 @@ html {
   .header__link:hover svg path {
     fill: yellow; }
 
-.intro {
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 37px;
-  height: 100vh;
-  z-index: 3;
-  width: 100vw; }
-  .intro__video {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    z-index: 2;
-    left: 37px;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .intro__wrapper {
-    position: relative;
-    z-index: 1100;
-    width: 1300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .intro__left {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .intro__downline {
-    margin-top: 18px;
-    font-size: 32px;
-    line-height: 23px;
-    color: #FFFFFF;
-    margin-bottom: 50px; }
-  .intro__img img {
-    width: 300px; }
-  .intro__btn {
-    padding: 12px 26px;
-    background: #071545;
-    border: 1px solid #071545;
-    border-radius: 20px;
-    font-size: 22px;
-    line-height: 20px;
-    color: #ffffff; }
-    .intro__btn:hover {
-      cursor: pointer; }
-  .intro__timer-title {
-    font-size: 40px;
-    line-height: 20px;
-    color: #071545;
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: 20px; }
-  .intro__timer {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .intro__timer #clockdiv {
-      color: #A29350;
-      font-size: 24px;
-      line-height: 28px;
-      text-align: center;
-      font-weight: 700;
-      margin-left: 20px; }
-    .intro__timer #clockdiv > div {
-      margin-right: 22px;
-      display: inline-block; }
-    .intro__timer #clockdiv div > span {
-      padding: 11px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: rgba(255, 255, 255, 0.5);
-      border-radius: 20px;
-      display: inline-block;
-      width: 55px; }
-    .intro__timer .smalltext {
-      margin-top: 6px;
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 14px;
-      color: #000000; }
-  .intro__link {
-    position: absolute;
-    right: 60px;
-    bottom: 25px;
-    z-index: 1001;
-    transition: 1s linear; }
-    .intro__link:hover {
-      transition: 0.5s linear;
-      filter: drop-shadow(0px 0px 10px yellow); }
-  .intro__bg {
-    position: fixed;
-    bottom: -40%;
-    left: 50%;
-    opacity: 0.5;
-    transform: translate(-50%, -50%); }
-    .intro__bg img {
-      width: 300px;
-      margin-left: 37px; }
-    @media only screen and (min-width: 1680px) {
-      .intro__bg {
-        bottom: -20%; } }
 .footer {
   background: linear-gradient(0deg, #17161B, #17161B), linear-gradient(0deg, #26232F, #26232F), url(image.png);
   padding: 95px 0px 20px 0px; }
