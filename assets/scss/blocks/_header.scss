@@ -1,39 +1,206 @@
-.header{
+//Color dasctop background
+$headerColor: #fff;
+//Color dasctop Link
+$headerTextColor: var(--text-color);
+//Color hover animation in link (border) --- Цвет анимации при наведении на ссылки
+$headerLinkLineColor: $accent;
+//ADAPTIVE header
+//Burger color
+$headerBurgerColor: #ffffff;
+//Menu background color
+$headerBurgerMenuBg: #ffffff;
+.header {
     position: fixed;
-    left: 0;
+    width: 100%;
     top: 0;
-    background: #071545;
-    width: 37px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1001;
-    &__list{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } 
-    &__item{
-        margin-bottom: 25px;
-        &:last-child{
-            margin-bottom: 0;
+    left: 0;
+    z-index: 1000;
+    
+    .container {
+        @include md-d {
+            padding: 0;
         }
-    }   
-    &__link{
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $headerColor;
+        z-index: 2;
+    }
+    &__logo {
+		 max-width: 54px;
+        z-index: 3;
+        @include md-d {            
+        }
         
-        svg{
-            height: 22px;
-            width: 22px;
-
+    }
+    &__body {
+        margin-top: 38px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include md-d {
+            height: 54px;
         }
-        &:hover{
-            svg{
-                path{
-                    fill: yellow;
+    }
+    &__burger-bg {
+        display: none;
+        @include md-d {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            right: 0;
+            height: 100%;
+            width: 54px;
+            background-color: $accent;
+            z-index: 3;
+        }
+    }
+    &__burger {
+        display: none;
+        @include md-d {
+            display: block;
+            position: relative;
+            width: 24px;
+            height: 18px;
+            z-index: 5;
+            & span {
+                position: absolute;
+                background-color: $headerBurgerColor;
+                left: 0;
+                width: 100%;
+                top: 8px;
+                height: 2.5px;
+                transition: all 0.3s ease 0s;
+            }
+            &::before,
+            &::after {
+                content: "";
+                background-color: $headerBurgerColor;
+                position: absolute;
+                width: 100%;
+                height: 2.5px;
+                left: 0;
+                transition: all 0.3s ease 0s;
+            }
+            &::before {
+                top: 0;
+            }
+            &::after {
+                bottom: 0;
+            }
+            &.active {
+                span {
+                    transform: scale(0);
+                }
+                &::before {
+                    transform: rotate(45deg);
+                    top: 7px;
+                }
+                &::after {
+                    transform: rotate(-45deg);
+                    bottom: 9px;
                 }
             }
         }
+    }   
+    &__menu {
+        display: flex;		  
+        @include md-d {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: space-around;
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $headerBurgerMenuBg;
+            padding: 49px 0px 0px 0px;
+            transition: all 0.3s ease 0s;
+            overflow: auto;
+            &.active {
+                padding-bottom: 70px;
+                top: 0;
+                background: #000;
+            }
+        }
     }
+    &__list {
+        display: flex;
+        position: relative;
+        z-index: 2;
+        flex-wrap: wrap;
+        @include lg-d {
+            flex-wrap: wrap;
+        }
+        @include md-d {
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 44px;
+            margin-bottom: 171px;
+        }
+        @media (max-width: 320px) {
+            margin-bottom: 40px;
+        }
+    }
+	 &__item	{
+		margin-left: 50px;
+		&:first-child{
+			margin-left: 0;
+		}
+	 }
+    &__link {
+		font-size: 16px;
+		line-height: 24px;		
+		color: #404249;	      
+      transition: 0.2s linear;
+		
+        &--active {
+            color: $accent;
+        }
+        &:hover {
+            transition: 0.2s linear;
+            color: $headerLinkLineColor;
+        }
+        @include md-d {
+            margin-left: 0;
+            font-size: 18px;
+            line-height: 29px;
+        }
+    }
+    &__meta{
+		 z-index: 3;
+		 a{
+			display: flex;
+			align-items: center;
+			padding: 15px 30px;
+			font-size: 16px;
+			line-height: 24px;
+			color: rgba(7, 20, 72, 0.75);
+		 }
+		
+		 background: rgba(7, 20, 72, 0.05);
+		 border-radius: 15px;
+		 
+		 img{
+			 margin-right: 17px;
+		 }
+		 @include md-d{
+			 display: none;
+		 }
+	 }
+    
+}
+
+.lock {
+    overflow: hidden;
 }

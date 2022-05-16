@@ -1,0 +1,55 @@
+.coin{
+	margin-top: 246px;
+	&__wrapper{
+		margin-left: 100px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__text{
+		max-width: 525px;
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: #404249;
+		
+		p{
+			margin-top: 25px;
+		}
+	}
+	&__card{
+			display: flex;
+			flex-direction: column;
+			margin-top: 100px;
+	}
+	&__copy{
+		display: flex;	
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 35px;
+		line-height: 50px;
+		color: rgba(7, 20, 72, 0.75);
+	}
+	&__link{
+		padding: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: rgba(7, 20, 72, 0.05);
+		border-radius: 15px;
+		margin-left: 42px;
+	}
+	&__remark{
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.26em;
+		color: rgba(7, 20, 72, 0.45);
+		align-self: center;
+		margin-top: 35px;
+	}
+}

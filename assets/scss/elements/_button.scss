@@ -3,23 +3,34 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    text-align: center;
-    font-size: 16px;
+    text-align: center;    
     font-weight: bold;
     z-index: 50;
-    &--height {
-        width: 180px;
-        height: 60px;
+	 cursor: pointer;
+	 
+		font-size: 16px;
+		line-height: 24px;		
+		color: #071448;
+	 
+    &--140 {
+        width: 140px;
+        height: 50px;
+		  background: $accent; 
     }
+	 &--210 {
+		width: 210px;
+		height: 50px;
+		background: transparent;
+		border: 2px solid #FEDC00; 
+  }
     &--hole {
-        $btnHoleBg: $accent;
-        $btnHoleBorder: 2px solid $accent;
-        border-radius: 30px;
+               
+        border-radius: 15px;
         -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
         transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-        border: $btnHoleBorder;
+        
         &:hover {
-            box-shadow: 0 0 40px 40px $btnHoleBg inset;
+            box-shadow: 0 0 40px 40px white inset;
         }
     }
 }

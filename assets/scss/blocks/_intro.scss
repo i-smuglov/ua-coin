@@ -1,1 +1,36 @@
-
+.intro{
+	margin-top: 180px;	
+	background: linear-gradient(96.87deg, #736ECC -15.81%, #E2D77E 108.29%);
+	position: relative;
+	@include xxl{
+		background-position: right 200px;
+		border-radius: 75px 0px 0px 75px;
+		margin-left: 8%;
+	}
+	&__wrapper{
+		
+	}
+	&__content{
+		padding: 62px 0px 62px 100px;
+		max-width: 580px;
+		
+	}
+	&__text{
+		font-family: "Hiragino Sans GB";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: #FFFFFF;
+		margin-top: 25px;
+	}
+	&__img{
+		max-width: 900px;
+		position: absolute;
+		bottom: -80px;
+		right: 0;
+	}
+	&__btn{
+		margin-top: 50px;
+	}
+}

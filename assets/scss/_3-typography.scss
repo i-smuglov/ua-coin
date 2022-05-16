@@ -3,7 +3,7 @@
     src: url("/fonts/Ermilov.otf") format("opentype");
 }
 @font-face {
-    font-family: "Hiragino";
+    font-family: "Hiragino Sans GB";
     src: url("/fonts/hiragino.otf") format("opentype");
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
@@ -11,25 +11,19 @@ body {
     font-family: "Ermilov";
     font-style: normal;
     font-weight: 700;
+	 color: #000000;
 }
 
 h1 {
-    font-family: 'Ermilov';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 27px;
+	font-size: 45px;
+	line-height: 50px;
+	font-weight: 700;	
+	
 }
 
 h2 {
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 46px;
-    line-height: 58px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
+	font-size: 45px;
+	line-height: 50px;
 }
 
 .upline {
