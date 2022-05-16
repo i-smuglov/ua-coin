@@ -1,0 +1,68 @@
+.team{
+	&__title{
+		display: flex;
+		justify-content: center;
+		margin-top: 160px;
+	}
+	&__wrapper{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 80px;
+	}
+	&__img{
+		position: relative;
+		width: 350px;
+		height: 345px;
+		box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+		border-radius: 50px;	
+		background: url('/img/team-bg.png') no-repeat;
+		background-position: center;	
+		border-right: 3px solid yellow;
+		img{
+			position: absolute;
+			bottom: 0;
+			border-radius: 50px;
+		}
+		
+	}
+	&__name{
+		font-size: 25px;
+		line-height: 38px;
+		text-align: center;
+		color: #071448;
+		margin-top: 23px;
+	}
+	&__pos{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 13.9747px;
+		line-height: 24px;
+		margin-top: 10px;
+	}
+	&__position{		
+		color: rgba(7, 20, 72, 0.75);
+	}
+	&__coin{		
+		line-height: 24px;
+		color: #071448;
+		padding: 5px 15px;
+		background: #FEDC00;
+		border-radius: 10px;	
+		margin-left: 10px;
+	}
+	&__buttons{
+		display: flex;
+		justify-content: center;
+		margin-top: 80px;
+		a{
+			margin-right: 20px;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+}

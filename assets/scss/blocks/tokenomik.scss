@@ -1,0 +1,66 @@
+.token{
+	background: #071448;
+	background-image: url('/img/monik.png') no-repeat;
+	background-position: left;
+	margin-top: 170px;		
+	// &:before{
+	// 	content: '';
+	// 	position: absolute;
+	// 	height: 100%;
+	// 	width: 70%;
+	// 	left: 0;
+	// 	bottom: 0;
+	// 	background: url('/img/monik.png') no-repeat;
+	// 	background-position: left center;
+	// 	background-size: contain;
+	// }
+	h2 {
+		color: #fff;		
+	}
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+	&__title{
+		display: flex;
+		justify-content: center;
+		padding-top: 80px;
+	}
+	@include xxl{
+		border-radius: 75px 0px 0px 75px;
+		margin-left: 5%;
+	}
+	&__wrapper{
+		margin-top: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include xxl{
+			
+		}
+	}
+	&__img{
+		max-width: 660px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__text{
+		background: rgba(255, 255, 255, 0.2);
+		box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+		border-radius: 15px;
+		font-size: 16.0906px;
+		line-height: 23px;
+		text-align: center;
+		color: #FFFFFF;
+		max-width: 220px;
+		padding: 5px 25px;
+		align-self: center;
+		margin-top: 35px;		
+	}
+	&__btn{
+		align-self: center;
+		margin-top: 40px;
+		margin-bottom: 80px;
+	}
+}
