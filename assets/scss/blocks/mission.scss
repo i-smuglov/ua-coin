@@ -71,5 +71,68 @@
 }
 
 .start{
+	margin-top: 130px;
+	background: url('/img/START.png') no-repeat;
+	background-position: top center;
+	&__wrapper{
+		padding-top: 100px;
+	}
+	&__row{
+		margin-top: 40px;
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+	&__year{
+		display: flex;
+		font-size: 35px;
+		line-height: 50px;
+		color: #11131D;
+		justify-content: space-between;
+	}
+	&__month{
+		display: flex;
+		justify-content: center;
+		width: 33%;
+	}
+	&__content{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 45px;
+	}
+	&__box{
+		background: url('/img/miss-box.png') no-repeat;
+		background-position: right bottom;
+		box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888), inset 0px 4px 0px #736ECC;
+		border-radius: 50px;
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 24px;
+		color: rgba(7, 20, 72, 0.45);
+		width: 350px;
+		height: 345px;
+		padding: 25px 40px 0px 40px;
 
+		&--first{
+			box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888), inset 0px 4px 0px #FEDC00;
+			background: url('/img/miss-box-1.png') no-repeat;
+			background-position: right -25px bottom;
+		}
+	}
+	&__text{
+		position: relative;
+		padding-top: 30px;
+		margin-top: 20px;
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 80px;
+			height: 18px;
+			background: url('/img/cubik.png') no-repeat;
+		}
+	}
 }

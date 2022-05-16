@@ -141,6 +141,11 @@ h2 {
   margin: 0 auto;
   padding: 0 10px; }
 
+.small-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -158,11 +163,11 @@ html {
   color: #071448; }
   .btn--140 {
     width: 140px;
-    height: 50px;
+    height: 55px;
     background: #FEDC00; }
   .btn--210 {
     width: 210px;
-    height: 50px;
+    height: 55px;
     background: transparent;
     border: 2px solid #FEDC00; }
   .btn--hole {
@@ -631,6 +636,61 @@ html {
       margin-right: 20px; }
       .mission__buttons a:last-child {
         margin-right: 0; }
+
+.start {
+  margin-top: 130px;
+  background: url("/img/START.png") no-repeat;
+  background-position: top center; }
+  .start__wrapper {
+    padding-top: 100px; }
+  .start__row {
+    margin-top: 40px; }
+    .start__row:first-child {
+      margin-top: 0; }
+  .start__year {
+    display: flex;
+    font-size: 35px;
+    line-height: 50px;
+    color: #11131D;
+    justify-content: space-between; }
+  .start__month {
+    display: flex;
+    justify-content: center;
+    width: 33%; }
+  .start__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px; }
+  .start__box {
+    background: url("/img/miss-box.png") no-repeat;
+    background-position: right bottom;
+    box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888), inset 0px 4px 0px #736ECC;
+    border-radius: 50px;
+    font-family: 'Hiragino Sans GB';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(7, 20, 72, 0.45);
+    width: 350px;
+    height: 345px;
+    padding: 25px 40px 0px 40px; }
+    .start__box--first {
+      box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888), inset 0px 4px 0px #FEDC00;
+      background: url("/img/miss-box-1.png") no-repeat;
+      background-position: right -25px bottom; }
+  .start__text {
+    position: relative;
+    padding-top: 30px;
+    margin-top: 20px; }
+    .start__text::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 18px;
+      background: url("/img/cubik.png") no-repeat; }
 
 .footer {
   background: linear-gradient(0deg, #17161B, #17161B), linear-gradient(0deg, #26232F, #26232F), url(image.png);
