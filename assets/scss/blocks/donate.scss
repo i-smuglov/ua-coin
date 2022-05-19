@@ -1,0 +1,148 @@
+.donate{
+	margin-top: 418px;
+	&__wrapper{
+		display: flex;
+		justify-content: space-between;		
+	}
+	&__content{
+		width: 580px;
+	}
+	&__remark{
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: #404249;
+		margin-top: 25px;
+	}	
+	&__icons{
+		display: flex;
+		flex-wrap: wrap;	
+		margin-top: 40px;	
+	}
+	&__icons-box{
+		background: #736ECC;
+		border-radius: 30px;
+		height: 183px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		padding: 40px 0px 30px 0px;
+		transition: 0.4s linear;
+		margin-right: 25px;
+		margin-bottom: 25px;
+		font-size: 18px;
+		color: #fff;
+	line-height: 19px;
+		&--158{
+			width: 158px;
+		}
+		&--338{
+			width: 338px;
+		}
+		svg{
+			transition: 0.4s linear;
+			path{
+				transition: 0.4s linear;
+				fill: #ffffff;
+			}
+		}
+		&:hover{
+			transition: 0.4s linear;
+			background: $accent;
+			color: #000;
+			svg{
+				transition: 0.4s linear;
+				path{
+					fill: #000;
+				}
+			}
+		}
+	}
+	&__picture{
+		display: flex;
+		flex-direction: column;
+	}
+	&__images{
+		display: flex;
+	}
+	&__images-wrapper{
+		margin-left: 20px;
+	}
+	&__images-box{
+		overflow: hidden;
+		transition: 0.3s linear;
+		&:hover{
+			transition: 0.3s linear;
+			img{
+				transition: 0.3s linear;
+				transform: scale(1.1);
+			}
+		}
+		img{
+			transition: 0.3s linear;
+			object-fit: contain;
+		}
+		&--390{
+			border-radius: 50px;		
+			width: 390px;	
+			height: 433px;
+			img{
+				border-radius: 50px;
+			}
+		}
+		&--352{
+			border-radius: 40px;
+			width: 352px;
+		}
+		&--82{
+			border-radius: 20px;
+			width: 82px;
+			margin-right: 20px;
+			img{
+				border-radius: 20px;
+			}
+		}
+		&--60{
+			border-radius: 20px;
+			width: 60px;
+			img{
+				border-radius: 20px;
+			}
+		}
+		&--165{
+			border-radius: 30px;
+			img{
+				border-radius: 30px;
+			}
+		}
+		&--181{
+			border-radius: 30px;
+			img{
+				border-radius: 30px;
+			}
+		}
+	}
+	&__small-images{
+		margin-top: 20px;
+		display: flex;
+	}
+	&__delivery{
+		display: flex;
+		flex-direction: column;
+	}
+	&__three{
+		display: flex;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		
+	}
+	.coin__card{
+		margin-top: 40px;
+	}
+	.coin__copy{
+		align-self: center;		
+	}
+}
