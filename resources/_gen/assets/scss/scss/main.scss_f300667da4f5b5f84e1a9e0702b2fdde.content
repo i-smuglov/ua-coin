@@ -34,7 +34,8 @@ body {
   font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden; }
 
 input,
 button,
@@ -165,6 +166,8 @@ html {
     width: 140px;
     height: 55px;
     background: #FEDC00; }
+    .btn--140:hover {
+      border: 2px solid #FEDC00; }
   .btn--210 {
     width: 210px;
     height: 55px;
@@ -172,8 +175,8 @@ html {
     border: 2px solid #FEDC00; }
   .btn--hole {
     border-radius: 15px;
-    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out; }
+    -webkit-transition: box-shadow 500ms ease-in-out, color 500ms ease-in-out;
+    transition: box-shadow 500ms ease-in-out, color 500ms ease-in-out; }
     .btn--hole:hover {
       box-shadow: 0 0 40px 40px white inset; }
 
@@ -706,6 +709,9 @@ html {
     display: flex;
     justify-content: center;
     padding-top: 80px; }
+    @media only screen and (min-width: 1680px) {
+      .token__title {
+        margin-right: calc(100vw - 95vw); } }
   @media only screen and (min-width: 1680px) {
     .token {
       border-radius: 75px 0px 0px 75px;
@@ -715,6 +721,9 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    @media only screen and (min-width: 1680px) {
+      .token__wrapper {
+        margin-right: calc(100vw - 95vw); } }
   .token__img {
     max-width: 660px;
     display: flex;
@@ -736,7 +745,9 @@ html {
     align-self: center;
     margin-top: 40px;
     margin-bottom: 80px; }
-
+    @media only screen and (min-width: 1680px) {
+      .token__btn {
+        margin-right: calc(100vw - 95vw); } }
 .team__title {
   display: flex;
   justify-content: center;
@@ -760,6 +771,13 @@ html {
     position: absolute;
     bottom: 0;
     border-radius: 50px; }
+
+.team__svg svg {
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  border-radius: 50px;
+  z-index: 4; }
 
 .team__name {
   font-size: 25px;
@@ -798,6 +816,81 @@ html {
     margin-right: 20px; }
     .team__buttons a:last-child {
       margin-right: 0; }
+
+.market {
+  position: relative; }
+  .market__bg {
+    height: 470px;
+    width: 100%;
+    background: #FEDC00;
+    margin-left: 10%;
+    position: absolute;
+    left: 5%;
+    top: -30%;
+    border-radius: 75px 0px 0px 75px; }
+    .market__bg img {
+      height: 100%;
+      width: 100%;
+      opacity: 0.15;
+      border-radius: 75px 0px 0px 75px; }
+  .market__title {
+    margin-top: 350px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-right: 150px; }
+  .market__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    margin-top: 80px; }
+  .market__box {
+    position: relative;
+    z-index: 2;
+    background: #FFFFFF;
+    box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+    border-radius: 50px;
+    padding: 10px 80px 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 472px; }
+    .market__box:nth-child(2) .market__img {
+      margin-left: -60px; }
+  .market__img {
+    height: 180px; }
+  .market__text {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 20px; }
+    .market__text span {
+      color: #FEDC00; }
+  .market__button {
+    margin-top: 30px; }
+
+.city {
+  margin-top: 190px;
+  display: flex;
+  flex-direction: column; }
+  .city__title {
+    width: 422px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 auto; }
+    .city__title span {
+      color: #FEDC00; }
+  .city__remark {
+    font-family: 'Hiragino Sans GB';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: rgba(7, 20, 72, 0.45);
+    margin-top: 20px; }
 
 .footer {
   background: linear-gradient(0deg, #17161B, #17161B), linear-gradient(0deg, #26232F, #26232F), url(image.png);

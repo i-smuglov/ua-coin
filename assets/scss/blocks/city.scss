@@ -1,0 +1,29 @@
+.city{
+	margin-top: 190px;
+	display: flex;
+	flex-direction: column;
+	&__title{
+		span{
+			color: $accent;
+		}
+		width: 422px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		align-content: center;
+		margin: 0 auto;
+	}
+	&__remark{
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 27px;
+		text-align: center;
+		color: rgba(7, 20, 72, 0.45);
+		margin-top: 20px;		
+	}
+	&__img{
+		
+	}
+}
