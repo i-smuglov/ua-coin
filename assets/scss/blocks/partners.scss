@@ -1,0 +1,71 @@
+.partners{
+	margin-top: 160px;
+	display: flex;
+	
+	
+	&__title{
+		text-align: center;
+		
+	}
+	&__remark{		
+		text-align: center;
+		max-width: 687px;
+		margin: 0 auto;
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 27px;
+		color: rgba(7, 20, 72, 0.45);
+		margin-top: 20px;
+	}
+	&__wrapper{
+		background: url('/img/human.png') no-repeat;
+		background-position: bottom right;
+		border-right: 1px solid #736ECC;
+		border-top: 1px solid #736ECC;
+		border-bottom: 1px solid #736ECC;
+		display: flex;
+		justify-content: space-around;
+		border-radius: 50px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-top: 90px;
+		padding-bottom: 90px;
+		margin-top: 50px;
+	}
+	&__box{
+		margin-bottom: 20px;		
+		border-radius: 15px;
+		padding: 20px;
+		flex: 0 0 22%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: 0.3s linear;
+		border: 1px solid transparent;
+		svg{	
+			
+					
+			path{
+				background: #919AAC;
+				background-clip: content-box;
+				
+			}
+		}
+		img{
+			width: 170px;			
+		}
+		&:hover{
+			transition: 0.3s linear;
+			background: rgba(255, 255, 255, 0.76);
+			border: 1px solid rgba(7, 20, 72, 0.05);
+			box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+		}
+	}
+	&__button{
+		display: flex;
+		justify-content: center;
+		margin-top: 80px;
+	}
+}

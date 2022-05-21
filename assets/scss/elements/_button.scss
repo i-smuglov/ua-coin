@@ -11,7 +11,15 @@
 		font-size: 16px;
 		line-height: 24px;		
 		color: #071448;
-	 
+
+	 &--164{
+		width: 164px;
+		height: 55px;
+		background: $accent; 
+		&:hover{
+			border: 2px solid $accent;
+		}
+	 }
     &--140 {
         width: 140px;
         height: 55px;
