@@ -1,118 +1,103 @@
-.footer {
-    background: linear-gradient(0deg, #17161B, #17161B), linear-gradient(0deg, #26232F, #26232F), url(image.png);
-    padding: 95px 0px 20px 0px;
-    @include sm-d {
-        padding: 60px 0px 60px 0px;
-    }
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 65px;
-        @include sm-d {
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-    &__logo {
-        @include md-d {
-            order: 2;
-        }
-    }
-    &__menu {
-        display: flex;
-        align-items: center;
-        li {
-            margin-right: 100px;
-            font-family: "Georama";
-            font-style: normal;
-            font-weight: normal;
-            font-size: 10px;
-            line-height: 26px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            opacity: 0.6;
-            &:last-child {
-                margin-right: 0;
-            }
-            &:hover {
-                opacity: 1;
-            }
-            @include md-d {
-                order: 1;
-            }
-            @include sm-d {
-                margin-right: 0;
-                font-size: 15px;
-                margin-top: 50px;
-                &:first-child {
-                    margin-top: 60px;
-                }
-                &:last-child {
-                    margin-bottom: 100px;
-                }
-            }
-        }
-        @include sm-d {
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-    &__item {
-        &:hover {
-            cursor: pointer;
-        }
-        @include sm-d {
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-    &__social {
-        display: flex;
-        align-items: center;
-        @include md-d {
-            order: 3;
-            margin-top: 50px;
-        }
-    }
-    &__icon {
-        margin-right: 50px;
-        &:last-child {
-            margin-right: 0;
-        }
-        svg {
-            width: 12px;
-            height: 12px;
-            path {
-                fill: #ffffff;
-            }
-        }
-        &:hover {
-            cursor: pointer;
-            transition: 0.3s linear;
-            svg {
-                path {
-                    fill: $accent;
-                }
-            }
-        }
-    }
-    &__downline {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-size: 8px;
-        line-height: 10px;
-        letter-spacing: 0.281409px;
-        text-transform: capitalize;
-        mix-blend-mode: normal;
-        opacity: 0.5;
-        @include sm-d {
-            flex-direction: column;
-            align-items: center;
-        }
-        @include md-d {
-            order: 4;
-        }
-    }
+.footer{
+	background: #11131D;
+	border-radius: 75px 75px 0px 0px;
+	margin-top: 230px;
+	padding-bottom: 41px;
+	&__wrapper{
+		position: relative;
+		padding-top: 134px;
+		padding-left: 400px;
+		padding-right: 150px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__logo{
+		position: absolute;
+		left: 0;
+		top: 100px;
+	}
+	&__title{
+		font-size: 16px;
+		line-height: 24px;
+		color: #FEDC00;
+	}
+	&__menu{
+		a{
+			font-family: 'Hiragino Sans GB';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			color: #FFFFFF;
+			transition: 0.3s linear;
+			&:hover{
+				color: $accent;
+				transition: 0.3s linear;
+			}
+		}
+	}
+	&__list{
+		margin-top: 48px;
+	}
+	&__item{
+		margin-top: 15px;
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+	&__social{
+		svg{
+			path{
+				fill: #fff;
+			}
+			&:hover{
+				path{
+					fill: $accent;
+				}
+			}
+		}
+		a{
+			margin-right: 30px;			
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+	&__social-wrapper{
+		margin-top: 48px;
+	}
+	&__wallet{
+		margin-top: 100px;
+	}
+	&__wallet-content{
+		margin-top: 48px;
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 17.817px;
+		line-height: 25px;
+		color: rgba(255, 255, 255, 0.75);
+	}
+	&__contacts-city{
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: #FFFFFF;
+		margin-top: 48px;
+	}
+	&__remark{
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+		color: rgba(101, 102, 105, 0.75);
+		margin-top: 177px;
+		span{
+			color: $accent;
+		}
+	}
 }
