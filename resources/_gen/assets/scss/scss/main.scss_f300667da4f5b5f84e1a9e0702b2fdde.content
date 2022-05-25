@@ -126,7 +126,10 @@ h1 {
 h2 {
   font-size: 45px;
   line-height: 50px; }
-
+  @media only screen and (max-width: 768px) {
+    h2 {
+      font-size: 35px;
+      line-height: 52px; } }
 .upline {
   font-family: "Poppins";
   font-style: normal;
@@ -174,11 +177,17 @@ html {
     background: #FEDC00; }
     .btn--140:hover {
       border: 2px solid #FEDC00; }
+    @media only screen and (max-width: 768px) {
+      .btn--140 {
+        width: 325px; } }
   .btn--210 {
     width: 210px;
     height: 55px;
     background: transparent;
     border: 2px solid #FEDC00; }
+    @media only screen and (max-width: 768px) {
+      .btn--210 {
+        width: 325px; } }
   .btn--hole {
     border-radius: 15px;
     -webkit-transition: box-shadow 500ms ease-in-out, color 500ms ease-in-out;
@@ -549,6 +558,11 @@ html {
     margin-left: 100px;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 992px) {
+      .coin__wrapper {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center; } }
   .coin__text {
     max-width: 525px;
     font-family: 'Hiragino Sans GB';
@@ -559,10 +573,29 @@ html {
     color: #404249; }
     .coin__text p {
       margin-top: 25px; }
+    @media only screen and (max-width: 1332px) {
+      .coin__text {
+        max-width: 425px; } }
+    @media only screen and (max-width: 768px) {
+      .coin__text {
+        font-size: 16px;
+        line-height: 24px; } }
   .coin__card {
     display: flex;
     flex-direction: column;
     margin-top: 100px; }
+    @media only screen and (max-width: 1332px) {
+      .coin__card {
+        max-width: 425px; } }
+    @media only screen and (max-width: 992px) {
+      .coin__card {
+        display: none;
+        margin-top: 40px; } }
+    .coin__card--visible {
+      display: none; }
+      @media only screen and (max-width: 992px) {
+        .coin__card--visible {
+          display: block; } }
   .coin__copy {
     display: flex;
     font-family: 'Hiragino Sans GB';
@@ -571,6 +604,11 @@ html {
     font-size: 35px;
     line-height: 50px;
     color: rgba(7, 20, 72, 0.75); }
+    @media only screen and (max-width: 992px) {
+      .coin__copy {
+        font-size: 20px;
+        line-height: 29px;
+        align-items: center; } }
   .coin__link {
     padding: 15px;
     display: flex;
@@ -579,6 +617,10 @@ html {
     background: rgba(7, 20, 72, 0.05);
     border-radius: 15px;
     margin-left: 42px; }
+    @media only screen and (max-width: 768px) {
+      .coin__link {
+        margin-left: 32px;
+        padding: 8px; } }
   .coin__remark {
     font-family: 'Hiragino Sans GB';
     font-style: normal;
@@ -589,15 +631,35 @@ html {
     color: rgba(7, 20, 72, 0.45);
     align-self: center;
     margin-top: 35px; }
-
+    @media only screen and (max-width: 992px) {
+      .coin__remark {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 15px;
+        text-align: center; } }
+  @media only screen and (max-width: 1332px) {
+    .coin__video {
+      max-width: 450px;
+      margin-right: 40px; } }
+  @media only screen and (max-width: 992px) {
+    .coin__video {
+      margin-right: 0; } }
 .mission {
   margin-top: 200px; }
+  @media only screen and (max-width: 768px) {
+    .mission {
+      margin-top: 80px; } }
   .mission h2 {
     text-align: center; }
   .mission__wrapper {
     margin-top: 78px;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 992px) {
+      .mission__wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px; } }
   .mission__box {
     position: relative;
     width: 350px;
@@ -625,8 +687,22 @@ html {
       transform: translateZ(-1px); }
       .mission__box::after img {
         width: 100%; }
+      @media only screen and (max-width: 992px) {
+        .mission__box::after {
+          bottom: -50%;
+          right: 17%; } }
     .mission__box:last-child::after {
       display: none; }
+    @media only screen and (max-width: 1332px) {
+      .mission__box {
+        width: 250px; } }
+    @media only screen and (max-width: 992px) {
+      .mission__box {
+        width: 325px;
+        height: 275px;
+        margin-top: 55px; }
+        .mission__box:first-child {
+          margin-top: 0; } }
   .mission__img {
     height: 70%; }
   .mission__text {
@@ -645,31 +721,76 @@ html {
       margin-right: 20px; }
       .mission__buttons a:last-child {
         margin-right: 0; }
-
+    @media only screen and (max-width: 768px) {
+      .mission__buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px; }
+        .mission__buttons a {
+          margin-top: 20px;
+          margin-right: 0; } }
 .start {
   margin-top: 130px;
   background: url("/img/START.png") no-repeat;
   background-position: top center; }
+  @media only screen and (max-width: 992px) {
+    .start {
+      background-size: contain;
+      margin-top: 90px; } }
   .start__wrapper {
     padding-top: 100px; }
+    @media only screen and (max-width: 992px) {
+      .start__wrapper {
+        padding-top: 20px; } }
   .start__row {
     margin-top: 40px; }
     .start__row:first-child {
       margin-top: 0; }
+    @media only screen and (max-width: 992px) {
+      .start__row {
+        margin-top: 0; } }
   .start__year {
     display: flex;
     font-size: 35px;
     line-height: 50px;
     color: #11131D;
     justify-content: space-between; }
+    @media only screen and (max-width: 992px) {
+      .start__year {
+        flex-direction: column;
+        align-items: center; } }
   .start__month {
     display: flex;
     justify-content: center;
     width: 33%; }
+    @media only screen and (max-width: 992px) {
+      .start__month {
+        display: none; } }
+  .start__visible {
+    display: none; }
+    @media only screen and (max-width: 992px) {
+      .start__visible {
+        display: block;
+        font-size: 35px;
+        line-height: 50px;
+        color: #11131D;
+        margin-top: 25px;
+        margin-bottom: 25px; } }
   .start__content {
     display: flex;
     justify-content: space-between;
     margin-top: 45px; }
+    @media only screen and (max-width: 992px) {
+      .start__content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0; } }
+    .start__content--reverse {
+      flex-direction: column-reverse; }
+  .start__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .start__box {
     background: url("/img/miss-box.png") no-repeat;
     background-position: right bottom;
@@ -688,10 +809,19 @@ html {
       box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888), inset 0px 4px 0px #FEDC00;
       background: url("/img/miss-box-1.png") no-repeat;
       background-position: right -25px bottom; }
+    @media only screen and (max-width: 576px) {
+      .start__box {
+        width: 325px;
+        height: 320px;
+        font-size: 16px;
+        line-height: 25px; } }
   .start__text {
     position: relative;
     padding-top: 30px;
     margin-top: 20px; }
+    @media only screen and (max-width: 992px) {
+      .start__text {
+        margin-top: 15px; } }
     .start__text::before {
       content: '';
       position: absolute;
@@ -706,6 +836,10 @@ html {
   background-image: url("/img/monik.png") no-repeat;
   background-position: left;
   margin-top: 170px; }
+  @media only screen and (max-width: 992px) {
+    .token {
+      border-radius: 50px 0 50px 0;
+      margin-top: 100px; } }
   .token h2 {
     color: #fff; }
   .token .container {
@@ -730,11 +864,19 @@ html {
     @media only screen and (min-width: 1680px) {
       .token__wrapper {
         margin-right: calc(100vw - 95vw); } }
+    @media only screen and (max-width: 992px) {
+      .token__wrapper {
+        flex-direction: column; } }
   .token__img {
     max-width: 660px;
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media only screen and (max-width: 992px) {
+      .token__img {
+        margin-top: 120px; }
+        .token__img:first-child {
+          margin-top: 0; } }
   .token__text {
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);

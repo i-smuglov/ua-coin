@@ -75,14 +75,3 @@ function run_clock(id, endtime) {
 run_clock('clockdiv', deadline);
 
 
-// import LazyLinePainter
-import LazyLinePainter from 'lazy-line-painter';
-
-// select your svg
-let el = document.querySelector('#team-1');
-
-// initialise & configure LazyLinePainter
-let myAnimation = new LazyLinePainter(el, { strokeWidth: 10 });
-
-// paint! :)
-myAnimation.paint();

@@ -1,5 +1,8 @@
 .mission{
 	margin-top: 200px;
+	@include md-d{
+		margin-top: 80px;
+	}
 	h2{
 		text-align: center;
 
@@ -8,6 +11,11 @@
 		margin-top: 78px;
 		display: flex;
 		justify-content: space-between;
+		@include lg-d{
+			flex-direction: column;
+			align-items: center;
+			margin-top: 40px;
+		}
 	}
 	&__box{
 		position: relative;
@@ -37,10 +45,25 @@
 			img{
 				width: 100%;
 			}	
+			@include lg-d{
+				bottom: -50%;
+				right: 17%;
+			}
 		}
 		&:last-child{
 			&::after{
 				display: none;
+			}
+		}
+		@include xl-d{
+			width: 250px;
+		}
+		@include lg-d{
+			width: 325px;
+			height: 275px;
+			margin-top: 55px;
+			&:first-child{
+				margin-top: 0;
 			}
 		}
 	}
@@ -67,6 +90,15 @@
 				margin-right: 0;
 			}
 		}
+		@include md-d{
+			flex-direction: column;
+			align-items: center;
+			margin-top: 40px;
+			a{
+				margin-top: 20px;
+				margin-right: 0;
+			}
+		}
 	}
 }
 
@@ -74,12 +106,22 @@
 	margin-top: 130px;
 	background: url('/img/START.png') no-repeat;
 	background-position: top center;
+	@include lg-d{
+		background-size: contain;
+		margin-top: 90px;
+	}
 	&__wrapper{
 		padding-top: 100px;
+		@include lg-d{
+			padding-top: 20px;
+		}
 	}
 	&__row{
 		margin-top: 40px;
 		&:first-child{
+			margin-top: 0;
+		}
+		@include lg-d{
 			margin-top: 0;
 		}
 	}
@@ -89,16 +131,47 @@
 		line-height: 50px;
 		color: #11131D;
 		justify-content: space-between;
+		@include lg-d{
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&__month{
 		display: flex;
 		justify-content: center;
 		width: 33%;
+		@include lg-d{
+			display: none;
+		}
+	}
+	&__visible{
+		display: none;
+		@include lg-d{
+			display: block;
+			font-size: 35px;
+		line-height: 50px;
+		color: #11131D;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		}
 	}
 	&__content{
 		display: flex;
 		justify-content: space-between;
 		margin-top: 45px;
+		@include lg-d{
+			flex-direction: column;
+			align-items: center;
+			margin-top: 0;
+		}
+		&--reverse{
+			flex-direction: column-reverse;
+		}
+	}
+	&__column{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	&__box{
 		background: url('/img/miss-box.png') no-repeat;
@@ -120,11 +193,20 @@
 			background: url('/img/miss-box-1.png') no-repeat;
 			background-position: right -25px bottom;
 		}
+		@include sm-d{
+			width: 325px;
+			height: 320px;
+			font-size: 16px;
+			line-height: 25px;
+		}
 	}
 	&__text{
 		position: relative;
 		padding-top: 30px;
 		margin-top: 20px;
+		@include lg-d{
+			margin-top: 15px;
+		}
 		&::before{
 			content: '';
 			position: absolute;

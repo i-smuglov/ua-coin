@@ -2,18 +2,11 @@
 	background: #071448;
 	background-image: url('/img/monik.png') no-repeat;
 	background-position: left;
-	margin-top: 170px;		
-	// &:before{
-	// 	content: '';
-	// 	position: absolute;
-	// 	height: 100%;
-	// 	width: 70%;
-	// 	left: 0;
-	// 	bottom: 0;
-	// 	background: url('/img/monik.png') no-repeat;
-	// 	background-position: left center;
-	// 	background-size: contain;
-	// }
+	margin-top: 170px;	
+	@include lg-d{
+		border-radius: 50px 0 50px 0;
+		margin-top: 100px;
+	}
 	h2 {
 		color: #fff;		
 	}
@@ -41,12 +34,21 @@
 		@include xxl{
 			margin-right: calc(100vw - 95vw);
 		}
+		@include lg-d{
+			flex-direction: column;
+		}
 	}
 	&__img{
 		max-width: 660px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		@include lg-d{
+			margin-top: 120px;
+			&:first-child{
+				margin-top: 0;
+			}
+		}
 	}
 	&__text{
 		background: rgba(255, 255, 255, 0.2);

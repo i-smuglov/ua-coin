@@ -27,12 +27,18 @@
 		  &:hover{
 			  border: 2px solid $accent;
 		  }
+		  @include md-d{
+			  width: 325px;
+		  }
     }
 	 &--210 {
 		width: 210px;
 		height: 55px;
 		background: transparent;
 		border: 2px solid #FEDC00; 
+		@include md-d{
+			width: 325px;
+		}
   }
     &--hole {
                

@@ -4,6 +4,11 @@
 		margin-left: 100px;
 		display: flex;
 		justify-content: space-between;
+		@include lg-d{
+			flex-direction: column;
+			margin-left: 0;
+			align-items: center;
+		}
 	}
 	&__text{
 		max-width: 525px;
@@ -12,16 +17,35 @@
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 24px;
-		color: #404249;
-		
+		color: #404249;		
 		p{
 			margin-top: 25px;
+		}
+		@include xl-d{
+			max-width: 425px;
+		}
+		@include md-d{
+			font-size: 16px;
+			line-height: 24px;
 		}
 	}
 	&__card{
 			display: flex;
 			flex-direction: column;
 			margin-top: 100px;
+			@include xl-d{
+				max-width: 425px;
+			}
+			@include lg-d{
+				display: none;
+				margin-top: 40px;
+			}			
+			&--visible{
+				display: none;
+				@include lg-d{
+					display: block;
+				}
+			}
 	}
 	&__copy{
 		display: flex;	
@@ -31,6 +55,11 @@
 		font-size: 35px;
 		line-height: 50px;
 		color: rgba(7, 20, 72, 0.75);
+		@include lg-d{
+			font-size: 20px;
+			line-height: 29px;
+			align-items: center;
+		}
 	}
 	&__link{
 		padding: 15px;
@@ -40,6 +69,10 @@
 		background: rgba(7, 20, 72, 0.05);
 		border-radius: 15px;
 		margin-left: 42px;
+		@include md-d{
+			margin-left: 32px;
+			padding: 8px;
+		}
 	}
 	&__remark{
 		font-family: 'Hiragino Sans GB';
@@ -51,5 +84,20 @@
 		color: rgba(7, 20, 72, 0.45);
 		align-self: center;
 		margin-top: 35px;
+		@include lg-d{
+			font-size: 12px;
+			line-height: 18px;
+			margin-top: 15px;
+			text-align: center;
+		}
+	}
+	&__video{
+		@include xl-d{
+			max-width: 450px;
+			margin-right: 40px;
+		}
+		@include lg-d{
+			margin-right: 0;
+		}
 	}
 }
