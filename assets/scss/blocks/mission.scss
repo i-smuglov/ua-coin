@@ -165,7 +165,10 @@
 			margin-top: 0;
 		}
 		&--reverse{
-			flex-direction: column-reverse;
+			@include lg-d{
+				flex-direction: column-reverse;
+			}
+			
 		}
 	}
 	&__column{

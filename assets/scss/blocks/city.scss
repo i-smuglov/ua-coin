@@ -2,6 +2,9 @@
 	margin-top: 190px;
 	display: flex;
 	flex-direction: column;
+	@include lg-d{
+		margin-top: 100px;
+	}
 	&__title{
 		span{
 			color: $accent;
@@ -12,6 +15,11 @@
 		justify-content: space-between;
 		align-content: center;
 		margin: 0 auto;
+	}
+	&__img{
+		@include lg-d{
+			margin-top: 90px;
+		}
 	}
 	&__remark{
 		font-family: 'Hiragino Sans GB';
@@ -26,11 +34,21 @@
 	&__wrapper{
 		display: flex;
 		margin-top: 130px;
+		@include xl-d{
+			flex-direction: column;
+			align-items: center;
+			margin-top: 80px;
+		}
+		
 	}
 	&__house{
 		display: flex;
 		max-width: 860px;
 		flex-wrap: wrap;
+		@include lg-d{
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&__box{
 		height: 150px;
@@ -53,15 +71,44 @@
 		}
 		&--350{
 			width: 350px;
+			@include lg-d{
+				width: 325px;
+				height: 107px;
+			}
 		}
 		&--400{
 			width: 413px;
+			@include lg-d{
+				width: 325px;
+				height: 107px;
+			}
+		}
+		@include lg-d{
+			font-size: 20px;
+			line-height: 30px;
+			border-radius: 25px;
+			padding-left: 140px;
 		}
 	}
 	&__box-img{
 		position: absolute;
 		left: 50px;
 		bottom: 55px;
+		@include lg-d{
+			left: 35px;
+			bottom: 20px;
+			img{
+				max-width: 94px;
+			}
+		}
+		&--h52{
+			@include lg-d{
+				img{
+					max-width: 52px;
+				}
+				
+			}
+		}
 	}
 	&__content{
 		margin-top: 60px;
@@ -74,6 +121,34 @@
 			line-height: 24px;
 			color: #404249;
 			margin-top: 25px;
+			@include lg-d{
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		h2{
+			@include sm-d{
+				margin-top: 100px;
+			}
+		}
+		@include sm-d{
+			max-width: 325px;
+			align-self: flex-start;
+		}
+	}
+	&__buttons{
+		display: none;
+		align-self: center;
+		justify-content: center;
+		
+		@include md-d{
+			display: flex;
+			a{
+				justify-content: center;
+			}
+		}
+		@include xs-d{
+			margin-left: -40px;
 		}
 	}
 }

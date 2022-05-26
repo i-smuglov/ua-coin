@@ -188,6 +188,15 @@ html {
     @media only screen and (max-width: 768px) {
       .btn--210 {
         width: 325px; } }
+  .btn--265 {
+    width: 140px;
+    height: 55px;
+    background: #FEDC00; }
+    .btn--265:hover {
+      border: 2px solid #FEDC00; }
+    @media only screen and (max-width: 992px) {
+      .btn--265 {
+        width: 265px; } }
   .btn--hole {
     border-radius: 15px;
     -webkit-transition: box-shadow 500ms ease-in-out, color 500ms ease-in-out;
@@ -785,8 +794,9 @@ html {
         flex-direction: column;
         align-items: center;
         margin-top: 0; } }
-    .start__content--reverse {
-      flex-direction: column-reverse; }
+    @media only screen and (max-width: 992px) {
+      .start__content--reverse {
+        flex-direction: column-reverse; } }
   .start__column {
     display: flex;
     flex-direction: column;
@@ -919,7 +929,9 @@ html {
     position: absolute;
     bottom: 0;
     border-radius: 50px; }
-
+  @media only screen and (max-width: 768px) {
+    .team__img {
+      box-shadow: none; } }
 .team__svg svg {
   position: absolute;
   left: 0;
@@ -964,9 +976,54 @@ html {
     margin-right: 20px; }
     .team__buttons a:last-child {
       margin-right: 0; }
+    @media only screen and (max-width: 576px) {
+      .team__buttons a {
+        margin-right: 0;
+        margin-top: 20px; } }
+  @media only screen and (max-width: 576px) {
+    .team__buttons {
+      margin-top: 30px;
+      flex-direction: column;
+      align-items: center; } }
+.team .slick-track {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 768px) {
+    .team .slick-track {
+      flex-wrap: wrap; } }
+.team .slick-list {
+  overflow: hidden;
+  padding: 0px 0px 0px 0px; }
+
+.team .slick-slide {
+  display: flex  !important;
+  flex-direction: column;
+  align-items: center; }
+
+.team .slick-dots {
+  margin-top: 15px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center; }
+
+.team .slick-dots li {
+  margin: 0 10px; }
+
+.team .slick-dots button {
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #FEDC00; }
+
+.team .slick-dots li.slick-active button {
+  background-color: black; }
 
 .market {
-  position: relative; }
+  position: relative;
+  margin-top: 70px; }
   .market__bg {
     height: 470px;
     width: 100%;
@@ -981,18 +1038,33 @@ html {
       width: 100%;
       opacity: 0.15;
       border-radius: 75px 0px 0px 75px; }
+    @media only screen and (max-width: 992px) {
+      .market__bg {
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        border-radius: 0;
+        height: 87%; } }
   .market__title {
     margin-top: 350px;
     position: relative;
     z-index: 2;
     text-align: center;
     margin-right: 150px; }
+    @media only screen and (max-width: 992px) {
+      .market__title {
+        margin-top: 0px;
+        padding-top: 80px; } }
   .market__wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
     z-index: 2;
     margin-top: 80px; }
+    @media only screen and (max-width: 992px) {
+      .market__wrapper {
+        flex-direction: column;
+        align-items: center; } }
   .market__box {
     position: relative;
     z-index: 2;
@@ -1006,6 +1078,13 @@ html {
     width: 472px; }
     .market__box:nth-child(2) .market__img {
       margin-left: -60px; }
+    @media only screen and (max-width: 1332px) {
+      .market__box {
+        width: 372px; } }
+    @media only screen and (max-width: 992px) {
+      .market__box {
+        width: 325px;
+        margin-top: 20px; } }
   .market__img {
     height: 180px; }
   .market__text {
@@ -1021,6 +1100,9 @@ html {
   margin-top: 190px;
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 992px) {
+    .city {
+      margin-top: 100px; } }
   .city__title {
     width: 422px;
     display: flex;
@@ -1030,6 +1112,9 @@ html {
     margin: 0 auto; }
     .city__title span {
       color: #FEDC00; }
+  @media only screen and (max-width: 992px) {
+    .city__img {
+      margin-top: 90px; } }
   .city__remark {
     font-family: 'Hiragino Sans GB';
     font-style: normal;
@@ -1042,10 +1127,19 @@ html {
   .city__wrapper {
     display: flex;
     margin-top: 130px; }
+    @media only screen and (max-width: 1332px) {
+      .city__wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px; } }
   .city__house {
     display: flex;
     max-width: 860px;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 992px) {
+      .city__house {
+        flex-direction: column;
+        align-items: center; } }
   .city__box {
     height: 150px;
     background: #FFFFFF;
@@ -1065,12 +1159,35 @@ html {
       color: #FEDC00; }
     .city__box--350 {
       width: 350px; }
+      @media only screen and (max-width: 992px) {
+        .city__box--350 {
+          width: 325px;
+          height: 107px; } }
     .city__box--400 {
       width: 413px; }
+      @media only screen and (max-width: 992px) {
+        .city__box--400 {
+          width: 325px;
+          height: 107px; } }
+    @media only screen and (max-width: 992px) {
+      .city__box {
+        font-size: 20px;
+        line-height: 30px;
+        border-radius: 25px;
+        padding-left: 140px; } }
   .city__box-img {
     position: absolute;
     left: 50px;
     bottom: 55px; }
+    @media only screen and (max-width: 992px) {
+      .city__box-img {
+        left: 35px;
+        bottom: 20px; }
+        .city__box-img img {
+          max-width: 94px; } }
+    @media only screen and (max-width: 992px) {
+      .city__box-img--h52 img {
+        max-width: 52px; } }
   .city__content {
     margin-top: 60px;
     max-width: 525px; }
@@ -1082,7 +1199,29 @@ html {
       line-height: 24px;
       color: #404249;
       margin-top: 25px; }
-
+      @media only screen and (max-width: 992px) {
+        .city__content p {
+          font-size: 16px;
+          line-height: 24px; } }
+    @media only screen and (max-width: 576px) {
+      .city__content h2 {
+        margin-top: 100px; } }
+    @media only screen and (max-width: 576px) {
+      .city__content {
+        max-width: 325px;
+        align-self: flex-start; } }
+  .city__buttons {
+    display: none;
+    align-self: center;
+    justify-content: center; }
+    @media only screen and (max-width: 768px) {
+      .city__buttons {
+        display: flex; }
+        .city__buttons a {
+          justify-content: center; } }
+    @media only screen and (max-width: 400px) {
+      .city__buttons {
+        margin-left: -40px; } }
 .donate {
   margin-top: 418px; }
   .donate__wrapper {
