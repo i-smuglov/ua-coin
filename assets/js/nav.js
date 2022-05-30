@@ -104,7 +104,7 @@ $(window).on('resize', function (e) {
 
 //TIMER
 
-var deadline = '06 04 2022 12:00:00 GMT+0300';
+var deadline = '06 30 2022 12:00:00 GMT+0300';
 function time_remaining(endtime){
 	var t = Date.parse(endtime) - Date.parse(new Date());
 	var seconds = Math.floor( (t/1000) % 60 );
