@@ -1,17 +1,75 @@
 .intro{
-	margin-top: 180px;	
+	margin-top: 400px;	
 	background: linear-gradient(96.87deg, #736ECC -15.81%, #E2D77E 108.29%);
-	position: relative;
+	position: relative;	
 	@include xxl{
 		background-position: right 200px;
 		border-radius: 75px 0px 0px 75px;
 		margin-left: 8%;
 	}
 	&__wrapper{
-		
+		position: relative;
 	}
+	&__timer-title{
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 60px;
+		color: rgba(7, 20, 72, 0.75);
+	}
+	&__timer{
+		display: flex;
+		flex-direction: column;
+		align-items: center; 
+		position: absolute;
+		padding: 28px 70px 40px 70px;
+		background: rgba(7, 20, 72, 0.05);
+		border-radius: 75px 75px 0 0;
+		top: 0;
+		left: 0; 
+		transform: translateY(-100%);      
+		#clockdiv{            
+			font-family: 'Hiragino Sans GB';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 27px;
+			line-height: 40px;
+			color: rgba(7, 20, 72, 0.75);
+			 text-align: center;			             
+			 display: flex; 
+			 flex-wrap: nowrap;  
+							
+		}        
+		
+		#clockdiv > div{	
+			 margin-right: 22px;
+			 display: inline-block;
+			 &:last-child{
+				  margin-right: 0;
+			 }
+		}        
+		#clockdiv div > span{
+			 padding: 11px;
+			 display: flex;
+			 justify-content: center;
+			 align-items: center;
+			 background: rgba(255, 255, 255, 0.5);
+			 border-radius: 20px;
+			 display: inline-block;
+			 width: 55px; 
+			 
+		}        
+		.smalltext{            
+				margin-top: 6px;
+				font-family: 'Hiragino Sans GB';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 24px;
+				color: rgba(7, 20, 72, 0.45);         
+		}
+  }
 	&__content{
-		padding: 62px 0px 62px 100px;
+		padding: 62px 0px 62px 0px;
 		max-width: 580px;
 		
 	}
@@ -27,10 +85,16 @@
 	&__img{
 		max-width: 900px;
 		position: absolute;
-		bottom: -80px;
+		bottom: -110px;
 		right: 0;
 	}
 	&__btn{
 		margin-top: 50px;
+	}
+	&__get{
+		position: absolute;
+		top: 0;
+		right: 300px;
+		transform: translateY(-120%);
 	}
 }
