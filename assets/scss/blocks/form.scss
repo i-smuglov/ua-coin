@@ -9,6 +9,9 @@
 		left: 0;
 		top: 0;
 		z-index: 1;
+		@include lg-d{
+			display: none;
+		}
 	}
 	
 	&__wrapper{
@@ -16,6 +19,9 @@
 		z-index: 2;
 		display: flex;
 		justify-content: space-between;
+		@include lg-d{
+			flex-direction: column;
+		}
 	}
 	&__heart{
 		position: absolute;
@@ -28,6 +34,9 @@
 		width: 100px;
 		height: 100px;
 		z-index: 3;
+		@include lg-d{
+			display: none;
+		}
 	}
 	&__content{
 		display: flex;
@@ -36,6 +45,12 @@
 		padding: 88px 122px 88px 122px;
 		border-radius: 0px 75px 75px 0px;
 		background: #736ECC;
+		@include lg-d{
+			margin: 0px -10px 0px -10px;
+			border-radius: 0;
+			padding: 60px 0px 179px 0px;
+		}
+		
 	}
 	&__title{
 		color: #fff;
@@ -82,6 +97,14 @@
 				font-size: 16px;
 				line-height: 24px;
 				color: rgba(7, 20, 72, 0.75);
+				@include md-d{
+					font-size: 14px;
+					line-height: 21px;
+				}
+			}
+			@include md-d{
+				width: 347px;
+				padding-left: 125px;
 			}
 			&:active,
 			&:focus{				
@@ -115,12 +138,24 @@
 		padding: 49px 124px 51px 108px;
 		border-top: 1px solid #736ECC;
 		position: relative;
+		@include xl-d{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0;
+			margin: 0 -10px;
+		}
 	}
 	&__absolute{
 		position: absolute;
 		&--rocket{
 			top: 163px;
 			right: 60px;
+			@include md-d{
+				right: 20px;
+				top: 60px;
+				max-width: 31px;
+			}
 		}	
 		&--star1{
 			top: 49px;

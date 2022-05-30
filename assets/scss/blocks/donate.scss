@@ -1,11 +1,19 @@
 .donate{
 	margin-top: 418px;
+	margin-left: 5px;
+	@include md-d{
+		margin-top: 152px;
+	}
 	&__wrapper{
 		display: flex;
-		justify-content: space-between;		
+		justify-content: space-between;
+		@include xl-d{
+			flex-direction: column;
+			align-items: center;
+		}		
 	}
 	&__content{
-		width: 580px;
+		max-width: 580px;
 	}
 	&__remark{
 		font-family: 'Hiragino Sans GB';
@@ -15,11 +23,32 @@
 		line-height: 24px;
 		color: #404249;
 		margin-top: 25px;
+		@include md-d{
+			font-size: 16px;
+			line-height: 24px;
+			margin-top: 25px;
+		}
 	}	
 	&__icons{
 		display: flex;
 		flex-wrap: wrap;	
-		margin-top: 40px;	
+		margin-top: 40px;
+			
+		 @include xl-d{
+			 margin-left: 25px;
+		 }
+		 @include md-d{
+			margin-left: 0;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	&__icons-wrapper{
+		display: flex;
+		@include md-d{
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&__icons-box{
 		background: #736ECC;
@@ -35,12 +64,24 @@
 		margin-bottom: 25px;
 		font-size: 18px;
 		color: #fff;
-	line-height: 19px;
+		line-height: 19px;
+		@include md-d{
+			justify-content: center;
+			padding: 10px 0px 10px 0px;
+		}
 		&--158{
 			width: 158px;
+			@include md-d{
+				width: 150.23783874511733px;
+				height: 279.9513854980471px;				
+			}
 		}
 		&--338{
 			width: 338px;
+			@include md-d{
+				width: 150.23783874511733px;
+				height: 129.7135467529298px;
+			}
 		}
 		svg{
 			transition: 0.4s linear;
@@ -64,12 +105,22 @@
 	&__picture{
 		display: flex;
 		flex-direction: column;
+		@include xl-d{
+			margin-top: 49px;
+		}
 	}
 	&__images{
 		display: flex;
+		@include md-d{
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&__images-wrapper{
 		margin-left: 20px;
+		@include md-d{			
+			margin-left: 0;
+		}
 	}
 	&__images-box{
 		overflow: hidden;
@@ -92,10 +143,19 @@
 			img{
 				border-radius: 50px;
 			}
+			@include md-d{
+				width: 350px;
+				height: 282px;
+			}
 		}
 		&--352{
 			border-radius: 40px;
 			width: 352px;
+			@include md-d{
+				width: 140px;
+				height: 263px;
+				display: none;
+			}
 		}
 		&--82{
 			border-radius: 20px;
@@ -123,6 +183,13 @@
 			img{
 				border-radius: 30px;
 			}
+			@include md-d{
+				width: 140px;
+				height: 263px;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
 		}
 	}
 	&__small-images{
@@ -144,5 +211,8 @@
 	}
 	.coin__copy{
 		align-self: center;		
+	}
+	.coin__card{
+		justify-content: center;
 	}
 }

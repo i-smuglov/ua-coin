@@ -19,6 +19,9 @@
 		&:hover{
 			border: 2px solid $accent;
 		}
+		@include md-d{
+			width: 325px;
+		}
 	 }
     &--140 {
         width: 140px;

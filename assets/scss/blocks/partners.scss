@@ -33,6 +33,11 @@
 		padding-top: 90px;
 		padding-bottom: 90px;
 		margin-top: 50px;
+		@include sm-d{
+			flex-direction: column;
+			align-items: center;
+			padding-bottom: 200px;
+		}
 	}
 	&__box{
 		margin-bottom: 20px;		

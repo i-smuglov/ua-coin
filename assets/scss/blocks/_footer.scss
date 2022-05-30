@@ -3,6 +3,9 @@
 	border-radius: 75px 75px 0px 0px;
 	margin-top: 230px;
 	padding-bottom: 41px;
+	@include md-d{
+		margin-top: 68px;
+	}
 	&__wrapper{
 		position: relative;
 		padding-top: 134px;
@@ -10,11 +13,31 @@
 		padding-right: 150px;
 		display: flex;
 		justify-content: space-between;
+		@include xl-d{
+			padding-left: 200px;
+		}
+		@include lg-d{
+			flex-wrap: wrap;
+		}
+		@include md-d{
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding-left: 0;
+			padding-right: 0;
+			flex-direction: column;
+			padding-top: 230px;
+		}
 	}
 	&__logo{
 		position: absolute;
 		left: 0;
 		top: 100px;
+		@include md-d{
+			left: 50%;
+			top: 82px;
+			transform: translate(-50%, 0%);
+		}
 	}
 	&__title{
 		font-size: 16px;
