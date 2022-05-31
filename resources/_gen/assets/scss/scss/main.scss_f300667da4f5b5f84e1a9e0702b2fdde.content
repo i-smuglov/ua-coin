@@ -653,6 +653,19 @@ html {
     border-radius: 15px;
     padding: 15px 22px;
     margin-left: 74px; }
+  .intro__downline {
+    display: flex;
+    align-items: center; }
+  .intro__markdown {
+    font-size: 70px;
+    line-height: 50px;
+    margin-left: 245px;
+    width: 800px;
+    margin-top: 70px;
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px rgba(7, 20, 72, 0.35);
+    white-space: nowrap;
+    transition: linear; }
 
 .coin {
   margin-top: 246px; }
