@@ -7,6 +7,48 @@
 		border-radius: 75px 0px 0px 75px;
 		margin-left: 8%;
 	}
+	&__social{
+		position: absolute;		
+		left: -100px;
+		top: -203px;
+		padding-top: 203px;
+		padding-bottom: 203px;
+		&::before,
+		&::after{
+			content: '';
+			position: absolute;
+			left: 12px;
+			width: 2px;
+			height: 153px;
+			border: 1px solid rgba(7, 20, 72, 0.25);
+		}
+		&::before{
+			top: 0px;
+		}
+		&::after{
+			bottom: 0;
+		}
+	}
+	&__list{
+		display: flex;
+		flex-direction: column;
+	}
+	&__social-icons{
+		margin-top: 36px;
+		&:first-child{
+			margin-top: 0;
+		}
+		svg{
+			transition: 0.3s linear;
+			&:hover{
+				transition: 0.3s linear;
+				path{
+					fill: $accent;
+					transition: 0.3s linear;
+				}
+			}
+		}
+	}
 	&__wrapper{
 		position: relative;
 	}

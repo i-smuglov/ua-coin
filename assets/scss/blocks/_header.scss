@@ -1,12 +1,12 @@
 //Color dasctop background
 $headerColor: #fff;
 //Color dasctop Link
-$headerTextColor: var(--text-color);
+
 //Color hover animation in link (border) --- Цвет анимации при наведении на ссылки
 $headerLinkLineColor: $accent;
 //ADAPTIVE header
 //Burger color
-$headerBurgerColor: #ffffff;
+$headerBurgerColor: #071448;
 //Menu background color
 $headerBurgerMenuBg: #ffffff;
 .header {
@@ -31,10 +31,50 @@ $headerBurgerMenuBg: #ffffff;
         background-color: $headerColor;
         z-index: 2;
     }
+	 &__social-title{
+		 	display: none;		
+			font-family: 'Hiragino Sans GB';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 21px;
+			margin-bottom: 30px;
+			letter-spacing: 0.15em;		
+			color: rgba(7, 20, 72, 0.45);	
+			border-top: 1px solid rgba(7, 20, 72, 0.05);
+			padding-top: 40px;
+			width: 213px;
+			@include md-d{
+				display: block;
+			}	 
+	 }
+	 &__social{
+		 display: none;
+		 @include md-d{
+			 display: flex;			 			 
+		 }		
+		 border-bottom: 1px solid rgba(7, 20, 72, 0.05);
+		 padding-bottom: 40px;
+	 }
+	 &__social-icons{
+		margin-left: 24px;
+		&:first-child{
+			margin-left: 0;
+		}
+		a{
+			svg{
+				path{
+					fill: black;									
+				}
+			}
+		}
+		
+	 }
     &__logo {
 		 max-width: 54px;
         z-index: 3;
-        @include md-d {            
+        @include md-d {
+			  margin-left: 25px;            
         }
         
     }
@@ -59,7 +99,7 @@ $headerBurgerMenuBg: #ffffff;
             right: 0;
             height: 100%;
             width: 54px;
-            background-color: $accent;
+            background-color: transparent;
             z-index: 3;
         }
     }
@@ -114,9 +154,8 @@ $headerBurgerMenuBg: #ffffff;
     &__menu {
         display: flex;		  
         @include md-d {
-            flex-direction: column-reverse;
-            align-items: center;
-            justify-content: space-around;
+            flex-direction: column;
+            align-items: flex-start;            
             position: fixed;
             top: -100%;
             left: 0;
@@ -129,7 +168,8 @@ $headerBurgerMenuBg: #ffffff;
             &.active {
                 padding-bottom: 70px;
                 top: 0;
-                background: #000;
+                background: #fff;
+					 padding-left: 76px;
             }
         }
     }
@@ -141,13 +181,12 @@ $headerBurgerMenuBg: #ffffff;
         @include lg-d {
             flex-wrap: wrap;
         }
-        @include md-d {
-            height: 100%;
+        @include md-d {            
             flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
+            align-items: center;            
+				align-items: flex-start;
             margin-top: 44px;
-            margin-bottom: 171px;
+            margin-bottom: 40px;
         }
         @media (max-width: 320px) {
             margin-bottom: 40px;
@@ -157,6 +196,10 @@ $headerBurgerMenuBg: #ffffff;
 		margin-left: 50px;
 		&:first-child{
 			margin-left: 0;
+		}
+		@include md-d{
+			margin-left: 0;
+			margin-top: 30px;
 		}
 	 }
     &__link {
@@ -174,8 +217,8 @@ $headerBurgerMenuBg: #ffffff;
         }
         @include md-d {
             margin-left: 0;
-            font-size: 18px;
-            line-height: 29px;
+				font-size: 16px;
+				line-height: 24px;
         }
     }
     &__meta{
