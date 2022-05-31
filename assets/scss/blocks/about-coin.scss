@@ -1,5 +1,8 @@
 .coin{
 	margin-top: 246px;
+	@include md-d{
+		margin-top: 80px;
+	}
 	&__wrapper{
 		margin-left: 100px;
 		display: flex;

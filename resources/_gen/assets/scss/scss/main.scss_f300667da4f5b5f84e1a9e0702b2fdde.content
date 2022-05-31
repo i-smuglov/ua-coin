@@ -122,7 +122,14 @@ h1 {
   font-size: 45px;
   line-height: 50px;
   font-weight: 700; }
-
+  @media only screen and (max-width: 992px) {
+    h1 {
+      font-size: 35px; } }
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 35px;
+      line-height: 52px;
+      color: #11131D; } }
 h2 {
   font-size: 45px;
   line-height: 50px; }
@@ -493,8 +500,8 @@ html {
       .header__burger {
         display: block;
         position: relative;
-        width: 24px;
-        height: 18px;
+        width: 18px;
+        height: 12px;
         z-index: 5; }
         .header__burger span {
           position: absolute;
@@ -508,22 +515,25 @@ html {
           content: "";
           background-color: #071448;
           position: absolute;
-          width: 100%;
+          width: 60%;
           height: 2.5px;
-          left: 0;
           transition: all 0.3s ease 0s; }
         .header__burger::before {
-          top: 0; }
+          top: 2px;
+          left: 0; }
         .header__burger::after {
-          bottom: 0; }
+          bottom: -4px;
+          right: 0; }
         .header__burger.active span {
           transform: scale(0); }
         .header__burger.active::before {
           transform: rotate(45deg);
-          top: 7px; }
+          top: 13px;
+          width: 100%; }
         .header__burger.active::after {
           transform: rotate(-45deg);
-          bottom: 9px; } }
+          bottom: -4px;
+          width: 100%; } }
   .header__menu {
     display: flex; }
     @media only screen and (max-width: 768px) {
@@ -613,6 +623,13 @@ html {
       background-position: right 200px;
       border-radius: 75px 0px 0px 75px;
       margin-left: 8%; } }
+  @media only screen and (max-width: 768px) {
+    .intro {
+      margin-top: 350px; } }
+  @media only screen and (max-width: 768px) {
+    .intro {
+      margin-top: 340px;
+      min-height: 286px; } }
   .intro__social {
     position: absolute;
     left: -100px;
@@ -662,6 +679,10 @@ html {
     top: 0;
     left: 0;
     transform: translateY(-100%); }
+
+@media only screen and (max-width: 576px) and (max-width: 768px) {
+  .intro__timer {
+    padding: 25px 20px 40px 20px; } }
     .intro__timer #clockdiv {
       font-family: 'Hiragino Sans GB';
       font-style: normal;
@@ -697,6 +718,18 @@ html {
   .intro__content {
     padding: 62px 0px 62px 0px;
     max-width: 580px; }
+    @media only screen and (max-width: 1332px) {
+      .intro__content {
+        max-width: 450px; } }
+    @media only screen and (max-width: 992px) {
+      .intro__content {
+        max-width: 350px; } }
+    @media only screen and (max-width: 768px) {
+      .intro__content {
+        position: absolute;
+        left: 50%;
+        top: 400px;
+        transform: translateX(-50%); } }
   .intro__text {
     font-family: "Hiragino Sans GB";
     font-style: normal;
@@ -705,11 +738,29 @@ html {
     line-height: 24px;
     color: #FFFFFF;
     margin-top: 25px; }
+    @media only screen and (max-width: 768px) {
+      .intro__text {
+        font-size: 16px;
+        line-height: 24px;
+        color: #11131D; } }
   .intro__img {
     max-width: 900px;
     position: absolute;
     bottom: -110px;
-    right: 0; }
+    right: -100px; }
+    @media only screen and (max-width: 1332px) {
+      .intro__img {
+        max-width: 650px;
+        bottom: -79px; } }
+    @media only screen and (max-width: 992px) {
+      .intro__img {
+        max-width: 560px;
+        bottom: -68px; } }
+    @media only screen and (max-width: 768px) {
+      .intro__img {
+        max-width: 500px;
+        bottom: -346px;
+        right: -20px; } }
   .intro__btn {
     margin-top: 50px; }
   .intro__get {
@@ -717,13 +768,33 @@ html {
     top: 0;
     right: 300px;
     transform: translateY(-120%); }
+    @media only screen and (max-width: 1332px) {
+      .intro__get {
+        top: 156px;
+        right: 125px; } }
+    @media only screen and (max-width: 992px) {
+      .intro__get {
+        top: 225px;
+        right: 65px; } }
+    @media only screen and (max-width: 768px) {
+      .intro__get {
+        max-width: 85px;
+        top: 53px;
+        right: 160px; } }
+    @media only screen and (max-width: 400px) {
+      .intro__get {
+        top: 127px; } }
   .intro__save {
     display: flex;
     margin-top: 30px; }
+    @media only screen and (max-width: 768px) {
+      .intro__save {
+        margin-top: 600px; } }
   .intro__save-img {
     background: #11131D;
     border-radius: 50px;
-    padding: 42px; }
+    padding: 42px;
+    min-width: 150px; }
   .intro__save-title {
     font-family: 'Hiragino Sans GB';
     font-style: normal;
@@ -764,9 +835,15 @@ html {
     -webkit-text-stroke: 1px rgba(7, 20, 72, 0.35);
     white-space: nowrap;
     transition: linear; }
-
+    @media only screen and (max-width: 768px) {
+      .intro__markdown {
+        margin-top: -550px;
+        margin-left: -100%; } }
 .coin {
   margin-top: 246px; }
+  @media only screen and (max-width: 768px) {
+    .coin {
+      margin-top: 80px; } }
   .coin__wrapper {
     margin-left: 100px;
     display: flex;

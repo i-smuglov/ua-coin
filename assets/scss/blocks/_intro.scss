@@ -7,6 +7,13 @@
 		border-radius: 75px 0px 0px 75px;
 		margin-left: 8%;
 	}
+	@include md-d{
+		margin-top: 350px;
+	}	
+	@include md-d{
+		margin-top: 340px;
+		min-height: 286px;
+	}
 	&__social{
 		position: absolute;		
 		left: -100px;
@@ -32,6 +39,9 @@
 	&__list{
 		display: flex;
 		flex-direction: column;
+	}
+	&__title{
+		
 	}
 	&__social-icons{
 		margin-top: 36px;
@@ -68,7 +78,12 @@
 		border-radius: 75px 75px 0 0;
 		top: 0;
 		left: 0; 
-		transform: translateY(-100%);      
+		transform: translateY(-100%); 
+		@include sm-d{
+			@include md-d{
+				padding: 25px 20px 40px 20px;
+			}
+		}     
 		#clockdiv{            
 			font-family: 'Hiragino Sans GB';
 			font-style: normal;
@@ -113,7 +128,18 @@
 	&__content{
 		padding: 62px 0px 62px 0px;
 		max-width: 580px;
-		
+		@include xl-d{
+			max-width: 450px;
+		}
+		@include lg-d{
+			max-width: 350px;
+		}
+		@include md-d{	
+			position: absolute;
+			left: 50%;
+			top: 400px;
+			transform: translateX(-50%);
+		}
 	}
 	&__text{
 		font-family: "Hiragino Sans GB";
@@ -123,12 +149,30 @@
 		line-height: 24px;
 		color: #FFFFFF;
 		margin-top: 25px;
+		@include md-d{
+			font-size: 16px;
+			line-height: 24px;
+			color: #11131D;
+		}
 	}
 	&__img{
 		max-width: 900px;
 		position: absolute;
 		bottom: -110px;
-		right: 0;
+		right: -100px;
+		@include xl-d{
+			max-width: 650px;
+			bottom: -79px;
+		}
+		@include lg-d{
+			max-width: 560px;
+			bottom: -68px;
+		}
+		@include md-d{
+			max-width: 500px;
+			bottom: -346px;
+			right: -20px;
+		}
 	}
 	&__btn{
 		margin-top: 50px;
@@ -138,15 +182,35 @@
 		top: 0;
 		right: 300px;
 		transform: translateY(-120%);
+		@include xl-d{
+			top: 156px;
+    		right: 125px;
+		}
+		@include lg-d{
+			top: 225px;
+    		right: 65px;			
+		}
+		@include md-d{
+			max-width: 85px;
+			top: 53px;
+			right: 160px;
+		}
+		@include xs-d{
+			top: 127px;
+		}
 	}
 	&__save{
 		display: flex;
 		margin-top: 30px;
+		@include md-d{
+			margin-top: 600px;
+		}
 	}
 	&__save-img{
 		background: #11131D;
 		border-radius: 50px;
 		padding: 42px;
+		min-width: 150px;
 	}
 	&__save-title{
 		font-family: 'Hiragino Sans GB';
@@ -183,7 +247,8 @@
 	&__downline{
 		display: flex;
 		align-items: center;
-	}&__markdown{
+	}
+	&__markdown{
 		font-size: 70px;
 		line-height: 50px;
 		margin-left: 245px;
@@ -193,6 +258,10 @@
 		-webkit-text-stroke: 1px  rgba(7, 20, 72, 0.35);
 		white-space: nowrap;
 		transition: linear;
+		@include md-d{
+			margin-top: -550px;
+			margin-left: -100%;
+		}
 	}
 	
 }

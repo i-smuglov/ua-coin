@@ -147,8 +147,8 @@ $headerBurgerMenuBg: #ffffff;
         @include md-d {
             display: block;
             position: relative;
-            width: 24px;
-            height: 18px;
+            width: 18px;
+            height: 12px;
             z-index: 5;
             & span {
                 position: absolute;
@@ -164,16 +164,17 @@ $headerBurgerMenuBg: #ffffff;
                 content: "";
                 background-color: $headerBurgerColor;
                 position: absolute;
-                width: 100%;
-                height: 2.5px;
-                left: 0;
+                width: 60%;
+                height: 2.5px;                
                 transition: all 0.3s ease 0s;
             }
             &::before {
-                top: 0;
+                top: 2px;
+					 left: 0;
             }
             &::after {
-                bottom: 0;
+                bottom: -4px;
+					 right: 0;
             }
             &.active {
                 span {
@@ -181,11 +182,13 @@ $headerBurgerMenuBg: #ffffff;
                 }
                 &::before {
                     transform: rotate(45deg);
-                    top: 7px;
+                    top: 13px;
+						  width: 100%;
                 }
                 &::after {
                     transform: rotate(-45deg);
-                    bottom: 9px;
+                    bottom: -4px;
+						  width: 100%;
                 }
             }
         }
