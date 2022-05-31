@@ -70,6 +70,45 @@ $headerBurgerMenuBg: #ffffff;
 		}
 		
 	 }
+	 &__account{
+		 display: none;
+		 @include md-d{
+			display: flex;
+		 	flex-direction: column;
+			 margin-top: 40px;
+		 }		 		 
+	 }
+	 &__account-title{
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		margin-bottom: 30px;
+		letter-spacing: 0.15em;		
+		color: rgba(7, 20, 72, 0.45);
+	 }
+	 &__account-meta{
+		 display: flex;
+		 align-items: center;
+	 }
+	 &__account-text{
+		font-size: 16px;
+		line-height: 24px;		
+		color: #404249;
+		margin-left: 10px;
+	 }
+	 &__log{
+		 margin-top: 25px;
+		a{
+			color: rgba(255, 0, 0, 0.5);
+			display: flex;
+			align-items: center;
+		}
+	 }
+	 &__log-text{
+		 margin-left: 10px;
+	 }
     &__logo {
 		 max-width: 54px;
         z-index: 3;

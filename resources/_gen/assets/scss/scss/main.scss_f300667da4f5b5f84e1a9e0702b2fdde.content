@@ -426,6 +426,38 @@ html {
       margin-left: 0; }
     .header__social-icons a svg path {
       fill: black; }
+  .header__account {
+    display: none; }
+    @media only screen and (max-width: 768px) {
+      .header__account {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px; } }
+  .header__account-title {
+    font-family: 'Hiragino Sans GB';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 30px;
+    letter-spacing: 0.15em;
+    color: rgba(7, 20, 72, 0.45); }
+  .header__account-meta {
+    display: flex;
+    align-items: center; }
+  .header__account-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #404249;
+    margin-left: 10px; }
+  .header__log {
+    margin-top: 25px; }
+    .header__log a {
+      color: rgba(255, 0, 0, 0.5);
+      display: flex;
+      align-items: center; }
+  .header__log-text {
+    margin-left: 10px; }
   .header__logo {
     max-width: 54px;
     z-index: 3; }
