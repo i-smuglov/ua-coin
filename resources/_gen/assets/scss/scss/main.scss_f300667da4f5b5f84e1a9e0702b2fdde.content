@@ -822,9 +822,18 @@ html {
     border-radius: 15px;
     padding: 15px 22px;
     margin-left: 74px; }
+  .intro__popup {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    display: none; }
+    @media only screen and (max-width: 1332px) {
+      .intro__popup {
+        display: block; } }
   .intro__downline {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
   .intro__markdown {
     font-size: 70px;
     line-height: 50px;
@@ -839,6 +848,48 @@ html {
       .intro__markdown {
         margin-top: -550px;
         margin-left: -100%; } }
+  .intro__downline-social {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 500px;
+    bottom: -160px;
+    overflow: hidden;
+    transition: 0.5s linear;
+    border-radius: 15px; }
+    @media only screen and (max-width: 768px) {
+      .intro__downline-social {
+        left: 40px; } }
+    .intro__downline-social:hover {
+      transition: 0.5s linear;
+      height: 325px; }
+      .intro__downline-social:hover .intro__downline-icons:first-child {
+        border-radius: 15px 15px 0 0; }
+      .intro__downline-social:hover .intro__downline-icons:last-child {
+        border-radius: 0 0 15px 15px; }
+    .intro__downline-social ul li:last-child {
+      position: relative;
+      z-index: 2; }
+  .intro__downline-icons {
+    background: #FEDC00;
+    position: relative;
+    z-index: 2;
+    padding: 18px; }
+  .intro__arrow {
+    position: absolute;
+    top: 80px;
+    left: 501px;
+    width: 58px;
+    height: 40px;
+    z-index: 1;
+    background: #071448;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px; }
+    @media only screen and (max-width: 768px) {
+      .intro__arrow {
+        left: 40px; } }
 .coin {
   margin-top: 246px; }
   @media only screen and (max-width: 768px) {
