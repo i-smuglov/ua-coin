@@ -1071,107 +1071,131 @@ html {
           margin-top: 20px;
           margin-right: 0; } }
 .start {
-  margin-top: 130px;
-  background: url("/img/START.png") no-repeat;
-  background-position: top center; }
-  @media only screen and (max-width: 992px) {
-    .start {
-      background-size: contain;
-      margin-top: 90px; } }
+  margin-top: 200px; }
   .start__wrapper {
-    padding-top: 100px; }
-    @media only screen and (max-width: 992px) {
-      .start__wrapper {
-        padding-top: 20px; } }
-  .start__row {
-    margin-top: 40px; }
-    .start__row:first-child {
-      margin-top: 0; }
-    @media only screen and (max-width: 992px) {
-      .start__row {
-        margin-top: 0; } }
-  .start__year {
     display: flex;
-    font-size: 35px;
-    line-height: 50px;
-    color: #11131D;
-    justify-content: space-between; }
-    @media only screen and (max-width: 992px) {
-      .start__year {
-        flex-direction: column;
-        align-items: center; } }
-  .start__month {
-    display: flex;
-    justify-content: center;
-    width: 33%; }
-    @media only screen and (max-width: 992px) {
-      .start__month {
-        display: none; } }
-  .start__visible {
-    display: none; }
-    @media only screen and (max-width: 992px) {
-      .start__visible {
-        display: block;
-        font-size: 35px;
-        line-height: 50px;
-        color: #11131D;
-        margin-top: 25px;
-        margin-bottom: 25px; } }
-  .start__content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 45px; }
-    @media only screen and (max-width: 992px) {
-      .start__content {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 0; } }
-    @media only screen and (max-width: 992px) {
-      .start__content--reverse {
-        flex-direction: column-reverse; } }
-  .start__column {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .start__box {
-    background: url("/img/miss-box.png") no-repeat;
-    background-position: right bottom;
-    box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888), inset 0px 4px 0px #736ECC;
-    border-radius: 50px;
+    position: relative; }
+  .start__line {
+    position: absolute;
+    right: -80px;
+    top: 65px; }
+  .start__yline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-290px, -177px);
+    filter: drop-shadow(0px 0px 10px #FEDC00); }
+  .start__downline {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(-94px, -214px); }
+  .start__upline {
+    max-width: 297px;
+    position: absolute;
+    left: 0;
+    top: 150px; }
+  .start__remark {
     font-family: 'Hiragino Sans GB';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #404249; }
+  .start__map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .start__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 350px;
+    margin-top: 30px;
+    position: relative; }
+    .start__box:first-child {
+      margin-left: 437px; }
+    .start__box--1::after, .start__box--4::after, .start__box--7::after {
+      content: '';
+      width: 235px;
+      height: 30px;
+      background: url("/img/Autobus.svg") no-repeat;
+      position: absolute;
+      right: -160px;
+      top: 35px; }
+    .start__box--1::before {
+      content: '';
+      width: 100px;
+      height: 30px;
+      background: url("/img/Boots.svg") no-repeat;
+      position: absolute;
+      left: 3px;
+      top: 35px; }
+    .start__box--4::before, .start__box--7::before {
+      content: '';
+      width: 235px;
+      height: 30px;
+      background: url("/img/Autobus.svg") no-repeat;
+      position: absolute;
+      left: -160px;
+      top: 35px; }
+    .start__box:last-child::after {
+      content: '';
+      width: 250px;
+      height: 95px;
+      background: url("/img/Digger.svg") no-repeat;
+      position: absolute;
+      right: -175px;
+      top: 0px; }
+  .start__box-title {
+    width: 102px;
+    height: 102px;
+    background: white;
+    border: 1px solid #736ECC;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .start__box-remark {
+    align-self: flex-start;
+    font-family: 'Hiragino Sans GB';
+    font-style: normal;
+    margin-left: 42px;
+    margin-top: 14px; }
+  .start__box-step {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(7, 20, 72, 0.75); }
+  .start__box-phase {
+    font-size: 16px;
+    line-height: 24px;
+    color: #736ECC; }
+  .start__circle {
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 0px #736ECC;
+    border-radius: 50px;
+    padding: 30px 40px 0px 40px;
+    border-top: 2px solid #736ECC;
+    height: 345px;
+    margin-top: 24px; }
+  .start__box-text {
+    font-family: 'Hiragino Sans GB';
+    font-style: normal;
+    font-weight: 300;
     font-size: 18px;
     line-height: 24px;
-    color: rgba(7, 20, 72, 0.45);
-    width: 350px;
-    height: 345px;
-    padding: 25px 40px 0px 40px; }
-    .start__box--first {
-      box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888), inset 0px 4px 0px #FEDC00;
-      background: url("/img/miss-box-1.png") no-repeat;
-      background-position: right -25px bottom; }
-    @media only screen and (max-width: 576px) {
-      .start__box {
-        width: 325px;
-        height: 320px;
-        font-size: 16px;
-        line-height: 25px; } }
-  .start__text {
+    color: #404249;
     position: relative;
     padding-top: 30px;
     margin-top: 20px; }
-    @media only screen and (max-width: 992px) {
-      .start__text {
-        margin-top: 15px; } }
-    .start__text::before {
+    .start__box-text::before {
       content: '';
+      background: url("/img/cubik.png") no-repeat;
+      width: 45px;
+      height: 15px;
       position: absolute;
-      top: 0;
       left: 0;
-      width: 80px;
-      height: 18px;
-      background: url("/img/cubik.png") no-repeat; }
+      top: 0; }
 
 .token {
   background: #071448;

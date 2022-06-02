@@ -5,18 +5,18 @@
 	}
 	h2{
 		text-align: center;
-
 	}
+	
 	&__wrapper{
 		margin-top: 78px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-between;				
 		@include lg-d{
 			flex-direction: column;
 			align-items: center;
 			margin-top: 40px;
 		}
-	}
+	}	
 	&__box{
 		position: relative;
 		width: 350px;
@@ -102,122 +102,167 @@
 	}
 }
 
+
+
+
 .start{
-	margin-top: 130px;
-	background: url('/img/START.png') no-repeat;
-	background-position: top center;
-	@include lg-d{
-		background-size: contain;
-		margin-top: 90px;
-	}
+	margin-top: 200px;
 	&__wrapper{
-		padding-top: 100px;
-		@include lg-d{
-			padding-top: 20px;
-		}
-	}
-	&__row{
-		margin-top: 40px;
-		&:first-child{
-			margin-top: 0;
-		}
-		@include lg-d{
-			margin-top: 0;
-		}
-	}
-	&__year{
 		display: flex;
-		font-size: 35px;
-		line-height: 50px;
-		color: #11131D;
-		justify-content: space-between;
-		@include lg-d{
-			flex-direction: column;
-			align-items: center;
-		}
+		position: relative;
 	}
-	&__month{
-		display: flex;
-		justify-content: center;
-		width: 33%;
-		@include lg-d{
-			display: none;
-		}
-	}
-	&__visible{
-		display: none;
-		@include lg-d{
-			display: block;
-			font-size: 35px;
-		line-height: 50px;
-		color: #11131D;
-		margin-top: 25px;
-		margin-bottom: 25px;
-		}
-	}
-	&__content{
-		display: flex;
-		justify-content: space-between;
-		margin-top: 45px;
-		@include lg-d{
-			flex-direction: column;
-			align-items: center;
-			margin-top: 0;
-		}
-		&--reverse{
-			@include lg-d{
-				flex-direction: column-reverse;
-			}
+	&__line{
+		position: absolute;
+		right: -80px;
+		top: 65px;	
 			
-		}
 	}
-	&__column{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	&__yline{
+		position: absolute;
+		top: 0;left: 0;
+		transform: translate(-290px, -177px);
+		filter: drop-shadow(0px 0px 10px $accent);
 	}
-	&__box{
-		background: url('/img/miss-box.png') no-repeat;
-		background-position: right bottom;
-		box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888), inset 0px 4px 0px #736ECC;
-		border-radius: 50px;
+	&__downline{
+		position: absolute;
+		top: 50%;
+		left: 0px;
+		transform: translate(-94px, -214px);
+	}
+	&__upline{
+		max-width: 297px;
+		position: absolute;
+		left: 0;
+		top: 150px;
+	}
+	&__remark{
 		font-family: 'Hiragino Sans GB';
 		font-style: normal;
-		font-weight: 400;
-		font-size: 18px;
+		font-weight: 300;
+		font-size: 16px;
 		line-height: 24px;
-		color: rgba(7, 20, 72, 0.45);
-		width: 350px;
-		height: 345px;
-		padding: 25px 40px 0px 40px;
-
-		&--first{
-			box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888), inset 0px 4px 0px #FEDC00;
-			background: url('/img/miss-box-1.png') no-repeat;
-			background-position: right -25px bottom;
+		color: #404249;
+	}
+	&__map{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+			
+	}
+	&__box{	
+		display: flex;
+		flex-direction: column;	
+		align-items: center;
+		flex: 0 0 350px;
+		margin-top: 30px;
+		position: relative;
+		&:first-child{
+			margin-left: 437px;
 		}
-		@include sm-d{
-			width: 325px;
-			height: 320px;
-			font-size: 16px;
-			line-height: 25px;
+		&--1,
+		&--4,
+		&--7{
+			&::after{
+				content: '';
+				width: 235px;
+				height: 30px;
+				background: url('/img/Autobus.svg') no-repeat;				
+				position: absolute;
+				right: -160px;
+				top: 35px;
+			}
+		}
+		&--1{
+			&::before{
+				content: '';
+				width: 100px;
+				height: 30px;
+				background: url('/img/Boots.svg') no-repeat;				
+				position: absolute;
+				left: 3px;
+				top: 35px;
+			}
+		}
+		&--4,
+		&--7{
+			&::before{
+				content: '';
+				width: 235px;
+				height: 30px;
+				background: url('/img/Autobus.svg') no-repeat;				
+				position: absolute;
+				left: -160px;
+				top: 35px;
+			}
+		}
+		&:last-child{
+			&::after{
+				content: '';
+				width: 250px;
+				height: 95px;
+				background: url('/img/Digger.svg') no-repeat;				
+				position: absolute;
+				right: -175px;
+				top: 0px;
 		}
 	}
-	&__text{
+	}
+	&__box-title{
+		width: 102px;
+		height: 102px;
+		background: rgba(255, 255, 255, 1);
+		border: 1px solid #736ECC;
+		border-radius: 25px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__box-remark{
+		align-self: flex-start;
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		margin-left: 42px;
+		margin-top: 14px;
+	}
+	&__box-step{
+		font-size: 14px;
+		line-height: 24px;
+		color: rgba(7, 20, 72, 0.75);
+	}
+	&__box-phase{		
+		font-size: 16px;
+		line-height: 24px;
+		color: #736ECC;
+	}
+	&__circle{
+		background: #FFFFFF;
+		box-shadow: inset 0px 4px 0px #736ECC;
+		border-radius: 50px;
+		padding: 30px 40px 0px 40px;
+		border-top: 2px solid #736ECC;
+		height: 345px;
+		margin-top: 24px;
+		
+	}
+	&__box-text{
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 24px;
+		color: #404249;
 		position: relative;
 		padding-top: 30px;
 		margin-top: 20px;
-		@include lg-d{
-			margin-top: 15px;
-		}
 		&::before{
 			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 80px;
-			height: 18px;
 			background: url('/img/cubik.png') no-repeat;
+			width: 45px;
+			height: 15px;
+			position: absolute;
+			left: 0;
+			top: 0;
 		}
 	}
+
 }
