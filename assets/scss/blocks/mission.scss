@@ -115,12 +115,17 @@
 		position: absolute;
 		right: -80px;
 		top: 65px;	
-			
+		@include xl-d{
+			right: 0;
+		}
+		@include lg-d{
+			display: none;
+		}
 	}
 	&__yline{
 		position: absolute;
 		top: 0;left: 0;
-		transform: translate(-290px, -177px);
+		transform: translate(-380px, -177px);
 		filter: drop-shadow(0px 0px 10px $accent);
 	}
 	&__downline{
@@ -128,6 +133,12 @@
 		top: 50%;
 		left: 0px;
 		transform: translate(-94px, -214px);
+		@include xl-d{
+			left: 100px;
+		}
+		@include lg-d{
+			display: none;
+		}
 	}
 	&__upline{
 		max-width: 297px;
@@ -147,7 +158,13 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-			
+		@include xl-d{
+			padding: 0px 40px 0px 40px;
+		}
+		@include lg-d{
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&__box{	
 		display: flex;
@@ -156,8 +173,14 @@
 		flex: 0 0 350px;
 		margin-top: 30px;
 		position: relative;
+		@include xl-d{
+			flex: 0 0 292px;
+		};
 		&:first-child{
-			margin-left: 437px;
+			padding-left: 278px;
+			@include lg-d{
+				padding-left: 0;
+			}
 		}
 		&--1,
 		&--4,
@@ -170,6 +193,12 @@
 				position: absolute;
 				right: -160px;
 				top: 35px;
+				@include xl-d{
+					right: -131px;
+				}
+				@include lg-d{
+					display: none;
+				}
 			}
 		}
 		&--1{
@@ -193,6 +222,12 @@
 				position: absolute;
 				left: -160px;
 				top: 35px;
+				@include xl-d{
+					left: -131px;
+				}
+				@include lg-d{
+					display: none;
+				}
 			}
 		}
 		&:last-child{
@@ -204,6 +239,9 @@
 				position: absolute;
 				right: -175px;
 				top: 0px;
+				@include lg-d{
+					display: none;
+				}
 		}
 	}
 	}
