@@ -118,8 +118,8 @@ $(document).ready(function () {
 {
    $('.start__box-wrapper').click(function (event) {
 		if ($('.start__map').hasClass('one')) {
-			$('.start__box-wrapper').not($(this)).removeClass('active');
-			$('.start__circle').not($(this).next()).slideUp(300);
+			// $('.start__box-wrapper').not($(this)).removeClass('active');
+			// $('.start__circle').not($(this).next()).slideUp(300);
 		}
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
