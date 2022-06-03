@@ -110,3 +110,21 @@ function run_clock(id,endtime){
 	var timeinterval = setInterval(update_clock,1000);
 }
 run_clock('clockdiv',deadline);
+
+
+$(document).ready(function () {
+	
+	if($(window).width() < 767)
+{
+   $('.start__box-wrapper').click(function (event) {
+		if ($('.start__map').hasClass('one')) {
+			$('.start__box-wrapper').not($(this)).removeClass('active');
+			$('.start__circle').not($(this).next()).slideUp(300);
+		}
+		$(this).toggleClass('active').next().slideToggle(300);
+	});
+} else {   
+}
+});
+
+
