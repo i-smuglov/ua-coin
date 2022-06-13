@@ -663,6 +663,9 @@ html {
           transition: 0.3s linear; }
   .intro__wrapper {
     position: relative; }
+    @media only screen and (min-width: 1680px) {
+      .intro__wrapper {
+        padding-left: 100px; } }
   .intro__timer-title {
     font-weight: 700;
     font-size: 28px;
@@ -683,6 +686,9 @@ html {
 @media only screen and (max-width: 576px) and (max-width: 768px) {
   .intro__timer {
     padding: 25px 20px 40px 20px; } }
+    @media only screen and (min-width: 1680px) {
+      .intro__timer {
+        margin-left: 100px; } }
     .intro__timer #clockdiv {
       font-family: 'Hiragino Sans GB';
       font-style: normal;

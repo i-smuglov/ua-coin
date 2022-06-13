@@ -58,6 +58,9 @@
 	}
 	&__wrapper{
 		position: relative;
+		@include xxl{
+			padding-left: 100px;
+		}
 	}
 	&__timer-title{
 		font-weight: 700;
@@ -80,7 +83,10 @@
 			@include md-d{
 				padding: 25px 20px 40px 20px;
 			}
-		}     
+		} 
+		@include xxl{
+			margin-left: 100px;
+		}    
 		#clockdiv{            
 			font-family: 'Hiragino Sans GB';
 			font-style: normal;
