@@ -1108,6 +1108,13 @@ html {
   @media only screen and (max-width: 992px) {
     .start {
       margin-top: 0; } }
+  .start .small-container {
+    background: url("/img/START.png") no-repeat;
+    background-position: top center;
+    background-size: contain; }
+    @media only screen and (max-width: 768px) {
+      .start .small-container {
+        background-position: 0px 50px; } }
   .start__wrapper {
     display: flex;
     position: relative; }

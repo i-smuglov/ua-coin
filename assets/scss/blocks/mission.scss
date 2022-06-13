@@ -110,9 +110,18 @@
 	@include lg-d{
 		margin-top: 0;
 	}
+	.small-container{
+		background: url('/img/START.png') no-repeat;
+		background-position: top center;
+		background-size: contain;
+		@include md-d{
+			background-position: 0px 50px;
+		}
+	}
 	&__wrapper{
 		display: flex;
 		position: relative;
+		
 		@include lg-d{
 			left: 50%;
 		}
