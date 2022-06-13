@@ -50,6 +50,40 @@
 			align-items: center;
 		}
 	}
+	&__copy{
+		display: flex;	
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 35px;
+		line-height: 50px;
+		color: rgba(7, 20, 72, 0.75);
+		@include lg-d{
+			font-size: 20px;
+			line-height: 29px;
+			align-items: center;
+			align-self: center;
+		}
+	}
+	&__link{
+		padding: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: rgba(7, 20, 72, 0.05);
+		border-radius: 15px;
+		margin-left: 42px;
+		transition: 0.3s linear;
+		@include md-d{
+			margin-left: 32px;
+			padding: 8px;
+		}
+		&:hover{
+			transition: 0.3s linear;
+			cursor: pointer;
+			background: rgba(7, 20, 72, 0.2);
+		}
+	}
 	&__icons-box{
 		background: #736ECC;
 		border-radius: 30px;

@@ -128,3 +128,19 @@ $(document).ready(function () {
 });
 
 
+$(".coin__link").click(function(){
+	let temp = $("<input>");
+	$("body").append(temp);
+	temp.val($(".coin__number").text()).select();
+	document.execCommand("copy");
+	temp.remove();
+ })
+
+ $(".donate__link").click(function(){
+	let temp = $("<input>");
+	$("body").append(temp);
+	temp.val($(".donate__number").text()).select();
+	document.execCommand("copy");
+	temp.remove();
+ })
+

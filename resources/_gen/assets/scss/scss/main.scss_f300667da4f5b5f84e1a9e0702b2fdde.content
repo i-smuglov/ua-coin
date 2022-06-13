@@ -792,15 +792,25 @@ html {
         top: 127px; } }
   .intro__save {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 30px; }
     @media only screen and (max-width: 768px) {
       .intro__save {
-        margin-top: 600px; } }
+        margin-top: 600px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); } }
   .intro__save-img {
     background: #11131D;
     border-radius: 50px;
     padding: 42px;
     min-width: 150px; }
+    @media only screen and (max-width: 576px) {
+      .intro__save-img {
+        padding: 31px;
+        min-width: 125px;
+        border-radius: 39px; } }
   .intro__save-title {
     font-family: 'Hiragino Sans GB';
     font-style: normal;
@@ -813,6 +823,10 @@ html {
     margin-left: 30px; }
   .intro__save-wrapper {
     margin-left: -20px; }
+    @media only screen and (max-width: 576px) {
+      .intro__save-wrapper {
+        margin-left: -35px;
+        margin-top: -10px; } }
   .intro__download {
     font-size: 24px;
     line-height: 38px;
@@ -823,11 +837,18 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    @media only screen and (max-width: 576px) {
+      .intro__download {
+        font-size: 20px;
+        line-height: 30px; } }
   .intro__link {
     background: #071448;
     border-radius: 15px;
     padding: 15px 22px;
     margin-left: 74px; }
+    @media only screen and (max-width: 576px) {
+      .intro__link {
+        margin-left: 50px; } }
   .intro__popup {
     position: relative;
     display: flex;
@@ -955,7 +976,8 @@ html {
       .coin__copy {
         font-size: 20px;
         line-height: 29px;
-        align-items: center; } }
+        align-items: center;
+        align-self: center; } }
   .coin__link {
     padding: 15px;
     display: flex;
@@ -963,11 +985,16 @@ html {
     align-items: center;
     background: rgba(7, 20, 72, 0.05);
     border-radius: 15px;
-    margin-left: 42px; }
+    margin-left: 42px;
+    transition: 0.3s linear; }
     @media only screen and (max-width: 768px) {
       .coin__link {
         margin-left: 32px;
         padding: 8px; } }
+    .coin__link:hover {
+      transition: 0.3s linear;
+      cursor: pointer;
+      background: rgba(7, 20, 72, 0.2); }
   .coin__remark {
     font-family: 'Hiragino Sans GB';
     font-style: normal;
@@ -1750,6 +1777,37 @@ html {
       .donate__icons-wrapper {
         flex-direction: column;
         align-items: center; } }
+  .donate__copy {
+    display: flex;
+    font-family: 'Hiragino Sans GB';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 50px;
+    color: rgba(7, 20, 72, 0.75); }
+    @media only screen and (max-width: 992px) {
+      .donate__copy {
+        font-size: 20px;
+        line-height: 29px;
+        align-items: center;
+        align-self: center; } }
+  .donate__link {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(7, 20, 72, 0.05);
+    border-radius: 15px;
+    margin-left: 42px;
+    transition: 0.3s linear; }
+    @media only screen and (max-width: 768px) {
+      .donate__link {
+        margin-left: 32px;
+        padding: 8px; } }
+    .donate__link:hover {
+      transition: 0.3s linear;
+      cursor: pointer;
+      background: rgba(7, 20, 72, 0.2); }
   .donate__icons-box {
     background: #736ECC;
     border-radius: 30px;
