@@ -35,6 +35,9 @@
 		&::after{
 			bottom: 0;
 		}
+		@include lg-d{
+			display: none;
+		}
 	}
 	&__list{
 		display: flex;

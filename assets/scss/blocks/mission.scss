@@ -20,6 +20,7 @@
 	&__box{
 		position: relative;
 		width: 350px;
+		height: 297px;
 		padding: 5px 44px 35px 44px;
 		background: #FFFFFF;
 		box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
@@ -30,6 +31,7 @@
 		text-align: center;
 		z-index: 3;
 		transform-style: preserve-3d;
+		// overflow: hidden;
 		&::after{
 			content: '';
 			position: absolute;
@@ -67,9 +69,18 @@
 			}
 		}
 	}
+	&__bg{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		border-radius: 50px 50px 0 0 ;
+		overflow: hidden;
+	}
 	&__img{
-		height: 70%;
-
+		position: relative;
+		z-index: 3;
+		height: 70%;		
 	}
 	&__text{
 		font-family: 'Hiragino Sans GB';
@@ -79,6 +90,7 @@
 		line-height: 24px;
 		text-align: center;
 		color: #071448;		
+		margin-top: 20px;
 	}
 	&__buttons{
 		margin-top: 78px;

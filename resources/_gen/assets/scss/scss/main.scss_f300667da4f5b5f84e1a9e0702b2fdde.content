@@ -647,6 +647,9 @@ html {
       top: 0px; }
     .intro__social::after {
       bottom: 0; }
+    @media only screen and (max-width: 992px) {
+      .intro__social {
+        display: none; } }
   .intro__list {
     display: flex;
     flex-direction: column; }
@@ -1037,6 +1040,7 @@ html {
   .mission__box {
     position: relative;
     width: 350px;
+    height: 297px;
     padding: 5px 44px 35px 44px;
     background: #FFFFFF;
     box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
@@ -1077,7 +1081,16 @@ html {
         margin-top: 55px; }
         .mission__box:first-child {
           margin-top: 0; } }
+  .mission__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 50px 50px 0 0;
+    overflow: hidden; }
   .mission__img {
+    position: relative;
+    z-index: 3;
     height: 70%; }
   .mission__text {
     font-family: 'Hiragino Sans GB';
@@ -1086,7 +1099,8 @@ html {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #071448; }
+    color: #071448;
+    margin-top: 20px; }
   .mission__buttons {
     margin-top: 78px;
     display: flex;
