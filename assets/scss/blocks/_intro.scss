@@ -15,9 +15,9 @@
 		min-height: 286px;
 	}
 	&__social{
-		position: absolute;		
-		left: -100px;
-		top: -203px;
+		position: fixed;		
+		left: 35px;
+		top: 130px;
 		padding-top: 203px;
 		padding-bottom: 203px;
 		&::before,

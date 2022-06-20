@@ -631,9 +631,9 @@ html {
       margin-top: 340px;
       min-height: 286px; } }
   .intro__social {
-    position: absolute;
-    left: -100px;
-    top: -203px;
+    position: fixed;
+    left: 35px;
+    top: 130px;
     padding-top: 203px;
     padding-bottom: 203px; }
     .intro__social::before, .intro__social::after {
@@ -1188,7 +1188,8 @@ html {
         margin-top: 300px; } }
     @media only screen and (max-width: 768px) {
       .start__map {
-        transform: translateX(0%); } }
+        transform: translateX(0%);
+        padding: 0px 5px 0px 5px; } }
   .start__box {
     display: flex;
     flex-direction: column;
@@ -1364,10 +1365,10 @@ html {
       top: 11px; }
     @media only screen and (max-width: 576px) {
       .start__box-text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 25px;
         color: rgba(7, 20, 72, 0.45); } }
+    @media only screen and (max-width: 400px) {
+      .start__box-text {
+        font-size: 12px; } }
 .token {
   background: #071448;
   background-image: url("/img/monik.png") no-repeat;

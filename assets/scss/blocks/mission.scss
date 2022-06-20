@@ -197,7 +197,7 @@
 		}
 		@include md-d{
 			transform: translateX(0%);
-			
+			padding: 0px 5px 0px 5px;
 		}
 	}
 	&__box{	
@@ -431,11 +431,11 @@
 			left: 0;
 			top: 11px;
 		}
-		@include sm-d{
-			font-weight: 400;
-			font-size: 16px;
-			line-height: 25px;
+		@include sm-d{			
 			color: rgba(7, 20, 72, 0.45);
+		}
+		@include xs-d{
+			font-size: 12px;
 		}
 	}
 

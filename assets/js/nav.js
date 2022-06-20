@@ -77,7 +77,7 @@ setInterval(function ()
 
 //TIMER
 
-var deadline = '06 30 2022 12:00:00 GMT+0300';
+var deadline = '08 30 2022 12:00:00 GMT+0300';
 function time_remaining(endtime){
 	var t = Date.parse(endtime) - Date.parse(new Date());
 	var seconds = Math.floor( (t/1000) % 60 );
@@ -128,6 +128,8 @@ $(document).ready(function () {
 });
 
 
+
+//Copy this
 $(".coin__link").click(function(){
 	let temp = $("<input>");
 	$("body").append(temp);
