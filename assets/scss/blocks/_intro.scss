@@ -2,10 +2,10 @@
 	margin-top: 400px;	
 	background: linear-gradient(96.87deg, #736ECC -15.81%, #E2D77E 108.29%);
 	position: relative;	
-	@include xxl{
+	@include xl{
 		background-position: right 200px;
 		border-radius: 75px 0px 0px 75px;
-		margin-left: 8%;
+		margin-left: 4%;
 	}
 	@include md-d{
 		margin-top: 350px;
@@ -35,7 +35,7 @@
 		&::after{
 			bottom: 0;
 		}
-		@include lg-d{
+		@include xxl-d{
 			display: none;
 		}
 	}
@@ -61,8 +61,11 @@
 	}
 	&__wrapper{
 		position: relative;
+		@include xl{
+			margin-left: 50px;
+		}
 		@include xxl{
-			padding-left: 100px;
+			padding-left: 20px;
 		}
 	}
 	&__timer-title{
@@ -88,7 +91,7 @@
 			}
 		} 
 		@include xxl{
-			margin-left: 100px;
+			margin-left: 20px;
 		}    
 		#clockdiv{            
 			font-family: 'Hiragino Sans GB';
@@ -130,7 +133,12 @@
 				line-height: 24px;
 				color: rgba(7, 20, 72, 0.45);         
 		}
-  }
+ 	}
+	&__total{
+		@include md-d{
+			display: none;
+		}
+	}
 	&__content{
 		padding: 62px 0px 62px 0px;
 		max-width: 580px;
@@ -138,13 +146,15 @@
 			max-width: 450px;
 		}
 		@include lg-d{
-			max-width: 350px;
+			width: 100%;
 		}
 		@include md-d{	
 			position: absolute;
 			left: 50%;
 			top: 400px;
 			transform: translateX(-50%);
+			display: flex;
+			flex-direction: column;
 		}
 	}
 	&__text{
@@ -167,21 +177,24 @@
 		bottom: -110px;
 		right: -100px;
 		@include xl-d{
-			max-width: 650px;
-			bottom: -79px;
+			max-width: 750px;
+ 		   bottom: -90px;
 		}
 		@include lg-d{
 			max-width: 560px;
 			bottom: -68px;
 		}
 		@include md-d{
-			max-width: 500px;
+			width: 500px;
 			bottom: -346px;
-			right: -20px;
+			right: -80px;
 		}
 	}
 	&__btn{
 		margin-top: 50px;
+		@include md-d{
+		align-self: center;
+		}
 	}
 	&__get{
 		position: absolute;
@@ -198,8 +211,8 @@
 		}
 		@include md-d{
 			max-width: 85px;
-			top: 53px;
-			right: 160px;
+			top: 60px;
+   		right: 110px;
 		}
 		@include xs-d{
 			top: 127px;
@@ -210,11 +223,13 @@
 		align-items: center;
 		justify-content: center;
 		margin-top: 30px;
+		margin-left: 100px;
 		@include md-d{
 			margin-top: 600px;
 			position: relative;
 			left: 50%;
 			transform: translateX(-50%);
+			margin-left: 0;
 		}
 	}
 	&__save-img{

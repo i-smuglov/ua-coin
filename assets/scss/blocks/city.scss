@@ -15,10 +15,16 @@
 		justify-content: space-between;
 		align-content: center;
 		margin: 0 auto;
+		@include sm-d{
+			width: 308px;
+		}
 	}
 	&__img{
 		@include lg-d{
 			margin-top: 90px;
+		}
+		@include sm-d{
+			margin-top: 68px;	
 		}
 	}
 	&__remark{
@@ -97,9 +103,13 @@
 		@include lg-d{
 			left: 35px;
 			bottom: 20px;
-			img{
+			img,
+			svg{
 				max-width: 94px;
 			}
+		}
+		&--big{
+			margin-top: 30px;
 		}
 		&--h52{
 			@include lg-d{
@@ -128,7 +138,7 @@
 		}
 		h2{
 			@include sm-d{
-				margin-top: 100px;
+				margin-top: 12px;
 			}
 		}
 		@include sm-d{

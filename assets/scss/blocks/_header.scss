@@ -15,7 +15,13 @@ $headerBurgerMenuBg: #ffffff;
     top: 0;
     left: 0;
     z-index: 1000;
-    
+    @include md-d{
+		width: 96%;
+		top: 15px;
+		left: 2%;
+		border-radius: 20px;
+   	overflow: hidden;
+	 }
     .container {
         @include md-d {
             padding: 0;
@@ -140,6 +146,7 @@ $headerBurgerMenuBg: #ffffff;
             width: 54px;
             background-color: transparent;
             z-index: 3;
+				order: 3;
         }
     }
     &__burger {
@@ -281,7 +288,7 @@ $headerBurgerMenuBg: #ffffff;
 			 margin-right: 17px;
 		 }
 		 @include md-d{
-			 display: none;
+			order: 2;
 		 }
 	 }
     
