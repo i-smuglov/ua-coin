@@ -1,19 +1,35 @@
 .free{
-	
-	.container{
-		
-		background: url('/img/free-bg.png') no-repeat;
-		background-position: center;
+	background: url('/img/free-bg.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	backdrop-filter: blur(124px);
+	.container{		
+		background: transparent;
 	}
-	&__wrapper{
+	&__wrapper{		
 		display: flex;
-		justify-content: space-between;
-		background: rgba(255, 255, 255, 0);		
-		backdrop-filter: blur(124px);
+		justify-content: space-between;				
+		
+		padding-bottom: 161px;
+		padding-top: 181px;
+		@include xl-d{
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		@include md-d{
+			padding-bottom: 296px;
+		}
 	}
 	&__check{
 		display: flex;
 		flex-direction: column;
+		@include lg-d{
+			order: 3;
+		}
+		@include sm-d{
+			max-width: 329px;
+			margin-top: 100px;
+		}
 	}
 	&__check-contain{
 		display: flex;
@@ -25,6 +41,9 @@
 		background: url('/img/lock.png') no-repeat;
 		background-position: top center;
 		padding: 45px 27px 33px 27px;
+		@include sm-d{
+			padding: 46px 22px 33px 22px;
+		}
 	}
 	&__check-title{
 		font-weight: 700;
@@ -33,13 +52,16 @@
 		text-align: center;
 		color: #11131D;
 		max-width: 325px;
+		@include sm-d{
+			font-size: 28px;
+		}
 	}
 	&__check-status{
 		font-family: 'Hiragino Sans GB';
 		font-style: normal;
 		display: flex;
 		justify-content: space-between;
-		max-width: 233px;	
+		width: 233px;	
 		align-self: center;
 		margin-top: 68px;
 	}
@@ -100,6 +122,7 @@
 	}
 
 	&__wallet{
+		margin: 0px 20px 0px 20px;
 		position: relative;
 		background: rgba(7, 20, 72, 0.45);
 		border: 1px solid rgba(7, 20, 72, 0.05);
@@ -107,18 +130,28 @@
 		display: flex;
 		flex-direction: column;
 		padding: 189px 89px 55px 89px;
-		min-width: 609px;
+		width: 609px;
 		max-height: 676px;
 		margin-top: 137px;
+		@include lg-d{
+			order: 1;
+		}
+		@include md-d{
+			width: 329px;
+			padding:113px 20px 28px 20px;
+			border-radius: 25px;
+		}
 	}
 	&__wallet-coin{
 		position: absolute;
 		top: 0%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		width: 159px;
+		
 	}
 	&__wallet-content{
-		min-width: 332px;
+		width: 332px;
 		font-family: 'Hiragino Sans GB';
 		font-style: normal;
 		font-weight: 300;
@@ -130,7 +163,11 @@
 		align-self: center;
 		position: relative;
 		&--second{
-			margin-top: 23px;
+			margin-top: 23px;			
+		}
+		@include md-d{
+			width: 270px;
+			font-size: 14px;
 		}
 	}
 	&__wallet-name{
@@ -147,10 +184,16 @@
 	&__wallet-meaning{
 		display: flex;
 		justify-content: space-between;		
+		@include md-d{
+			flex-direction: column;
+		}
 	}
 	&__wallet-dropdown{
 		margin-top: 52px;
 		height: 54px;
+		@include md-d{
+			margin-top: 28px;
+		}
 	}
 	&__wallet-box{
 		width: 204px;
@@ -161,6 +204,9 @@
 		border: 1px solid #FFFFFF;
 		border-radius: 15px;
 		margin-top: 25px;
+		@include md-d{
+			width: 100%;
+		}
 		p{
 			text-align: center;
 			font-family: 'Hiragino Sans GB';
@@ -189,6 +235,10 @@
 		text-align: center;		
 		color: #FFFFFF;
 		margin-top: 48px;
+		@include md-d{
+			line-height: 21px;
+			margin-top: 31px;
+		}
 		a{
 			color: $accent;
 			text-decoration: underline;
@@ -197,5 +247,112 @@
 	&__wallet-btn{
 		align-self: center;
 		margin-top: 21px;
+	}
+	&__content{
+		display: flex;
+		flex-direction: column;
+		max-width: 410px;
+		text-align: center;
+		@include xl-d{
+			margin-top: 80px;
+			max-width: 800px;
+		}
+		@include lg-d{
+			order: 2;
+		}
+		@include md-d{
+			max-width: 329px;
+		}
+	}
+	&__content-img{
+		align-self: center;
+	}
+	&__content-title{
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 42px;
+		color: rgba(7, 20, 72, 0.75);
+	}
+	&__content-subtitle{
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+		color: rgba(7, 20, 72, 0.45);
+		margin-top: 15px;
+	}
+	&__content-text{
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		align-self: center;
+		max-width: 380px;
+		line-height: 24px;
+		color: #11131D;
+		margin-top: 30px;
+		&--second{			
+			padding-bottom: 46px;
+			border-bottom: 1px solid rgba(7, 20, 72, 0.25);
+		}
+	}
+	&__content-referal{
+		display: flex;
+		flex-direction: column;		
+		margin-top: 37px;
+	}
+	&__content-upline{
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 36px;
+		color: rgba(7, 20, 72, 0.75);
+		text-align: left;
+		@include md-d{
+			text-align: center;
+		}
+	}
+	&__content-link{
+		display: flex;
+		justify-content: space-between;
+		@include md-d{
+			flex-direction: column;
+		}
+	}
+	&__content-btn{
+		@include md-d{
+			margin-top: 30px;
+		}
+	}
+	&__content-percent{
+		margin-top: 5px;
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 24px;
+		color: #404249;
+		max-width: 213px;
+		text-align: left;
+		@include md-d{
+			text-align: center;
+			align-self: center;
+		}
+	}
+	&__downline{
+		position: absolute;
+		left: 50%;
+		bottom: 32px;
+		transform: translateX(-50%);
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+		color: rgba(101, 102, 105, 0.75);
+		span{
+			color: $accent;
+		}
 	}
 }

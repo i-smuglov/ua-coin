@@ -23,10 +23,27 @@
 			width: 325px;
 		}
 	 }
+	 &--163{
+		width: 163px;
+		height: 44px;
+		background: #000;
+		color: #fff;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 24px;
+		border-radius: 15px;
+		color: #FFFFFF;
+		@include md-d{
+			width: 329px;
+		}
+	 }
 	 &--361{
 		width: 361px;
 		height: 54px;
 		border-radius: 15px;
+		@include sm-d{
+			width: 281px;
+		}
 	 }
 	 &--wallet{
 		background: rgba(7, 20, 72, 0.05);
@@ -47,6 +64,9 @@
 		width: 326px;
 		height: 54px;
 		border-radius: 15px;
+		@include md-d{
+			width: 283px;
+		}
 	 }
 	 &--claim{
 		background: #DADADA;
