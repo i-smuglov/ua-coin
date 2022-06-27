@@ -33,8 +33,15 @@
 		line-height: 24px;
 		border-radius: 15px;
 		color: #FFFFFF;
+		transition: 0.3s linear;
 		@include md-d{
 			width: 329px;
+		}
+		&:hover{
+			background: #fff;
+			color: #000;
+			transition: 0.3s linear;
+			border: 2px solid black;
 		}
 	 }
 	 &--361{

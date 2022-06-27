@@ -190,10 +190,16 @@ html {
     font-size: 14px;
     line-height: 24px;
     border-radius: 15px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    transition: 0.3s linear; }
     @media only screen and (max-width: 768px) {
       .btn--163 {
         width: 329px; } }
+    .btn--163:hover {
+      background: #fff;
+      color: #000;
+      transition: 0.3s linear;
+      border: 2px solid black; }
   .btn--361 {
     width: 361px;
     height: 54px;
