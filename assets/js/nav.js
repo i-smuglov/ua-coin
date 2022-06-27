@@ -146,3 +146,8 @@ $(".coin__link").click(function(){
 	temp.remove();
  })
 
+
+ //progressbar
+ var progress = $(".progress-done");
+progress.css("width", progress.attr("data-done") + "%");
+progress.css("opacity", "5");

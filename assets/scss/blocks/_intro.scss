@@ -138,6 +138,60 @@
 		@include md-d{
 			display: none;
 		}
+		width: 480px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__total-start{
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 24px;
+		letter-spacing: 0.05em;
+		color: rgba(7, 20, 72, 0.75);
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+	}
+	&__total-end{
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 24px;
+		color: #FFFFFF;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__total-goal{
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 24px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		color: #FFFFFF;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 5px;
+	}
+	&__total-price{
+		background: rgba(255, 255, 255, 0.55);
+		border-radius: 5px;
+		font-family: 'Hiragino Sans GB';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		color: #FFFFFF;
+		margin-top: 8px;
+		align-self: center;
+		width: 196px;
+		height: 25px;
 	}
 	&__content{
 		padding: 62px 0px 62px 0px;
@@ -172,10 +226,10 @@
 		}
 	}
 	&__img{
-		max-width: 900px;
+		max-width: 1100px;
 		position: absolute;
 		bottom: -110px;
-		right: -100px;
+		right: -200px;
 		@include xl-d{
 			max-width: 750px;
  		   bottom: -90px;

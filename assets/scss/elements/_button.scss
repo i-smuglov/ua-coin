@@ -23,6 +23,38 @@
 			width: 325px;
 		}
 	 }
+	 &--361{
+		width: 361px;
+		height: 54px;
+		border-radius: 15px;
+	 }
+	 &--wallet{
+		background: rgba(7, 20, 72, 0.05);
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 24px;
+		color: rgba(7, 20, 72, 0.45);
+	 }
+	 &--confirm{
+		background: $accent;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 24px;
+		color: #071448;
+
+	 }
+	 &--326{
+		width: 326px;
+		height: 54px;
+		border-radius: 15px;
+	 }
+	 &--claim{
+		background: #DADADA;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 24px;
+		color: #A3A4AB;
+	 }
     &--140 {
         width: 140px;
         height: 55px;

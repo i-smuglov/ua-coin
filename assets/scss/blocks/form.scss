@@ -12,8 +12,13 @@
 		@include lg-d{
 			display: none;
 		}
+	}	
+	&__img{
+		position: absolute;
+		left: -20px;
+		bottom: 0;
+		z-index: 2;
 	}
-	
 	&__wrapper{
 		position: relative;
 		z-index: 2;
