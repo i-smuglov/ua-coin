@@ -14,7 +14,7 @@ $headerBurgerMenuBg: #ffffff;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
     @include md-d{
 		width: 96%;
 		top: 15px;
@@ -97,6 +97,12 @@ $headerBurgerMenuBg: #ffffff;
 	 &__account-meta{
 		 display: flex;
 		 align-items: center;
+		
+	 }
+	 &__arrow{
+		@include sm-d{
+			display: none;
+		}
 	 }
 	 &__account-text{
 		font-size: 16px;
@@ -292,6 +298,7 @@ $headerBurgerMenuBg: #ffffff;
 		 }
 		 @include md-d{
 			order: 2;
+			margin-left: 15px;
 		 }
 	 }
     

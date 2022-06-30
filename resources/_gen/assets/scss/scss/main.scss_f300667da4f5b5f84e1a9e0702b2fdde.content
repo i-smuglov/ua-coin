@@ -501,7 +501,7 @@ html {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1000; }
+  z-index: 9999; }
   @media only screen and (max-width: 768px) {
     .header {
       width: 96%;
@@ -569,6 +569,9 @@ html {
   .header__account-meta {
     display: flex;
     align-items: center; }
+  @media only screen and (max-width: 576px) {
+    .header__arrow {
+      display: none; } }
   .header__account-text {
     font-size: 16px;
     line-height: 24px;
@@ -731,7 +734,8 @@ html {
       margin-right: 17px; }
     @media only screen and (max-width: 768px) {
       .header__meta {
-        order: 2; } }
+        order: 2;
+        margin-left: 15px; } }
 .lock {
   overflow: hidden; }
 
@@ -1099,6 +1103,10 @@ html {
     @media only screen and (max-width: 768px) {
       .intro__downline-social {
         left: 40px; } }
+    @media only screen and (max-width: 576px) {
+      .intro__downline-social {
+        left: 20px;
+        bottom: 20px; } }
     .intro__downline-social.active {
       transition: 0.5s linear;
       height: 310px; }
@@ -1130,6 +1138,10 @@ html {
     @media only screen and (max-width: 768px) {
       .intro__arrow {
         left: 40px; } }
+    @media only screen and (max-width: 576px) {
+      .intro__arrow {
+        left: 20px;
+        bottom: 61px; } }
     .intro__arrow.active {
       transition: 0.5s linear;
       bottom: 317px; }

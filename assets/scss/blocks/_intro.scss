@@ -408,6 +408,10 @@
 		@include md-d{
 			left: 40px;
 		}
+		@include sm-d{
+			left: 20px;
+			bottom: 20px;
+		}
 		&.active{
 			transition: 0.5s linear;
 			height: 310px;
@@ -452,8 +456,13 @@
 		justify-content: center;
 		padding-top: 8px;
 		transition: 0.5s linear;
+		
 		@include md-d{
 			left: 40px;
+		}
+		@include sm-d{
+			left: 20px;
+			bottom: 61px;
 		}
 		&.active{
 			transition: 0.5s linear;
