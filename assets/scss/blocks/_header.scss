@@ -132,6 +132,7 @@ $headerBurgerMenuBg: #ffffff;
 		  padding-bottom: 30px;
         @include md-d {
             height: 54px;
+				margin-top: 30px;
         }
     }
     &__burger-bg {
@@ -231,11 +232,11 @@ $headerBurgerMenuBg: #ffffff;
             flex-wrap: wrap;
         }
         @include md-d {            
-            flex-direction: column;
-            align-items: center;            
+            flex-direction: column;                      
 				align-items: flex-start;
             margin-top: 44px;
             margin-bottom: 40px;
+				min-height: 432px;
         }
         @media (max-width: 320px) {
             margin-bottom: 40px;

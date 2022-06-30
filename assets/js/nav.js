@@ -9,34 +9,7 @@ $(document).ready(function () {
 	$('.header__link').click(function (event) {
 		$('.header__burger, .header__menu').removeClass('active');
 		$('body').removeClass('lock')
-	});
-
-	
-	//Adaptive SlickSlider 
-	$(window).on('resize', function (e) {
-
-		var init = $(".news__wrapper").data('init-slider');
-
-		if (window.innerWidth < 769) {
-			if (init != 1) {
-				$('.news__wrapper').slick({
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					dots: true,
-					arrows: false,
-					adaptiveHeight: true,
-
-
-				}).data({ 'init-slider': 1 });
-			}
-		}
-
-		else {
-			if (init == 1) {
-				$('.news__wrapper').slick('unslick').data({ 'init-slider': 0 });
-			}
-		}
-	}).trigger('resize');
+	});	
 })
 
 
@@ -45,15 +18,31 @@ $(window).on('resize', function (e) {
 
 	var init = $(".team__wrapper").data('init-slider');
 
-	if (window.innerWidth < 769) {
+	if (window.innerWidth < 1400) {
 		if (init != 1) {
 			$('.team__wrapper').slick({
-				slidesToShow: 1,
+				slidesToShow: 3,
 				slidesToScroll: 1,
 				dots: true,
 				arrows: false,
 				adaptiveHeight: true,
-
+				responsive: [
+					{
+						breakpoint: 1070,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1,
+						}
+					},
+					{
+						breakpoint: 770,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+						}
+					}
+				]
+				
 
 			}).data({ 'init-slider': 1 });
 		}
@@ -111,14 +100,14 @@ function run_clock(id,endtime){
 }
 run_clock('clockdiv',deadline);
 
-
+// accordeon
 $(document).ready(function () {
 	
 	if($(window).width() < 767)
 {
-   $('.start__box-wrapper').click(function (event) {
+   $('.start__arrow, .start__box-wrapper').click(function (event) {
 		if ($('.start__map').hasClass('one')) {
-			// $('.start__box-wrapper').not($(this)).removeClass('active');
+			$('.start__box-wrapper').not($(this)).removeClass('active');
 			// $('.start__circle').not($(this).next()).slideUp(300);
 		}
 		$(this).toggleClass('active').next().slideToggle(300);
@@ -151,3 +140,17 @@ $(".coin__link").click(function(){
  var progress = $(".progress-done");
 progress.css("width", progress.attr("data-done") + "%");
 progress.css("opacity", "5");
+
+//Dropdown social link
+$('.intro__arrow, .intro__downline-social').hover(
+	function () {
+	  $('.intro__downline-social, .intro__arrow').addClass('active');
+	},
+	function () {
+	  $('.intro__downline-social, .intro__arrow').removeClass('active');
+	}
+ );
+
+ $('.coin__link').click(function(){
+	$('.coin__copy-textt').addClass('active');
+ });

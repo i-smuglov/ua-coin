@@ -22,10 +22,10 @@
 		img{
 			position: absolute;
 			bottom: 0;
-			border-radius: 50px;
-			
+			border-radius: 50px;			
 		}
-		@include md-d{
+		
+		@include xl-d{
 			box-shadow: none;
 		}
 	}

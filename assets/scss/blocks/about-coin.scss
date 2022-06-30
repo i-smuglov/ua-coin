@@ -7,12 +7,14 @@
 		margin-left: 100px;
 		display: flex;
 		justify-content: space-between;
+		position: relative;
 		@include lg-d{
 			flex-direction: column;
 			margin-left: 0;
 			align-items: center;
 		}
 	}
+	
 	&__text{
 		max-width: 525px;
 		font-family: 'Hiragino Sans GB';
@@ -36,6 +38,8 @@
 			display: flex;
 			flex-direction: column;
 			margin-top: 100px;
+			position: relative;
+			z-index: 2;
 			@include xl-d{
 				width: 585px;
 			}
@@ -44,7 +48,7 @@
 				margin-top: 40px;
 			}			
 			&--visible{
-				display: none;
+				display: none;				
 				@include lg-d{
 					display: flex;					
 				}
@@ -52,12 +56,14 @@
 	}
 	&__copy{
 		display: flex;	
+		position: relative;
 		font-family: 'Hiragino Sans GB';
 		font-style: normal;
 		font-weight: 400;
 		font-size: 35px;
 		line-height: 50px;
 		color: rgba(7, 20, 72, 0.75);
+		
 		@include lg-d{
 			font-size: 20px;
 			line-height: 29px;
@@ -69,20 +75,53 @@
 		padding: 15px;
 		display: flex;
 		justify-content: center;
+		position: relative;
 		align-items: center;
-		background: rgba(7, 20, 72, 0.05);
+		background: rgb(231, 231, 231);
 		border-radius: 15px;
 		margin-left: 42px;
 		transition: 0.3s linear;
+		transform-style: preserve-3d;
+		z-index: 200;			
 		@include md-d{
 			margin-left: 32px;
 			padding: 8px;
 		}
+
 		&:hover{
 			transition: 0.3s linear;
 			cursor: pointer;
-			background: rgba(7, 20, 72, 0.2);
+			background: rgb(154, 154, 154);
 		}
+
+		
+	}
+	&__copy-textt{
+		position: absolute;
+		right: 5px;
+		top: 0;
+		font-size: 12px;
+		color: #000;
+		z-index: 1;				
+				
+		&.active{			
+			animation: copied 1s;
+			opacity: 0;
+			@keyframes copied {
+				0%{					
+					top: 0;
+					opacity: 0;
+				}
+				50%{					
+					top: 40px;
+					opacity: 1;
+				}
+				100%{
+					opacity: 0;
+				}
+			}
+		}
+		
 	}
 	&__remark{
 		font-family: 'Hiragino Sans GB';

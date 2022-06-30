@@ -16,27 +16,46 @@
 	}
 	&__social{
 		position: fixed;		
-		left: 35px;
-		top: 130px;
+		left: 15px;
+   	top: 50px;
 		padding-top: 203px;
 		padding-bottom: 203px;
+		z-index: 1000;
 		&::before,
 		&::after{
 			content: '';
 			position: absolute;
 			left: 12px;
 			width: 2px;
+			background: rgba(7, 20, 72, 0.25);
 			height: 153px;
-			border: 1px solid rgba(7, 20, 72, 0.25);
+			
+			@include xxl-d{
+				height: 100px;				
+			}
+			
+			
 		}
 		&::before{
 			top: 0px;
+			@include xxl-d{
+				top: 80px;
+			}
 		}
 		&::after{
 			bottom: 0;
+			@include xxl-d{
+				bottom: 80px;
+			}
 		}
 		@include xxl-d{
+			left: 20px;
+		}
+		@include xl-d{
 			display: none;
+		}
+		@include xxl{
+			top: 170px;
 		}
 	}
 	&__list{
@@ -209,6 +228,7 @@
 			transform: translateX(-50%);
 			display: flex;
 			flex-direction: column;
+			text-align: center;
 		}
 	}
 	&__text{
@@ -228,15 +248,15 @@
 	&__img{
 		max-width: 1100px;
 		position: absolute;
-		bottom: -110px;
+		bottom: -125px;
 		right: -200px;
 		@include xl-d{
-			max-width: 750px;
- 		   bottom: -90px;
+			right: -400px;
 		}
 		@include lg-d{
 			max-width: 560px;
 			bottom: -68px;
+			right: -200px;
 		}
 		@include md-d{
 			width: 500px;
@@ -252,16 +272,16 @@
 	}
 	&__get{
 		position: absolute;
-		top: 0;
-		right: 300px;
+		top: 57px;
+   	right: 200px;
 		transform: translateY(-120%);
 		@include xl-d{
-			top: 156px;
-    		right: 125px;
+			top: 110px;
+			right: 0px;
 		}
 		@include lg-d{
-			top: 225px;
-    		right: 65px;			
+			top: 273px;
+			right: -6px;				  
 		}
 		@include md-d{
 			max-width: 85px;
@@ -307,6 +327,9 @@
 		margin-top: 18px;
 		margin-bottom: 10px;
 		margin-left: 30px;
+		@include md-d{
+			margin-left: 54px;
+		}
 		}
 	&__save-wrapper{
 		margin-left: -20px;
@@ -345,6 +368,8 @@
 		display: flex;
 		flex-direction: column;
 		display: none;
+		border-radius: 15px;
+		transition: 0.5s linear;
 		@include xl-d{
 			display: block;
 		}
@@ -372,19 +397,20 @@
 	&__downline-social{		
 		width: 60px;
 		height: 60px;
-		position: absolute;
-		left: 500px;
-		bottom: -160px;
+		position: fixed;
+		z-index: 1000;
+		left: 26px;
+		bottom: 26px;
 		overflow: hidden;
 		transition: 0.5s linear;
 		border-radius: 15px;
+		background: $accent ;
 		@include md-d{
 			left: 40px;
 		}
-
-		&:hover{			
+		&.active{
 			transition: 0.5s linear;
-			height: 325px;
+			height: 310px;
 			.intro__downline-icons{
 				&:first-child{
 					border-radius: 15px 15px 0 0;
@@ -395,6 +421,7 @@
 				}
 			}
 		}
+		
 		ul{
 			
 			li{
@@ -413,9 +440,9 @@
 		
 	}
 	&__arrow{
-		position: absolute;
-		top: 80px;
-		left: 501px;
+		position: fixed;
+		bottom: 67px;
+		left: 28px;
 		width: 58px;
 		height: 40px;
 		z-index: 1;
@@ -424,8 +451,17 @@
 		display: flex;
 		justify-content: center;
 		padding-top: 8px;
+		transition: 0.5s linear;
 		@include md-d{
 			left: 40px;
+		}
+		&.active{
+			transition: 0.5s linear;
+			bottom: 317px;
+			svg{
+				transition: 0.5s linear;
+				transform: rotate(180deg);
+			}
 		}
 	}
 }
