@@ -1128,7 +1128,7 @@ html {
     left: 28px;
     width: 58px;
     height: 40px;
-    z-index: 1;
+    z-index: 1000;
     background: #071448;
     border-radius: 15px;
     display: flex;

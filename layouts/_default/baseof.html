@@ -3,7 +3,10 @@
   {{ partial "0-head" . }}
 
   <body class="{{ .Page.Kind }} {{ .Page.Type }} {{ .Site.Hugo.Version }}">
-    {{ block "header" . }}{{ partial "1-navbar" . }}{{end}} {{ block "main" . }}
+    {{ block "header" . }}
+		 {{ partial "1-navbar" . }}
+	 {{ end }} 
+	 	{{ block "main" . }}
     {{ end }} 
   </body>
 </html>
