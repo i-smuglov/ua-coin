@@ -99,11 +99,12 @@ function time_remaining(endtime){
 	var days = Math.floor( t/(1000*60*60*24) );
 	console.log(Date.parse(endtime) + ' date');
 	console.log(Date.parse(new Date()) + ' new date');
+	console.log(endtime);
 	return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
 
 }
 function run_clock(id,endtime){
-	var clock = document.getElementById(id);	
+	var clock = document.getElementById('clockdiv');	
 	var days_span = clock.querySelector('.days');
 	var hours_span = clock.querySelector('.hours');
 	var minutes_span = clock.querySelector('.minutes');
