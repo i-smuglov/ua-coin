@@ -55,7 +55,7 @@ $(window).on('resize', function (e) {
 	}
 }).trigger('resize');
 //Slider partners
-$(window).on('resize', function (e) {
+$(window).on('resize', function (i) {
 
 	var init = $(".partners__wrapper").data('init-slider');
 
@@ -103,9 +103,7 @@ function time_remaining(endtime){
 
 }
 function run_clock(id,endtime){
-	var clock = document.getElementById(id);
-	
-	
+	var clock = document.getElementById(id);	
 	var days_span = clock.querySelector('.days');
 	var hours_span = clock.querySelector('.hours');
 	var minutes_span = clock.querySelector('.minutes');
@@ -132,7 +130,7 @@ $(document).ready(function () {
 	
 	if($(window).width() < 767)
 {
-   $('.start__arrow, .start__box-wrapper').click(function (event) {
+   $(' .start__box-wrapper').click(function (accord) {
 		if ($('.start__map').hasClass('one')) {
 			$('.start__box-wrapper').not($(this)).removeClass('active');
 			// $('.start__circle').not($(this).next()).slideUp(300);
@@ -182,12 +180,7 @@ $('.intro__arrow, .intro__downline-social').hover(
 	$('.coin__copy-textt').addClass('active');
  });
 
-
-//  $('.start__box-wrapper').click(function(){
-// 	$('.start__arrow').addClass('active');
-//  });
-
- $('.start__box-wrapper,').hover(
+ $('.start__box-wrapper').hover(
 	function () {
 	  $('.start__arrow').addClass('active');
 	},
