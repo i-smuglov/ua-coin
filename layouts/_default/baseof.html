@@ -3,6 +3,7 @@
   {{ partial "0-head" . }}
 
   <body class="{{ .Page.Kind }} {{ .Page.Type }} {{ .Site.Hugo.Version }}">
+	 {{ partial "01-preloader" . }}
     {{ block "header" . }}
 		 {{ partial "1-navbar" . }}
 	 {{ end }} 

@@ -1,3 +1,36 @@
+//Preloader
+
+var 	
+  images = document.images,
+  images_total_count = images.length,
+  images_loaded_count = 0,
+  perc_display = document.getElementById('load_perc'),
+  preloader = document.getElementById('page-preloader'),
+  preloadProgress = $('#page-preloader-progress');
+
+
+for (var i = 0; i < images_total_count; i++) {
+  image_clone = new Image();
+  image_clone.onload = image_loaded;
+  image_clone.onerror = image_loaded;
+  image_clone.src = images[i].src;
+}
+function image_loaded() {
+  images_loaded_count++;
+  var calc = ( ( (100 / images_total_count) * images_loaded_count) << 0);
+
+  perc_display.innerHTML =  calc + '%';
+  preloadProgress.css('width', calc + '%');
+  console.log(images_loaded_count, images_total_count)
+  if( images_loaded_count >= images_total_count ) {
+    setTimeout(function() {
+
+      if( !preloader.classList.contains('hidden') ) {
+        preloader.classList.add('hidden');
+      }
+    }, 1000);
+  }
+}
 //header
 $(document).ready(function () {
 
@@ -96,10 +129,7 @@ function time_remaining(endtime){
 	var seconds = Math.floor( (t/1000) % 60 );
 	var minutes = Math.floor( (t/1000/60) % 60 );
 	var hours = Math.floor( (t/(1000*60*60)) % 24 );
-	var days = Math.floor( t/(1000*60*60*24) );
-	console.log(Date.parse(endtime) + ' date');
-	console.log(Date.parse(new Date()) + ' new date');
-	console.log(endtime);
+	var days = Math.floor( t/(1000*60*60*24) );	
 	return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
 
 }

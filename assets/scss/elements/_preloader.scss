@@ -1,0 +1,70 @@
+@keyframes preloader-slideOut {
+	to{
+	  transform: translateX(100%);
+	}
+ } 
+ .preloader {
+	 position: fixed;
+	 z-index: 9999;
+	height: 100%;
+	width: 100%;
+	transition: opacity 1s linear;
+	opacity: 1;	
+	background-color: #000;	
+	&.hidden {
+	  animation-name:  preloader-slideOut;
+	  animation-delay: 1s;
+	  animation-duration: 1s; 
+	  animation-fill-mode:both;
+	  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	  .preloader__process {
+			width: 0!important;
+			right: 0;
+			left: initial;
+	  }
+	}
+	
+	  &__inner {
+		 position: absolute;
+		 height: 100%;
+		 width: 100%;
+		 left: 0;
+		 top: 0;
+		 display: flex;
+		 flex-wrap:wrap;
+		 justify-content: center;
+		 align-items: center;
+		  
+	  }
+	&__process {
+	  background-color: #e11458;
+	  position:absolute;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  transition: 1s ease-in-out;
+	  width:0;
+	}
+	&__center {
+	  text-align: center;
+	  position:relative;
+	  width: 100%;
+	}
+	&__percent {
+		 color: white;
+		 font-weight: bold;
+		 font-size: 15vw;
+		 line-height: 15vw;
+		 height:15vw;
+		 opacity: .08;
+		 position: absolute;
+		 left: 0;
+		 right: 0;
+		 top: 0;
+		 bottom: 0;
+		 width: 100%;
+		 margin: auto 0;
+		 z-index: 1;
+		 text-align: center;
+	}
+ }
