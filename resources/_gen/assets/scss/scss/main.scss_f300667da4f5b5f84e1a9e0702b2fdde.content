@@ -1541,7 +1541,6 @@ html {
         .start__box:last-child::after {
           display: none; } }
   .start__box-wrapper {
-    width: 95vw;
     position: relative;
     z-index: 1;
     display: flex;
@@ -1551,7 +1550,12 @@ html {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between; } }
+        justify-content: space-between;
+        width: 95vw; } }
+    .start__box-wrapper.active .start__arrow {
+      background: #FEDC00; }
+      .start__box-wrapper.active .start__arrow svg {
+        transform: rotate(180deg); }
   .start__box-contain {
     display: flex; }
   .start__box-title {
