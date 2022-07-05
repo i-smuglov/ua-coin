@@ -730,6 +730,9 @@ html {
       line-height: 24px;
       color: rgba(7, 20, 72, 0.75);
       justify-content: space-between; }
+      @media only screen and (max-width: 576px) {
+        .header__meta a {
+          padding: 16px; } }
     .header__meta img {
       margin-right: 17px; }
     @media only screen and (max-width: 768px) {
@@ -1276,7 +1279,8 @@ html {
       margin-right: 40px; } }
   @media only screen and (max-width: 992px) {
     .coin__video {
-      margin-right: 0; } }
+      margin-right: 0;
+      max-width: 425px; } }
 .mission {
   margin-top: 200px; }
   @media only screen and (max-width: 768px) {
@@ -1791,11 +1795,11 @@ html {
     margin-right: 20px; }
     .team__buttons a:last-child {
       margin-right: 0; }
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 768px) {
       .team__buttons a {
         margin-right: 0;
         margin-top: 20px; } }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
     .team__buttons {
       margin-top: 30px;
       flex-direction: column;
@@ -1994,7 +1998,8 @@ html {
         font-size: 20px;
         line-height: 30px;
         border-radius: 25px;
-        padding-left: 140px; } }
+        padding-left: 140px;
+        margin-right: 0; } }
   .city__box-img {
     position: absolute;
     left: 50px;
@@ -2007,7 +2012,10 @@ html {
         .city__box-img svg {
           max-width: 94px; } }
     .city__box-img--big {
-      bottom: -20px; }
+      bottom: 35px; }
+      @media only screen and (max-width: 992px) {
+        .city__box-img--big {
+          bottom: -20px; } }
     @media only screen and (max-width: 992px) {
       .city__box-img--h52 img {
         max-width: 52px; } }
@@ -2042,13 +2050,10 @@ html {
         display: flex; }
         .city__buttons a {
           justify-content: center; } }
-    @media only screen and (max-width: 400px) {
-      .city__buttons {
-        margin-left: -40px; } }
 .donate {
   margin-top: 418px;
   margin-left: 5px; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     .donate {
       margin-top: 152px; } }
   .donate__wrapper {
@@ -2082,6 +2087,7 @@ html {
         margin-left: 25px; } }
     @media only screen and (max-width: 768px) {
       .donate__icons {
+        flex-wrap: nowrap;
         margin-left: 0;
         align-items: center;
         justify-content: center; } }
@@ -2153,6 +2159,9 @@ html {
         .donate__icons-box--338 {
           width: 150.23783874511733px;
           height: 129.7135467529298px; } }
+    @media only screen and (max-width: 768px) {
+      .donate__icons-box--nomg {
+        margin-right: 0; } }
     .donate__icons-box svg {
       transition: 0.4s linear; }
       .donate__icons-box svg path {
@@ -2256,8 +2265,7 @@ html {
     justify-content: center; }
 
 .partners {
-  margin-top: 160px;
-  display: flex; }
+  margin-top: 160px; }
   .partners__title {
     text-align: center; }
   .partners__remark {
@@ -2287,19 +2295,22 @@ html {
     margin-top: 50px; }
     @media only screen and (max-width: 576px) {
       .partners__wrapper {
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 200px; } }
+        background: none;
+        padding-top: 40px;
+        padding-bottom: 40px; } }
   .partners__box {
     margin-bottom: 20px;
     border-radius: 15px;
     padding: 20px;
-    flex: 0 0 22%;
     display: flex;
+    min-width: 300px;
     align-items: center;
     justify-content: center;
     transition: 0.3s linear;
     border: 1px solid transparent; }
+    @media only screen and (max-width: 992px) {
+      .partners__box {
+        margin-bottom: 0; } }
     .partners__box svg path {
       background: #919AAC;
       background-clip: content-box; }
@@ -2314,6 +2325,40 @@ html {
     display: flex;
     justify-content: center;
     margin-top: 80px; }
+  .partners .slick-track {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media only screen and (max-width: 768px) {
+      .partners .slick-track {
+        flex-wrap: wrap; } }
+  .partners .slick-list {
+    overflow: hidden;
+    padding: 0px 0px 0px 0px; }
+  .partners .slick-slide {
+    display: flex  !important;
+    flex-direction: column;
+    align-items: center; }
+  .partners .slick-dots {
+    margin-top: 15px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -28px; }
+  .partners .slick-dots li {
+    margin: 0 10px; }
+  .partners .slick-dots button {
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #FEDC00; }
+  .partners .slick-dots li.slick-active button {
+    background-color: black; }
 
 .free {
   background: url("/img/free-bg.png") no-repeat;

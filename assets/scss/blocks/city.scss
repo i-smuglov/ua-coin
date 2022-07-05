@@ -94,6 +94,7 @@
 			line-height: 30px;
 			border-radius: 25px;
 			padding-left: 140px;
+			margin-right: 0;
 		}
 	}
 	&__box-img{
@@ -109,7 +110,10 @@
 			}
 		}
 		&--big{			
-				bottom: -20px;			
+				bottom: 35px;
+				@include lg-d{
+					bottom: -20px;
+				}			
 		}
 		&--h52{
 			@include lg-d{
@@ -158,7 +162,7 @@
 			}
 		}
 		@include xs-d{
-			margin-left: -40px;
+			// margin-left: -40px;
 		}
 	}
 }

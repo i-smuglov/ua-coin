@@ -13,7 +13,7 @@ $(document).ready(function () {
 })
 
 
-//slider
+//slider Team	
 $(window).on('resize', function (e) {
 
 	var init = $(".team__wrapper").data('init-slider');
@@ -51,6 +51,30 @@ $(window).on('resize', function (e) {
 	else {
 		if (init == 1) {
 			$('.team__wrapper').slick('unslick').data({ 'init-slider': 0 });
+		}
+	}
+}).trigger('resize');
+//Slider partners
+$(window).on('resize', function (e) {
+
+	var init = $(".partners__wrapper").data('init-slider');
+
+	if (window.innerWidth < 970) {
+		if (init != 1) {
+			$('.partners__wrapper').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: true,
+				arrows: false,
+				adaptiveHeight:false,
+				autoplay: true,
+			}).data({ 'init-slider': 1 });
+		}
+	}
+
+	else {
+		if (init == 1) {
+			$('.partners__wrapper').slick('unslick').data({ 'init-slider': 0 });
 		}
 	}
 }).trigger('resize');

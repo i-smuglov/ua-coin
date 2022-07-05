@@ -1,8 +1,5 @@
 .partners{
-	margin-top: 160px;
-	display: flex;
-	
-	
+	margin-top: 160px;	
 	&__title{
 		text-align: center;
 		
@@ -34,21 +31,24 @@
 		padding-bottom: 90px;
 		margin-top: 50px;
 		@include sm-d{
-			flex-direction: column;
-			align-items: center;
-			padding-bottom: 200px;
+		background: none;
+		padding-top: 40px;
+		padding-bottom: 40px;
 		}
 	}
 	&__box{
 		margin-bottom: 20px;		
 		border-radius: 15px;
 		padding: 20px;
-		flex: 0 0 22%;
-		display: flex;
+		display: flex;	
+		min-width: 300px;
 		align-items: center;
 		justify-content: center;
 		transition: 0.3s linear;
 		border: 1px solid transparent;
+		@include lg-d{
+			margin-bottom: 0;
+		}
 		svg{	
 			
 					
@@ -73,4 +73,48 @@
 		justify-content: center;
 		margin-top: 80px;
 	}
+		//Slick settings
+		.slick-track {
+			min-width: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@include md-d {
+			  flex-wrap: wrap;
+			}
+		 }
+		 .slick-list {
+			overflow: hidden;
+			padding: 0px 0px 0px 0px;	
+		 }
+		 .slick-slide{
+			 display: flex  !important;
+			 flex-direction: column;
+			 align-items: center;
+		 }
+		 .slick-dots {
+			margin-top: 15px;
+			display: flex !important;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -28px;
+		 }
+		 .slick-dots li {
+			margin: 0 10px;
+		 }
+		 .slick-dots button {
+			font-size: 0;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background-color: $accent;
+		 }
+		 .slick-dots li.slick-active button {
+			background-color: black;
+		 }
 }
+
+

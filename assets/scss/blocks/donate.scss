@@ -1,7 +1,7 @@
 .donate{
 	margin-top: 418px;
 	margin-left: 5px;
-	@include md-d{
+	@include lg-d{
 		margin-top: 152px;
 	}
 	&__wrapper{
@@ -38,6 +38,7 @@
 			 margin-left: 25px;
 		 }
 		 @include md-d{
+			flex-wrap: nowrap;
 			margin-left: 0;
 			align-items: center;
 			justify-content: center;
@@ -116,6 +117,12 @@
 				width: 150.23783874511733px;
 				height: 129.7135467529298px;
 			}
+		}
+		&--nomg{
+			@include md-d{
+				margin-right: 0;
+			}
+			
 		}
 		svg{
 			transition: 0.4s linear;
