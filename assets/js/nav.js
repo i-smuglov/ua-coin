@@ -90,7 +90,7 @@ setInterval(function ()
 
 //TIMER
 
-var deadline = '08 30 2022 12:00:00 GMT+0300';
+var deadline = ' 2022-9-30 12:00:00 '; 
 function time_remaining(endtime){
 	var t = Date.parse(endtime) - Date.parse(new Date());
 	var seconds = Math.floor( (t/1000) % 60 );
@@ -116,12 +116,11 @@ function run_clock(id,endtime){
 		days_span.innerHTML = t.days;
 		hours_span.innerHTML = ('0' + t.hours).slice(-2);
 		minutes_span.innerHTML = ('0' + t.minutes).slice(-2);
-		seconds_span.innerHTML = ('0' + t.seconds).slice(-2);
-		
+		seconds_span.innerHTML = ('0' + t.seconds).slice(-2);		
 		if(t.total<=0){ clearInterval(timeinterval); }
 	}
 	update_clock();
-	var timeinterval = setInterval(update_clock,1000);
+	var timeinterval = setInterval(update_clock,1000);	
 }
 run_clock('clockdiv',deadline);
 
