@@ -90,7 +90,7 @@ setInterval(function ()
 
 //TIMER
 
-var deadline = '2022-07-05 19:00:00+0300'; 
+var deadline = '2022-08-30T12:00:00+0300'; 
 function time_remaining(endtime){
 	var t = Date.parse(endtime) - Date.parse(new Date());
 	var seconds = Math.floor( (t/1000) % 60 );
