@@ -18,26 +18,31 @@
 		border-radius: 50px;	
 		background: url('/img/team-bg.png') no-repeat;
 		background-position: center;	
-		border-right: 3px solid yellow;
-		img{
-			position: absolute;
-			bottom: 0;
-			border-radius: 50px;			
-		}
-		
+		border-right: 3px solid yellow;		
 		@include xl-d{
 			box-shadow: none;
 		}
 	}
-	&__svg{
-		svg{
-			position: absolute;
-		left: 0;
-		bottom: -14px;
-		border-radius: 50px;
-		z-index: 4;
+	&__img-main{
+		position: absolute;
+		bottom: 0;
+		border-radius: 50px;		
+	}
+	&__bg-yellow{
+		position: absolute;
+		&--2{
+			left: 0;
+			bottom: -14px;
+		}		
+		&--3{
+			height: 451px;
+			left: 0;
+			bottom: -15px;
 		}
-		
+		&--4{			
+			right: 0;
+			bottom: -15px;
+		}
 	}
 	&__name{
 		font-size: 25px;
@@ -99,7 +104,7 @@
 	}
  }
  .slick-list {
-	overflow: hidden;
+	// overflow: hidden;
 	padding: 0px 0px 0px 0px;	
  }
  .slick-slide{

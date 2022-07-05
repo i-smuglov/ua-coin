@@ -14,6 +14,9 @@
 	}
 	&__content{
 		max-width: 580px;
+		@include lg-d{
+			max-width: 525px;
+		}
 	}
 	&__remark{
 		font-family: 'Hiragino Sans GB';
@@ -37,9 +40,11 @@
 		 @include xl-d{
 			 margin-left: 25px;
 		 }
-		 @include md-d{
-			flex-wrap: nowrap;
+		 @include lg-d{
 			margin-left: 0;
+		 }
+		 @include md-d{
+			flex-wrap: nowrap;			
 			align-items: center;
 			justify-content: center;
 		}

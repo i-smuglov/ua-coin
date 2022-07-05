@@ -1748,19 +1748,26 @@ html {
   background: url("/img/team-bg.png") no-repeat;
   background-position: center;
   border-right: 3px solid yellow; }
-  .team__img img {
-    position: absolute;
-    bottom: 0;
-    border-radius: 50px; }
   @media only screen and (max-width: 1332px) {
     .team__img {
       box-shadow: none; } }
-.team__svg svg {
+.team__img-main {
   position: absolute;
-  left: 0;
-  bottom: -14px;
-  border-radius: 50px;
-  z-index: 4; }
+  bottom: 0;
+  border-radius: 50px; }
+
+.team__bg-yellow {
+  position: absolute; }
+  .team__bg-yellow--2 {
+    left: 0;
+    bottom: -14px; }
+  .team__bg-yellow--3 {
+    height: 451px;
+    left: 0;
+    bottom: -15px; }
+  .team__bg-yellow--4 {
+    right: 0;
+    bottom: -15px; }
 
 .team__name {
   font-size: 25px;
@@ -1817,7 +1824,6 @@ html {
     .team .slick-track {
       flex-wrap: wrap; } }
 .team .slick-list {
-  overflow: hidden;
   padding: 0px 0px 0px 0px; }
 
 .team .slick-slide {
@@ -2069,6 +2075,9 @@ html {
         align-items: center; } }
   .donate__content {
     max-width: 580px; }
+    @media only screen and (max-width: 992px) {
+      .donate__content {
+        max-width: 525px; } }
   .donate__remark {
     font-family: 'Hiragino Sans GB';
     font-style: normal;
@@ -2089,10 +2098,12 @@ html {
     @media only screen and (max-width: 1332px) {
       .donate__icons {
         margin-left: 25px; } }
+    @media only screen and (max-width: 992px) {
+      .donate__icons {
+        margin-left: 0; } }
     @media only screen and (max-width: 768px) {
       .donate__icons {
         flex-wrap: nowrap;
-        margin-left: 0;
         align-items: center;
         justify-content: center; } }
   .donate__icons-wrapper {
