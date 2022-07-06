@@ -170,8 +170,8 @@ html {
   height: 100%;
   width: 100%;
   transition: opacity 1s linear;
-  opacity: 1;
-  background-color: #000; }
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(124px); }
   .preloader.hidden {
     animation-name: preloader-slideOut;
     animation-delay: 1s;
@@ -179,27 +179,45 @@ html {
     animation-fill-mode: both;
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
     .preloader.hidden .preloader__process {
-      width: 0 !important;
+      width: 5px !important;
       right: 0;
       left: initial; }
+  .preloader__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
   .preloader__inner {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
+    height: 5px;
+    width: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
+  .preloader__text {
+    font-family: 'Ermilov';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #11131D;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%); }
   .preloader__process {
-    background-color: #e11458;
+    background: #071448;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     transition: 1s ease-in-out;
-    width: 0; }
+    width: 5px; }
   .preloader__center {
     text-align: center;
     position: relative;
@@ -219,7 +237,8 @@ html {
     width: 100%;
     margin: auto 0;
     z-index: 1;
-    text-align: center; }
+    text-align: center;
+    visibility: hidden; }
 
 .btn {
   display: flex;
