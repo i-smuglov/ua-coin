@@ -578,10 +578,12 @@ html {
 
 .header {
   position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 9998; }
+  width: 96%;
+  top: 20px;
+  left: 2%;
+  z-index: 9998;
+  border-radius: 20px;
+  overflow: hidden; }
   @media only screen and (max-width: 768px) {
     .header {
       width: 96%;
@@ -672,12 +674,12 @@ html {
       .header__logo {
         margin-left: 25px; } }
   .header__body {
-    margin-top: 38px;
+    margin-top: 15px;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px; }
+    padding-bottom: 15px; }
     @media only screen and (max-width: 768px) {
       .header__body {
         height: 54px;
@@ -787,11 +789,11 @@ html {
     line-height: 24px;
     color: #404249;
     transition: 0.2s linear; }
-    .header__link--active {
-      color: #FEDC00; }
-    .header__link:hover {
+    .header__link:hover, .header__link:active, .header__link:focus {
+      color: #11131D;
       transition: 0.2s linear;
-      color: #FEDC00; }
+      background: url("/img/link-bord.svg") no-repeat;
+      background-position: right bottom; }
     @media only screen and (max-width: 768px) {
       .header__link {
         margin-left: 0;

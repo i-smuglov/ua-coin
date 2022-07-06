@@ -11,10 +11,12 @@ $headerBurgerColor: #071448;
 $headerBurgerMenuBg: #ffffff;
 .header {
     position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+    width: 96%;
+    top: 20px;
+    left: 2%;
     z-index: 9998;
+	 border-radius: 20px;
+	 overflow: hidden;
     @include md-d{
 		width: 96%;
 		top: 15px;
@@ -130,12 +132,12 @@ $headerBurgerMenuBg: #ffffff;
         
     }
     &__body {
-        margin-top: 38px;
+        margin-top: 15px;
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-		  padding-bottom: 30px;
+		  padding-bottom: 15px;
         @include md-d {
             height: 54px;
 				margin-top: 30px;
@@ -264,12 +266,14 @@ $headerBurgerMenuBg: #ffffff;
 		color: #404249;	      
       transition: 0.2s linear;
 		
-        &--active {
-            color: $accent;
-        }
-        &:hover {
+       
+        &:hover,
+		  &:active,
+		  &:focus {
+				color: #11131D;
             transition: 0.2s linear;
-            color: $headerLinkLineColor;
+            background: url('/img/link-bord.svg') no-repeat;
+				background-position: right bottom;
         }
         @include md-d {
             margin-left: 0;
