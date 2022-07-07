@@ -1,0 +1,205 @@
+//Close acordeon
+$accordeonWidth: 790px; //With accordeon --- Длина акордеона
+$accordeonPadding: 0px; //Padding accordeon --- Внутренние отступы
+$accordeonRadius: 0px; //Border radius
+$accordeonColorMain: #3f5858; //Text color
+$accordeonColorBg: rgba(255, 255, 255, 0.5); // Bg color
+$arrowsColor: $accent;
+//Open acordeon
+$acordeonMainColor: $accent;
+$openAcordeonTextColor: #6b7575;
+$openAcordeonBgColor: rgba(255, 255, 255, 0.5);
+$arrowsColorClose: #071448;
+
+
+.start{
+	&__remark{
+				font-family: 'Hiragino Sans GB';
+				font-style: normal;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 24px;
+				color: #404249;
+			}			
+			&__box-title{
+				width: 102px;
+				height: 102px;
+				background: rgba(255, 255, 255, 1);
+				border: 1px solid #736ECC;
+				border-radius: 25px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				z-index: 2;
+				@include md-d{
+					&::before{
+						content: '';
+						background: url('/img/Vector.svg') no-repeat;	
+						height: 40px;
+						width: 25px;
+						position: absolute;
+						left: 20.5px;
+						bottom: -30px;
+						z-index: 2;
+					}
+					&::after{
+						content: '';
+						background: url('/img/Vector.svg') no-repeat;	
+						height: 40px;
+						width: 25px;
+						position: absolute;
+						left: 19px;
+						top: -30px;
+						transform: rotate(180deg);
+						z-index: 2;
+					}
+				}
+			}
+			&__box-remark{
+				margin-left: 0;
+				font-family: 'Hiragino Sans GB';
+				font-style: normal;				
+				position: absolute;
+				left: 130px;
+				top: 50%;
+				transform: translateY(-50%);
+			}			
+			&__box-step{
+				font-size: 14px;
+				line-height: 24px;
+				color: rgba(7, 20, 72, 0.75);
+			}
+			&__box-phase{		
+				font-size: 16px;
+				line-height: 24px;
+				color: #736ECC;				
+			}
+			
+			&__box-text{
+				font-family: 'Hiragino Sans GB';
+				font-style: normal;
+				font-weight: 300;
+				font-size: 14px;
+				line-height: 24px;
+				color: #404249;
+				position: relative;		
+				margin-top: 10px;
+				padding-left: 22px;
+				&::before{
+					content: '';
+					border-radius: 50%;
+					background: #000;
+					width: 3px;
+					height: 3px;
+					position: absolute;
+					left: 0;
+					top: 11px;
+				}
+				@include sm-d{			
+					color: rgba(7, 20, 72, 0.45);
+				}
+				@include xs-d{
+					font-size: 12px;
+				}
+			}
+}
+.block__item {
+	margin-bottom: 15px;
+	width: 100%;
+
+	@include md-d {
+		margin-bottom: 10px;
+	}
+}
+.block__title {
+	
+	color: $accordeonColorMain;
+	border-radius: $accordeonRadius;
+	padding: $accordeonPadding;
+	background: $accordeonColorBg;
+	text-align: left;
+	cursor: pointer;
+	//text settings
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 25px;
+	//any settings
+	box-shadow: 0px 14px 50px 5px rgba(178, 200, 200, 0.1);
+	backdrop-filter: blur(40px);
+	transition: all 0.2s linear;
+	@include md-d {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 150%;
+		padding: 15px 51px 15px 18px;
+	}
+}
+
+
+.block__title::after {
+	content: "";
+	width: 42px;
+	height: 42px;
+	background: url('/img/arrow.svg') no-repeat center;
+	overflow: hidden;
+	background-color: $arrowsColorClose;
+	position: absolute;
+	top: 50%;	
+	transform:  rotateX(0deg), translate(0%, -50%);
+	transition: all 0.3s ease 0s;
+	border-radius: 10px;
+	@include md-d {
+		width: 12px;
+	}
+}
+
+
+.block__title::after {	
+	right: 0;
+	@include md-d {
+		right: 0;
+	}
+}
+
+.block__title.active::before,
+.block__title.active::after {
+	background-color: $arrowsColor;
+}
+
+.block__title.active::after {
+	transform: rotateX(180deg) translate(0%, 0%);	
+}
+.block__title.active {
+	color: $acordeonMainColor;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	box-shadow: none;
+}
+
+.block__text {
+	display: none;
+	background: #FFFFFF;
+	box-shadow: inset 0px 4px 0px #736ECC;
+	border-radius: 50px;
+	padding: 27px 30px 0px 22px;
+	border-top: 2px solid #736ECC;
+	
+	margin-top: 24px;
+	@include md-d{
+		display: none;
+		background: #FFFFFF;
+		box-shadow: 0px 150.705px 226.988px rgba(0, 0, 0, 0.07), 0px 45.4332px 68.4302px rgba(0, 0, 0, 0.0456112), 0px 18.8706px 28.4224px rgba(0, 0, 0, 0.035), 0px 6.82513px 10.2798px rgba(0, 0, 0, 0.0243888), inset 0px 3.72111px 0px #736ECC;
+		border-radius: 46.5139px;
+		background: url('/img/miss-box.png') no-repeat;
+		background-position: right bottom;
+	}
+	@include sm-d{
+		padding: 10px 35px 0px 35px;
+	}
+	@include md-d {
+		font-size: 14px;
+		line-height: 22px;
+		padding: 0px 20px 17px 25px;
+	}
+}
