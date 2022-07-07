@@ -139,8 +139,8 @@ $arrowsColorClose: #071448;
 
 .block__title::after {
 	content: "";
-	width: 42px;
-	height: 42px;
+	min-width: 42px;
+	min-height: 42px;
 	background: url('/img/arrow.svg') no-repeat center;
 	overflow: hidden;
 	background-color: $arrowsColorClose;

@@ -1571,8 +1571,8 @@ html {
       padding: 15px 51px 15px 18px; } }
 .block__title::after {
   content: "";
-  width: 42px;
-  height: 42px;
+  min-width: 42px;
+  min-height: 42px;
   background: url("/img/arrow.svg") no-repeat center;
   overflow: hidden;
   background-color: #071448;
