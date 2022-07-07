@@ -113,7 +113,7 @@ $arrowsColorClose: #071448;
 	}
 }
 .block__title {
-	
+	position: relative;
 	color: $accordeonColorMain;
 	border-radius: $accordeonRadius;
 	padding: $accordeonPadding;

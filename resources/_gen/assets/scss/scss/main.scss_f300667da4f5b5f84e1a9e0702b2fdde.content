@@ -1551,6 +1551,7 @@ html {
     .block__item {
       margin-bottom: 10px; } }
 .block__title {
+  position: relative;
   color: #3f5858;
   border-radius: 0px;
   padding: 0px;
