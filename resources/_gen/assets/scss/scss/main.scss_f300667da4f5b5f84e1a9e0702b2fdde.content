@@ -1667,17 +1667,21 @@ html {
     @media only screen and (max-width: 992px) {
       .block__item:nth-child(4)::before, .block__item:nth-child(7)::before {
         display: none; } }
-  .block__item:last-child::after {
-    content: '';
-    width: 250px;
-    height: 95px;
-    background: url("/img/Digger.svg") no-repeat;
-    position: absolute;
-    right: -175px;
-    top: 0px; }
-    @media only screen and (max-width: 992px) {
-      .block__item:last-child::after {
-        display: none; } }
+  .block__item:last-child {
+    margin-bottom: 200px; }
+    .block__item:last-child::before {
+      content: '';
+      width: 250px;
+      height: 95px;
+      background: url("/img/Digger.svg") no-repeat;
+      position: absolute;
+      right: -175px;
+      top: 0px; }
+      @media only screen and (max-width: 992px) {
+        .block__item:last-child::before {
+          transform: rotate(90deg);
+          left: -74px;
+          top: 181px; } }
 .block__title {
   position: relative;
   color: #3f5858;
@@ -1769,7 +1773,7 @@ html {
   @media only screen and (max-width: 992px) {
     .token {
       border-radius: 50px 0 50px 0;
-      margin-top: 100px; } }
+      margin-top: 30px; } }
   .token h2 {
     color: #fff; }
   .token .container {

@@ -262,8 +262,9 @@ $arrowsColorClose: #071448;
 			}
 		}
 	}
+	
 	&:last-child{
-		&::after{
+		&::before{
 			content: '';
 			width: 250px;
 			height: 95px;
@@ -272,9 +273,17 @@ $arrowsColorClose: #071448;
 			right: -175px;
 			top: 0px;
 			@include lg-d{
-				display: none;
+				transform: rotate(90deg);
+				left: -74px;
+    			top: 181px;
 			}
+		
 	}
+	&--last{
+		
+	}
+	margin-bottom: 200px;
+
 	}	
 }
 
