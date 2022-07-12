@@ -683,7 +683,7 @@ html {
     @media only screen and (max-width: 768px) {
       .header__body {
         height: 54px;
-        margin-top: 30px; } }
+        margin-top: 17px; } }
   .header__burger-bg {
     display: none; }
     @media only screen and (max-width: 768px) {
