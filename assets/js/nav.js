@@ -204,6 +204,7 @@ $('.intro__arrow, .intro__downline-social').hover(
 	$('.coin__copy-textt').addClass('active');
  });
 
+
 //  $('.start__box-wrapper').hover(
 // 	function () {
 // 	  $('.start__arrow').addClass('active');
