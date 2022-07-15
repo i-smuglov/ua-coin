@@ -190,28 +190,30 @@ $(".coin__link").click(function(){
 progress.css("width", progress.attr("data-done") + "%");
 progress.css("opacity", "5");
 
-//Dropdown social link
-$('.intro__arrow, .intro__downline-social').hover(
-	function () {
-	  $('.intro__downline-social, .intro__arrow').addClass('active');
-	},
-	function () {
-	  $('.intro__downline-social, .intro__arrow').removeClass('active');
-	}
- );
+// // Dropdown social link
+// $('.intro__arrow, .intro__downline-social').on ( 'click', function () {
+// 	  $('.intro__downline-social, .intro__arrow').addClass('active');
+// 	}
+	
+//  );
+ 
 
  $('.coin__link').click(function(){
 	$('.coin__copy-textt').addClass('active');
  });
 
+ $('.intro__arrow').click(function() {
+  
+	if( $('.intro__arrow, .intro__downline-social').hasClass('active') ) {
+	  $('.intro__arrow, .intro__downline-social').removeClass('active');
+	} else {
+	  $('.intro__arrow , .intro__downline-social').removeClass('active');
+	  $('.intro__arrow , .intro__downline-social').addClass('active');
+	}
+	
+  });
 
-//  $('.start__box-wrapper').hover(
-// 	function () {
-// 	  $('.start__arrow').addClass('active');
-// 	},
-// 	function () {
-// 	  $('.start__arrow').removeClass('active');
-// 	}
-//  );
+
+
 
 

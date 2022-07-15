@@ -112,7 +112,9 @@
 		@include xxl{
 			margin-left: 20px;
 		}    
-		#clockdiv{            
+		#clockdiv{ 
+			font-family: "Ermilov";
+
 			font-family: 'Hiragino Sans GB';
 			font-style: normal;
 			font-weight: 400;
@@ -162,6 +164,7 @@
 		flex-direction: column;
 	}
 	&__total-start{
+		font-family: "Ermilov";
 		font-family: 'Hiragino Sans GB';
 		font-style: normal;
 		font-weight: 300;
@@ -174,6 +177,7 @@
 		margin-top: 20px;
 	}
 	&__total-end{
+		font-family: "Ermilov";
 		font-family: 'Hiragino Sans GB';
 		font-style: normal;
 		font-weight: 600;
@@ -232,6 +236,7 @@
 		}
 	}
 	&__text{
+		font-family: "Ermilov";
 		font-family: "Hiragino Sans GB";
 		font-style: normal;
 		font-weight: 400;

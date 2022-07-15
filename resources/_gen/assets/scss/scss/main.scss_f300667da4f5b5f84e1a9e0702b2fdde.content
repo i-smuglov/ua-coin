@@ -923,6 +923,7 @@ html {
       .intro__timer {
         margin-left: 20px; } }
     .intro__timer #clockdiv {
+      font-family: "Ermilov";
       font-family: 'Hiragino Sans GB';
       font-style: normal;
       font-weight: 400;
@@ -962,6 +963,7 @@ html {
       .intro__total {
         display: none; } }
   .intro__total-start {
+    font-family: "Ermilov";
     font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 300;
@@ -973,6 +975,7 @@ html {
     justify-content: space-between;
     margin-top: 20px; }
   .intro__total-end {
+    font-family: "Ermilov";
     font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 600;
@@ -1027,6 +1030,7 @@ html {
         flex-direction: column;
         text-align: center; } }
   .intro__text {
+    font-family: "Ermilov";
     font-family: "Hiragino Sans GB";
     font-style: normal;
     font-weight: 400;
@@ -1845,6 +1849,9 @@ html {
     padding: 5px 25px;
     align-self: center;
     margin-top: 35px; }
+    @media only screen and (max-width: 768px) {
+      .token__text {
+        font-size: 20px; } }
   .token__btn {
     align-self: center;
     margin-top: 40px;
