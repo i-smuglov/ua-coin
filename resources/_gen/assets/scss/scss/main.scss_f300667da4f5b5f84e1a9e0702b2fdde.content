@@ -1494,28 +1494,34 @@ html {
     transform-style: preserve-3d;
     transform: translateZ(10px); }
     @media only screen and (max-width: 992px) {
-      .start__box-title::before {
-        content: '';
-        background: url("/img/Vector.svg") no-repeat;
-        height: 40px;
-        width: 25px;
-        position: absolute;
-        bottom: -30px;
-        z-index: 2;
-        left: 39px;
-        transform: translateZ(-10px); }
-      .start__box-title::after {
-        content: '';
-        background: url("/img/Vector.svg") no-repeat;
-        height: 40px;
-        width: 25px;
-        position: absolute;
-        top: -30px;
-        left: 38px;
-        z-index: 2;
-        transform: rotate(180deg) translateZ(-10px); }
-      .start__box-title::before, .start__box-title::after {
-        transform-style: preserve-3d; } }
+      .start__box-title {
+        width: 70.1px;
+        height: 70.1px; }
+        .start__box-title svg {
+          width: 55px;
+          height: 55px; }
+        .start__box-title::before {
+          content: '';
+          background: url("/img/Vector.svg") no-repeat;
+          height: 40px;
+          width: 25px;
+          position: absolute;
+          bottom: -30px;
+          z-index: 2;
+          left: 23px;
+          transform: translateZ(-10px); }
+        .start__box-title::after {
+          content: '';
+          background: url("/img/Vector.svg") no-repeat;
+          height: 40px;
+          width: 25px;
+          position: absolute;
+          top: -30px;
+          left: 22px;
+          z-index: 2;
+          transform: rotate(180deg) translateZ(-10px); }
+        .start__box-title::before, .start__box-title::after {
+          transform-style: preserve-3d; } }
   .start__box-remark {
     margin-left: 0;
     font-family: 'Hiragino Sans GB';
@@ -1526,7 +1532,7 @@ html {
     transform: translateY(-50%); }
     @media only screen and (max-width: 992px) {
       .start__box-remark {
-        left: 130px;
+        left: 100px;
         top: 50%; } }
   .start__box-step {
     font-size: 14px;
@@ -1698,16 +1704,19 @@ html {
       top: 0px; }
       @media only screen and (max-width: 992px) {
         .block__item:last-child .start__box-title::before {
-          transform: rotate(90deg) translateZ(-10px);
+          background: url("/img/coin-adapt.svg") no-repeat;
+          width: 200px;
+          height: 200px;
+          transform: translateZ(-10px);
           transition: 0.3s linear;
-          top: 170px;
-          left: -90px; } }
+          top: 58px;
+          left: 26px; } }
     @media only screen and (max-width: 992px) {
       .block__item:last-child .block__title.active .start__box-title {
         transition: 0.2s linear; }
         .block__item:last-child .block__title.active .start__box-title::before {
           transition: 0.2s linear;
-          top: 542px;
+          top: 480px;
           z-index: 2; } }
 .block__title {
   position: relative;
@@ -1729,7 +1738,7 @@ html {
       font-weight: 500;
       font-size: 12px;
       line-height: 150%;
-      padding: 15px 51px 15px 18px;
+      padding: 15px 51px 15px 0px;
       box-shadow: none; } }
 .block__title::after {
   display: none;
@@ -1740,7 +1749,7 @@ html {
   overflow: hidden;
   background-color: #071448;
   position: absolute;
-  top: 48px;
+  top: 30px;
   transform: rotateX(0deg), translate(0%, -50%);
   transition: all 0.3s ease 0s;
   border-radius: 10px; }
@@ -1750,9 +1759,7 @@ html {
       width: 12px; } }
 .block__title::after {
   right: 0; }
-  @media only screen and (max-width: 992px) {
-    .block__title::after {
-      right: 15px; } }
+
 .block__title.active::before,
 .block__title.active::after {
   background-color: #FEDC00; }

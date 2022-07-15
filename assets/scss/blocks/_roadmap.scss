@@ -40,7 +40,12 @@ $arrowsColorClose: #071448;
 				transform-style: preserve-3d;
 				transform: translateZ(10px);
 				@include lg-d{
-					
+					width: 70.1px;
+					height: 70.1px;
+					svg{
+						width: 55px;
+						height: 55px;
+					}
 					&::before{
 						content: '';
 						background: url('/img/Vector.svg') no-repeat;	
@@ -49,7 +54,7 @@ $arrowsColorClose: #071448;
 						position: absolute;
 						bottom: -30px;
 						z-index: 2;
-						left: 39px;
+						left: 23px;
 						transform: translateZ(-10px);
 						
 					}
@@ -60,7 +65,7 @@ $arrowsColorClose: #071448;
 						width: 25px;
 						position: absolute;
 						top: -30px;
-						left: 38px;
+						left: 22px;
 						z-index: 2;
 						transform: rotate(180deg) translateZ(-10px);
 						
@@ -82,7 +87,7 @@ $arrowsColorClose: #071448;
 				top: 130px;				
 				transform: translateY(-50%);
 				@include lg-d{
-					left: 130px;
+					left: 100px;
 					top: 50%;
 				}
 			}			
@@ -301,10 +306,13 @@ $arrowsColorClose: #071448;
 				left: 136px;
    				top: 0px;
 				@include lg-d{
-				transform: rotate(90deg) translateZ(-10px);
+				background: url('/img/coin-adapt.svg') no-repeat;
+				width: 200px;
+				height: 200px;
+				transform: translateZ(-10px);
 				transition: 0.3s linear;
-				top: 170px;
-				left: -90px;
+				top: 58px;
+				left: 26px;
 			}
 			}
 		}
@@ -315,7 +323,7 @@ $arrowsColorClose: #071448;
 				transition: 0.2s linear;
 				&::before{
 					transition: 0.2s linear;
-					top: 542px;
+					top: 480px;
 					z-index: 2;
 					
 				}
@@ -380,7 +388,7 @@ $arrowsColorClose: #071448;
 		font-weight: 500;
 		font-size: 12px;
 		line-height: 150%;
-		padding: 15px 51px 15px 18px;
+		padding: 15px 51px 15px 0px;
 		box-shadow: none;
 	}
 }
@@ -395,7 +403,7 @@ $arrowsColorClose: #071448;
 	overflow: hidden;
 	background-color: $arrowsColorClose;
 	position: absolute;
-	top: 48px;	
+	top: 30px;	
 	transform:  rotateX(0deg), translate(0%, -50%);
 	transition: all 0.3s ease 0s;
 	border-radius: 10px;
@@ -409,7 +417,7 @@ $arrowsColorClose: #071448;
 .block__title::after {	
 	right: 0;
 	@include lg-d {
-		right: 15px;
+		
 	}
 }
 
