@@ -18,11 +18,11 @@
 		display: flex;
 		justify-content: center;
 		padding-top: 80px;
-		@include xxl{
+		@include xl{
 			margin-right: calc(100vw - 95vw);
 		}
 	}
-	@include xxl{
+	@include xl{
 		border-radius: 75px 0px 0px 75px;
 		margin-left: 5%;
 	}
@@ -31,7 +31,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		@include xxl{
+		@include xl{
 			margin-right: calc(100vw - 95vw);
 		}
 		@include lg-d{
@@ -43,7 +43,11 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		@include xl{
+			margin-left: 30px;
+		}
 		@include lg-d{
+			margin-left: 0;
 			margin-top: 120px;
 			&:first-child{
 				margin-top: 0;
