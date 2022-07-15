@@ -149,7 +149,7 @@ run_clock('clockdiv',deadline);
 // accordeon
 $(document).ready(function () {
 	
-	if($(window).width() < 767)
+	if($(window).width() < 998)
 {
 	
 		$('.block__title').click(function (acordeon) {

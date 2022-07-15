@@ -39,7 +39,7 @@ $arrowsColorClose: #071448;
 				z-index: 3;
 				transform-style: preserve-3d;
 				transform: translateZ(10px);
-				@include md-d{
+				@include lg-d{
 					
 					&::before{
 						content: '';
@@ -64,10 +64,8 @@ $arrowsColorClose: #071448;
 						left: 19px;
 					}
 					&::before,
-					&::after{
-					
-						transform-style: preserve-3d;
-						
+					&::after{					
+						transform-style: preserve-3d;						
 					}
 				}
 			}
@@ -80,9 +78,9 @@ $arrowsColorClose: #071448;
 				left: 50px;
 				top: 130px;				
 				transform: translateY(-50%);
-				@include md-d{
+				@include lg-d{
 					left: 130px;
-				top: 50%;
+					top: 50%;
 				}
 			}			
 			&__box-step{
@@ -148,8 +146,8 @@ $arrowsColorClose: #071448;
 		position: absolute;
 		top: 50%;
 		left: 0px;
-		transform: translate(-75px, -224px);		@include xl-d{
-			left: 100px;
+		transform: translate(-78px, -315px);;		
+		@include xl-d{			
 		}
 		@include lg-d{
 			display: none;
@@ -160,10 +158,8 @@ $arrowsColorClose: #071448;
 		position: absolute;
 		left: 0;
 		top: 150px;
+		
 		@include lg-d{
-			left: -320px;
-		}
-		@include md-d{
 			left: 0px;
 			top: -145px;
 		}
@@ -190,13 +186,16 @@ $arrowsColorClose: #071448;
 	margin-bottom: 15px;
 	width: 350px;
 	position: relative;
-	@include md-d {
+	@include xl-d{
+		width: 290px;
+	}
+	@include lg-d {
 		width: 100%;
 		margin-bottom: 5px;
 	}
 	&:first-child{
 		margin-left: 400px;
-		@include md-d{
+		@include lg-d{
 			margin-left: 0;
 		}
 		.start__box-title{
@@ -205,11 +204,12 @@ $arrowsColorClose: #071448;
 			}
 		}
 	}
+	
 	&:nth-child(1),
 	&:nth-child(2){
 		.block__text{
 			height: 552px;
-			@include md-d{
+			@include lg-d{
 				height: auto;
 			}
 		}
@@ -252,7 +252,7 @@ $arrowsColorClose: #071448;
 	&:nth-child(5){
 		.block__text{
 			height: 421px;
-			@include md-d{
+			@include lg-d{
 				height: auto;
 			}
 		}			
@@ -262,7 +262,7 @@ $arrowsColorClose: #071448;
 	&:nth-child(8){
 		.block__text{
 			height: 452px;
-			@include md-d{
+			@include lg-d{
 				height: auto;
 			}
 		}			
@@ -287,27 +287,72 @@ $arrowsColorClose: #071448;
 	}
 	
 	&:last-child{
-		&::before{
-			content: '';
-			width: 250px;
-			height: 95px;
-			background: url('/img/Digger.svg') no-repeat;				
-			position: absolute;
-			right: -175px;
-			top: 0px;
-			@include lg-d{
-				transform: rotate(90deg);
-				left: -74px;
-    			top: 181px;
+		.start__box-title{
+			&::before{
+				content: '';
+				width: 250px;
+				transform-style: preserve-3d;				
+				height: 95px;
+				background: url('/img/Digger.svg') no-repeat;				
+				position: absolute;				
+				left: 136px;
+   				top: 0px;
+				@include lg-d{
+				transform: rotate(90deg) translateZ(-10px);
+				transition: 0.3s linear;
+				top: 170px;
+				left: -90px;
 			}
-		
-	}
-	&--last{
-		
-	}
+			}
+		}
 	margin-bottom: 200px;
-
+	.block__title.active{
+		@include lg-d{
+			.start__box-title{
+				transition: 0.2s linear;
+				&::before{
+					transition: 0.2s linear;
+					top: 542px;
+					z-index: 2;
+					
+				}
+			}
+		}		
+	}
 	}	
+	
+	.block__item{
+		&:last-child{
+			
+		}
+	}
+	// .block__title.active{
+	// 	transition: 0.3s linear;
+	// 	.start__box-title{
+	// 		transition: 0.3s linear;
+	// 		&::before{
+	// 			transition: 0.3s linear;
+	// 			display: none;
+	// 		}
+	// 	}
+	// }
+	.block__item--last{
+		// &::before{
+		// 	content: '';
+		// 	width: 250px;
+		// 	height: 95px;
+		// 	background: url('/img/Digger.svg') no-repeat;				
+		// 	position: absolute;
+		// 	right: -175px;
+		// 	top: 0px;
+		// 	@include lg-d{
+		// 	transform: rotate(90deg) translateZ(-10px);
+		// 	left: -74px;
+		// 	top: 416px;
+		// 	transform-style: preserve-3d;				
+		// }
+		// }
+	}
 }
 
 .block__title {
@@ -323,12 +368,11 @@ $arrowsColorClose: #071448;
 	font-size: 20px;
 	line-height: 25px;
 	//any settings
-	box-shadow: 0px 14px 50px 5px rgba(178, 200, 200, 0.1);
-	backdrop-filter: blur(40px);
+
 	transition: all 0.2s linear;
 	display: flex;
 	justify-content: center;
-	@include md-d {
+	@include lg-d {
 		justify-content: flex-start;
 		font-weight: 500;
 		font-size: 12px;
@@ -352,7 +396,7 @@ $arrowsColorClose: #071448;
 	transform:  rotateX(0deg), translate(0%, -50%);
 	transition: all 0.3s ease 0s;
 	border-radius: 10px;
-	@include md-d {
+	@include lg-d {
 		display: block;
 		width: 12px;
 	}
@@ -361,7 +405,7 @@ $arrowsColorClose: #071448;
 
 .block__title::after {	
 	right: 0;
-	@include md-d {
+	@include lg-d {
 		right: 15px;
 	}
 }
@@ -388,9 +432,9 @@ $arrowsColorClose: #071448;
 	border-radius: 50px;
 	padding: 25px 20px 25px 25px;
 	border-top: 2px solid #736ECC;
-	
+	z-index: 3;
 	margin-top: 92px;
-	@include md-d{
+	@include lg-d{
 		display: none;
 		background-color: #FFFFFF;
 		box-shadow: 0px 150.705px 226.988px rgba(0, 0, 0, 0.07), 0px 45.4332px 68.4302px rgba(0, 0, 0, 0.0456112), 0px 18.8706px 28.4224px rgba(0, 0, 0, 0.035), 0px 6.82513px 10.2798px rgba(0, 0, 0, 0.0243888), inset 0px 3.72111px 0px #736ECC;
@@ -398,6 +442,8 @@ $arrowsColorClose: #071448;
 		background: url('/img/miss-box.png') no-repeat;
 		background-position: right bottom;
 		margin-top: 10px;
+		transform-style: preserve-3d;	
+		transform: translateZ(10px);
 	}
 	
 	@include md-d {

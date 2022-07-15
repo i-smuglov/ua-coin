@@ -1,6 +1,6 @@
 @keyframes preloader-slideOut {
 	to{
-	  transform: translateX(100%);
+	  transform: translateX(100%);	  
 	}
  } 
  .preloader {
@@ -20,6 +20,7 @@
 	  .preloader__process {
 			width: 5px !important;
 			right: 0;
+			opacity: 0;
 			left: initial;
 	  }
 	}

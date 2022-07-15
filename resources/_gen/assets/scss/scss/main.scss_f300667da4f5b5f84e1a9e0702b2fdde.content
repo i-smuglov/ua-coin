@@ -181,6 +181,7 @@ html {
     .preloader.hidden .preloader__process {
       width: 5px !important;
       right: 0;
+      opacity: 0;
       left: initial; }
   .preloader__logo {
     position: absolute;
@@ -1488,7 +1489,7 @@ html {
     z-index: 3;
     transform-style: preserve-3d;
     transform: translateZ(10px); }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
       .start__box-title::before {
         content: '';
         background: url("/img/Vector.svg") no-repeat;
@@ -1519,7 +1520,7 @@ html {
     left: 50px;
     top: 130px;
     transform: translateY(-50%); }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
       .start__box-remark {
         left: 130px;
         top: 50%; } }
@@ -1579,10 +1580,7 @@ html {
     position: absolute;
     top: 50%;
     left: 0px;
-    transform: translate(-75px, -224px); }
-    @media only screen and (max-width: 1332px) {
-      .start__downline {
-        left: 100px; } }
+    transform: translate(-78px, -315px); }
     @media only screen and (max-width: 992px) {
       .start__downline {
         display: none; } }
@@ -1592,9 +1590,6 @@ html {
     left: 0;
     top: 150px; }
     @media only screen and (max-width: 992px) {
-      .start__upline {
-        left: -320px; } }
-    @media only screen and (max-width: 768px) {
       .start__upline {
         left: 0px;
         top: -145px; } }
@@ -1618,20 +1613,23 @@ html {
   margin-bottom: 15px;
   width: 350px;
   position: relative; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1332px) {
+    .block__item {
+      width: 290px; } }
+  @media only screen and (max-width: 992px) {
     .block__item {
       width: 100%;
       margin-bottom: 5px; } }
   .block__item:first-child {
     margin-left: 400px; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
       .block__item:first-child {
         margin-left: 0; } }
     .block__item:first-child .start__box-title::after {
       display: none; }
   .block__item:nth-child(1) .block__text, .block__item:nth-child(2) .block__text {
     height: 552px; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
       .block__item:nth-child(1) .block__text, .block__item:nth-child(2) .block__text {
         height: auto; } }
   .block__item:nth-child(1)::after, .block__item:nth-child(4)::after, .block__item:nth-child(7)::after {
@@ -1661,12 +1659,12 @@ html {
         display: none; } }
   .block__item:nth-child(3) .block__text, .block__item:nth-child(4) .block__text, .block__item:nth-child(5) .block__text {
     height: 421px; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
       .block__item:nth-child(3) .block__text, .block__item:nth-child(4) .block__text, .block__item:nth-child(5) .block__text {
         height: auto; } }
   .block__item:nth-child(6) .block__text, .block__item:nth-child(7) .block__text, .block__item:nth-child(8) .block__text {
     height: 452px; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
       .block__item:nth-child(6) .block__text, .block__item:nth-child(7) .block__text, .block__item:nth-child(8) .block__text {
         height: auto; } }
   .block__item:nth-child(4)::before, .block__item:nth-child(7)::before {
@@ -1685,19 +1683,28 @@ html {
         display: none; } }
   .block__item:last-child {
     margin-bottom: 200px; }
-    .block__item:last-child::before {
+    .block__item:last-child .start__box-title::before {
       content: '';
       width: 250px;
+      transform-style: preserve-3d;
       height: 95px;
       background: url("/img/Digger.svg") no-repeat;
       position: absolute;
-      right: -175px;
+      left: 136px;
       top: 0px; }
       @media only screen and (max-width: 992px) {
-        .block__item:last-child::before {
-          transform: rotate(90deg);
-          left: -74px;
-          top: 181px; } }
+        .block__item:last-child .start__box-title::before {
+          transform: rotate(90deg) translateZ(-10px);
+          transition: 0.3s linear;
+          top: 170px;
+          left: -90px; } }
+    @media only screen and (max-width: 992px) {
+      .block__item:last-child .block__title.active .start__box-title {
+        transition: 0.2s linear; }
+        .block__item:last-child .block__title.active .start__box-title::before {
+          transition: 0.2s linear;
+          top: 542px;
+          z-index: 2; } }
 .block__title {
   position: relative;
   color: #3f5858;
@@ -1709,12 +1716,10 @@ html {
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
-  box-shadow: 0px 14px 50px 5px rgba(178, 200, 200, 0.1);
-  backdrop-filter: blur(40px);
   transition: all 0.2s linear;
   display: flex;
   justify-content: center; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     .block__title {
       justify-content: flex-start;
       font-weight: 500;
@@ -1735,13 +1740,13 @@ html {
   transform: rotateX(0deg), translate(0%, -50%);
   transition: all 0.3s ease 0s;
   border-radius: 10px; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     .block__title::after {
       display: block;
       width: 12px; } }
 .block__title::after {
   right: 0; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     .block__title::after {
       right: 15px; } }
 .block__title.active::before,
@@ -1764,8 +1769,9 @@ html {
   border-radius: 50px;
   padding: 25px 20px 25px 25px;
   border-top: 2px solid #736ECC;
+  z-index: 3;
   margin-top: 92px; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     .block__text {
       display: none;
       background-color: #FFFFFF;
@@ -1773,7 +1779,9 @@ html {
       border-radius: 46.5139px;
       background: url("/img/miss-box.png") no-repeat;
       background-position: right bottom;
-      margin-top: 10px; } }
+      margin-top: 10px;
+      transform-style: preserve-3d;
+      transform: translateZ(10px); } }
   @media only screen and (max-width: 768px) {
     .block__text {
       font-size: 14px;
