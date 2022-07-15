@@ -49,8 +49,9 @@ $arrowsColorClose: #071448;
 						position: absolute;
 						bottom: -30px;
 						z-index: 2;
+						left: 39px;
 						transform: translateZ(-10px);
-						left: 20px;
+						
 					}
 					&::after{
 						content: '';
@@ -59,9 +60,11 @@ $arrowsColorClose: #071448;
 						width: 25px;
 						position: absolute;
 						top: -30px;
-						transform: rotate(180deg) translateZ(-10px);
+						left: 38px;
 						z-index: 2;
-						left: 19px;
+						transform: rotate(180deg) translateZ(-10px);
+						
+						
 					}
 					&::before,
 					&::after{					

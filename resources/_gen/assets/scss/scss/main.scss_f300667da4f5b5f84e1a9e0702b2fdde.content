@@ -155,7 +155,7 @@ h2 {
 .small-container {
   max-width: 1250px;
   margin: 0 auto;
-  padding: 0 10px; }
+  padding: 0 20px; }
 
 html {
   scroll-behavior: smooth; }
@@ -1502,8 +1502,8 @@ html {
         position: absolute;
         bottom: -30px;
         z-index: 2;
-        transform: translateZ(-10px);
-        left: 20px; }
+        left: 39px;
+        transform: translateZ(-10px); }
       .start__box-title::after {
         content: '';
         background: url("/img/Vector.svg") no-repeat;
@@ -1511,9 +1511,9 @@ html {
         width: 25px;
         position: absolute;
         top: -30px;
-        transform: rotate(180deg) translateZ(-10px);
+        left: 38px;
         z-index: 2;
-        left: 19px; }
+        transform: rotate(180deg) translateZ(-10px); }
       .start__box-title::before, .start__box-title::after {
         transform-style: preserve-3d; } }
   .start__box-remark {
