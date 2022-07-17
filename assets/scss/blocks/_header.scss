@@ -132,12 +132,14 @@ $headerBurgerMenuBg: #ffffff;
         
     }
     &__body {
-        margin-top: 15px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-top: 8px;
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-		  padding-bottom: 15px;
+		padding-bottom: 8px;
         @include md-d {
             height: 54px;
 				margin-top: 17px;

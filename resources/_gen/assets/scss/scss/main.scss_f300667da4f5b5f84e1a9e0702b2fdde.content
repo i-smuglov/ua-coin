@@ -675,12 +675,14 @@ html {
       .header__logo {
         margin-left: 25px; } }
   .header__body {
-    margin-top: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 8px;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 15px; }
+    padding-bottom: 8px; }
     @media only screen and (max-width: 768px) {
       .header__body {
         height: 54px;
@@ -1240,10 +1242,20 @@ html {
         transform: rotate(180deg); }
 
 .coin {
-  margin-top: 246px; }
+  margin-top: 246px;
+  position: relative; }
   @media only screen and (max-width: 768px) {
     .coin {
       margin-top: 80px; } }
+  .coin__bg {
+    height: 100%;
+    width: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(7, 20, 72, 0.05);
+    border-radius: 75px 0px 0px 75px;
+    transform: rotate(180deg); }
   .coin__wrapper {
     margin-left: 100px;
     display: flex;

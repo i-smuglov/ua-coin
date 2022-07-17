@@ -27,6 +27,16 @@ function image_loaded() {
   }
 }
 
+// Anchor Slide
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
                               //Header
 
 $(document).ready(function () {	
