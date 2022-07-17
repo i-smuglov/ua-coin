@@ -584,6 +584,7 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background: #FEDC00;
+  border-color: #736ECC;
   border-radius: 5px; }
 
 .header {
@@ -596,8 +597,8 @@ html {
   overflow: hidden; }
   @media only screen and (max-width: 768px) {
     .header {
-      width: 96%;
-      top: 15px;
+      width: 94%;
+      top: 8px;
       left: 2%;
       border-radius: 20px;
       overflow: hidden; } }
@@ -682,11 +683,11 @@ html {
     z-index: 3; }
     @media only screen and (max-width: 768px) {
       .header__logo {
-        margin-left: 25px; } }
+        margin-left: 0px; } }
   .header__body {
     padding-left: 8px;
     padding-right: 8px;
-    margin-top: 8px;
+    padding-top: 8px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -695,7 +696,9 @@ html {
     @media only screen and (max-width: 768px) {
       .header__body {
         height: 54px;
-        margin-top: 17px; } }
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 10px; } }
   .header__burger-bg {
     display: none; }
     @media only screen and (max-width: 768px) {
@@ -1564,6 +1567,7 @@ html {
     color: rgba(7, 20, 72, 0.75); }
   .start__box-phase {
     font-size: 16px;
+    font-stretch: ultra-expanded;
     line-height: 24px;
     color: #736ECC; }
   .start__box-text {

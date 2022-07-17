@@ -18,8 +18,8 @@ $headerBurgerMenuBg: #ffffff;
 	 border-radius: 20px;
 	 overflow: hidden;
     @include md-d{
-		width: 96%;
-		top: 15px;
+		width: 94%;
+		top: 8px;
 		left: 2%;
 		border-radius: 20px;
    	overflow: hidden;
@@ -127,14 +127,14 @@ $headerBurgerMenuBg: #ffffff;
 		 max-width: 54px;
         z-index: 3;
         @include md-d {
-			  margin-left: 25px;            
+			  margin-left: 0px;            
         }
         
     }
     &__body {
         padding-left: 8px;
         padding-right: 8px;
-        margin-top: 8px;
+        padding-top: 8px;
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -142,7 +142,9 @@ $headerBurgerMenuBg: #ffffff;
 		padding-bottom: 8px;
         @include md-d {
             height: 54px;
-				margin-top: 17px;
+		    margin-top: 8px;
+            margin-bottom: 8px;
+            padding: 10px;
         }
     }
     &__burger-bg {
