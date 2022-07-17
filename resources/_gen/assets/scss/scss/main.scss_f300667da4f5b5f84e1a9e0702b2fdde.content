@@ -1265,6 +1265,9 @@ html {
     background: rgba(7, 20, 72, 0.05);
     border-radius: 75px 0px 0px 75px;
     transform: rotate(180deg); }
+    @media only screen and (max-width: 768px) {
+      .coin__bg {
+        display: none; } }
   .coin__wrapper {
     margin-left: 100px;
     display: flex;
