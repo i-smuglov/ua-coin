@@ -64,3 +64,16 @@
 	background-color: #fff;	
 	border: 3px solid $accent;
 }
+
+
+
+//full progress
+::-webkit-scrollbar{
+    background: #fff;
+    border-radius: 5px;
+    width: 10px;   
+}
+::-webkit-scrollbar-thumb{
+    background: $accent;
+    border-radius: 5px;
+}

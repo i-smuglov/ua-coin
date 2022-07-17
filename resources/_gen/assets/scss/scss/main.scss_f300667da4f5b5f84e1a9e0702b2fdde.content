@@ -577,6 +577,15 @@ html {
   background-color: #fff;
   border: 3px solid #FEDC00; }
 
+::-webkit-scrollbar {
+  background: #fff;
+  border-radius: 5px;
+  width: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background: #FEDC00;
+  border-radius: 5px; }
+
 .header {
   position: fixed;
   width: 96%;
