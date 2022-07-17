@@ -129,10 +129,33 @@ $arrowsColorClose: #071448;
 					font-size: 12px;
 				}
 			}
-				&__line{
+		&__line{
 		position: absolute;
 		right: 20px;
 		top: 45px;
+		svg{
+			path{
+				animation-name: blinker;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+				animation-duration: 2s;
+				-webkit-animation-name: blinker;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: linear;
+				-webkit-animation-duration: 2s;
+				@keyframes blinker {
+					0%{
+						stroke: $accent;
+					}
+					50% {
+						stroke: #736ECC;
+					}
+					100%{
+						stroke: $accent;
+					}
+				}
+			}
+		}
 		@include xl-d{
 			right: 0;
 		}
@@ -222,7 +245,7 @@ $arrowsColorClose: #071448;
 			}
 		}
 	}
-	&:nth-child(1),
+	// &:nth-child(1),
 	&:nth-child(4),
 	&:nth-child(7){
 		&::after{
@@ -242,6 +265,18 @@ $arrowsColorClose: #071448;
 		}
 	}
 	&:nth-child(1){
+		.start__box-title{
+			border: 1px solid $accent;
+			svg{
+				path{
+					fill: $accent;
+				}
+			}
+		}
+		.block__text{
+			border-top: 2px solid $accent;
+			box-shadow: inset 0px 4px 0px $accent;
+		}
 		&::before{
 			content: '';
 			width: 100px;
@@ -253,6 +288,35 @@ $arrowsColorClose: #071448;
 			@include lg-d{
 				display: none;
 			}				
+		}
+		&::after{
+			content: '';
+			width: 235px;
+			height: 30px;
+			background: url('/img/line-y.svg') no-repeat;				
+			position: absolute;
+			right: -135px;
+			top: 35px;
+			@include xl-d{
+				right: -131px;
+			}
+			@include lg-d{
+				display: none;
+			}
+		}
+	}
+	&:nth-child(2){
+		.block__text{
+			border-top: 2px solid $accent;
+			box-shadow: inset 0px 4px 0px $accent;
+		}
+		.start__box-title{
+			border: 1px solid $accent;
+			svg{
+				path{
+					fill: $accent;
+				}
+			}
 		}
 	}
 	&:nth-child(3),

@@ -1,0 +1,30 @@
+<svg
+  width="230"
+  height="25"
+  viewBox="0 0 230 25"
+  fill="#FEDC00"
+  xmlns="http://www.w3.org/2000/svg"
+>
+<path
+    d="M15 12H218"
+    stroke="#FEDC00"
+    stroke-width="10"
+    stroke-linecap="round"
+  />
+<circle
+    cx="11.7416"
+    cy="12.5329"
+    r="10.7416"
+    fill="white"
+    stroke="#FEDC00"
+    stroke-width="2"
+  />
+<circle
+    cx="217.742"
+    cy="12.5329"
+    r="10.7416"
+    fill="white"
+    stroke="#FEDC00"
+    stroke-width="2"
+  />
+</svg>
