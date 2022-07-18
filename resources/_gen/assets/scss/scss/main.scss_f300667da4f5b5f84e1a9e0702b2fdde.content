@@ -937,8 +937,6 @@ html {
       .intro__timer {
         margin-left: 20px; } }
     .intro__timer #clockdiv {
-      font-family: "Ermilov";
-      font-family: 'Hiragino Sans GB';
       font-style: normal;
       font-weight: 400;
       font-size: 27px;
@@ -978,7 +976,6 @@ html {
         display: none; } }
   .intro__total-start {
     font-family: "Ermilov";
-    font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -990,7 +987,6 @@ html {
     margin-top: 20px; }
   .intro__total-end {
     font-family: "Ermilov";
-    font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -999,7 +995,6 @@ html {
     display: flex;
     justify-content: space-between; }
   .intro__total-goal {
-    font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -1013,7 +1008,6 @@ html {
   .intro__total-price {
     background: rgba(255, 255, 255, 0.55);
     border-radius: 5px;
-    font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1045,7 +1039,6 @@ html {
         text-align: center; } }
   .intro__text {
     font-family: "Ermilov";
-    font-family: "Hiragino Sans GB";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1125,7 +1118,6 @@ html {
         min-width: 125px;
         border-radius: 39px; } }
   .intro__save-title {
-    font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1283,7 +1275,6 @@ html {
         align-items: center; } }
   .coin__text {
     max-width: 525px;
-    font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1319,7 +1310,6 @@ html {
   .coin__copy {
     display: flex;
     position: relative;
-    font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
@@ -1372,7 +1362,6 @@ html {
   100% {
     opacity: 0; } }
   .coin__remark {
-    font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1468,7 +1457,6 @@ html {
     z-index: 3;
     height: 70%; }
   .mission__text {
-    font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1499,7 +1487,6 @@ html {
     .start {
       margin-top: 30px; } }
   .start__remark {
-    font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -1551,7 +1538,6 @@ html {
           transform-style: preserve-3d; } }
   .start__box-remark {
     margin-left: 0;
-    font-family: 'Hiragino Sans GB';
     font-style: normal;
     position: absolute;
     left: 50px;
@@ -1572,7 +1558,6 @@ html {
     line-height: 24px;
     color: #736ECC; }
   .start__box-text {
-    font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1650,7 +1635,6 @@ html {
         left: 0px;
         top: -145px; } }
   .start__remark {
-    font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
