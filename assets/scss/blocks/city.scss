@@ -1,9 +1,10 @@
 .city{
-	margin-top: 190px;
+	padding-top: 90px;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 320px;
 	@include lg-d{
-		margin-top: 100px;
+		padding-top: 50px;
 	}
 	&__title{
 		span{
