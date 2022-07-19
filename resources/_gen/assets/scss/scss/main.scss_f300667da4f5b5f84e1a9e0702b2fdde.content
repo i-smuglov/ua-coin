@@ -2437,6 +2437,9 @@ html {
     .donate__img-abs--trizub {
       left: 50%;
       top: -120px; }
+      @media only screen and (max-width: 992px) {
+        .donate__img-abs--trizub {
+          display: none; } }
   .donate__images {
     display: flex; }
     @media only screen and (max-width: 768px) {
@@ -2522,6 +2525,18 @@ html {
 
 .partners {
   margin-top: 160px; }
+  .partners .container {
+    position: relative; }
+  .partners__img-air {
+    position: absolute;
+    right: -80px;
+    top: -238px; }
+    @media only screen and (max-width: 1332px) {
+      .partners__img-air {
+        top: -362px; } }
+    @media only screen and (max-width: 768px) {
+      .partners__img-air {
+        right: -260px; } }
   .partners__title {
     text-align: center; }
   .partners__remark {

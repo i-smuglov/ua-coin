@@ -186,6 +186,9 @@
 		&--trizub{
 			left: 50%;
 			top: -120px;
+			@include lg-d{
+				display: none;
+			}
 		}
 	}
 	&__images{

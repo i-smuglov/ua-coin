@@ -1,5 +1,18 @@
 .partners{
 	margin-top: 160px;	
+	.container{
+		position: relative;
+	}
+	&__img-air{
+		position: absolute;
+		right: -80px;
+		top: -238px;
+		@include xl-d{
+			top: -362px;
+		}@include md-d{
+			right: -260px;
+		}
+	}
 	&__title{
 		text-align: center;
 		
