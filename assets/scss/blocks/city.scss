@@ -5,6 +5,7 @@
 	margin-bottom: 320px;
 	@include lg-d{
 		padding-top: 50px;
+		margin-bottom: 0;
 	}
 	&__title{
 		span{

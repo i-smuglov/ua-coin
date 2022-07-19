@@ -93,6 +93,9 @@
 		font-size: 28px;
 		line-height: 60px;
 		color: rgba(7, 20, 72, 0.75);
+		@include md-d{
+			font-size: 23px;
+		}
 	}
 	&__timer{
 		display: flex;
@@ -287,7 +290,7 @@
 		margin-top: 30px;
 		margin-left: 100px;
 		@include md-d{
-			margin-top: 600px;
+			margin-top: 580px;
 			position: relative;
 			left: 50%;
 			transform: translateX(-50%);
@@ -301,7 +304,7 @@
 		min-width: 150px;
 		@include sm-d{
 			padding: 31px;
-			min-width: 125px;
+			min-width: 98px;
 			border-radius: 39px;
 		}
 	}
@@ -318,12 +321,15 @@
 		@include md-d{
 			margin-left: 54px;
 		}
+		@include sm-d{
+			margin-left: 41px;
+		}
 		}
 	&__save-wrapper{
 		margin-left: -20px;
 		@include sm-d{
 			margin-left: -35px;
-			margin-top: -10px;
+			margin-top: -37px;
 		}
 	}
 	&__download{

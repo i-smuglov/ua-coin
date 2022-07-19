@@ -1,5 +1,6 @@
 .donate{
 	padding-top: 98px;
+
 	margin-left: 5px;
 	@include lg-d{
 		margin-top: 152px;
@@ -14,8 +15,24 @@
 	}
 	&__content{
 		max-width: 580px;
+		position: relative;
 		@include lg-d{
 			max-width: 525px;
+		}
+	}
+	&__img-ua{
+		position: absolute;
+		left: -70px;
+		top: 50%;
+		transform: translateY(-50%);
+		@include xl-d{
+			max-width: 30px;
+			top: 117px;
+			left: 90%;
+			transform: rotate(90deg);
+		}
+		@include sm-d{
+			top: 150px;
 		}
 	}
 	&__remark{
@@ -147,11 +164,32 @@
 	&__picture{
 		display: flex;
 		flex-direction: column;
+		position: relative;
 		@include xl-d{
 			margin-top: 49px;
 		}
 	}
+	&__img-abs{
+		position: absolute;		
+		z-index: 10;
+		&--heart{
+			right: -100px;
+			top: -90px;
+		}
+		&--tree{
+			top: -65px;
+    		left: -179px;
+			@include lg-d{
+				display: none;
+			}
+		}
+		&--trizub{
+			left: 50%;
+			top: -120px;
+		}
+	}
 	&__images{
+		
 		display: flex;
 		@include md-d{
 			flex-direction: column;
@@ -186,7 +224,7 @@
 				border-radius: 50px;
 			}
 			@include md-d{
-				width: 350px;
+				width: 100%;
 				height: 282px;
 			}
 		}

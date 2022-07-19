@@ -9,7 +9,7 @@
 		left: 0;
 		top: 0;
 		z-index: 1;
-		@include lg-d{
+		@include xl-d{
 			display: none;
 		}
 	}	
@@ -24,7 +24,7 @@
 		z-index: 2;
 		display: flex;
 		justify-content: space-between;
-		@include lg-d{
+		@include xl-d{
 			flex-direction: column;
 		}
 	}
@@ -39,7 +39,7 @@
 		width: 100px;
 		height: 100px;
 		z-index: 3;
-		@include lg-d{
+		@include xl-d{
 			display: none;
 		}
 	}
@@ -50,7 +50,7 @@
 		padding: 88px 122px 88px 122px;
 		border-radius: 0px 75px 75px 0px;
 		background: #736ECC;
-		@include lg-d{
+		@include xl-d{
 			margin: 0px -10px 0px -10px;
 			border-radius: 0;
 			padding: 60px 0px 179px 0px;

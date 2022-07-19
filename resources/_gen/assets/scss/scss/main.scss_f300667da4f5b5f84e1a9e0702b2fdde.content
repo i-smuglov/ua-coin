@@ -923,6 +923,9 @@ html {
     font-size: 28px;
     line-height: 60px;
     color: rgba(7, 20, 72, 0.75); }
+    @media only screen and (max-width: 768px) {
+      .intro__timer-title {
+        font-size: 23px; } }
   .intro__timer {
     display: flex;
     flex-direction: column;
@@ -1090,7 +1093,7 @@ html {
     margin-left: 100px; }
     @media only screen and (max-width: 768px) {
       .intro__save {
-        margin-top: 600px;
+        margin-top: 580px;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
@@ -1103,7 +1106,7 @@ html {
     @media only screen and (max-width: 576px) {
       .intro__save-img {
         padding: 31px;
-        min-width: 125px;
+        min-width: 98px;
         border-radius: 39px; } }
   .intro__save-title {
     font-style: normal;
@@ -1117,12 +1120,15 @@ html {
     @media only screen and (max-width: 768px) {
       .intro__save-title {
         margin-left: 54px; } }
+    @media only screen and (max-width: 576px) {
+      .intro__save-title {
+        margin-left: 41px; } }
   .intro__save-wrapper {
     margin-left: -20px; }
     @media only screen and (max-width: 576px) {
       .intro__save-wrapper {
         margin-left: -35px;
-        margin-top: -10px; } }
+        margin-top: -37px; } }
   .intro__download {
     font-size: 24px;
     line-height: 38px;
@@ -2145,7 +2151,8 @@ html {
   margin-bottom: 320px; }
   @media only screen and (max-width: 992px) {
     .city {
-      padding-top: 50px; } }
+      padding-top: 50px;
+      margin-bottom: 0; } }
   .city__title {
     width: 422px;
     display: flex;
@@ -2283,10 +2290,25 @@ html {
         flex-direction: column;
         align-items: center; } }
   .donate__content {
-    max-width: 580px; }
+    max-width: 580px;
+    position: relative; }
     @media only screen and (max-width: 992px) {
       .donate__content {
         max-width: 525px; } }
+  .donate__img-ua {
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%); }
+    @media only screen and (max-width: 1332px) {
+      .donate__img-ua {
+        max-width: 30px;
+        top: 117px;
+        left: 90%;
+        transform: rotate(90deg); } }
+    @media only screen and (max-width: 576px) {
+      .donate__img-ua {
+        top: 150px; } }
   .donate__remark {
     font-size: 16px;
     line-height: 24px;
@@ -2395,10 +2417,26 @@ html {
           fill: #000; }
   .donate__picture {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative; }
     @media only screen and (max-width: 1332px) {
       .donate__picture {
         margin-top: 49px; } }
+  .donate__img-abs {
+    position: absolute;
+    z-index: 10; }
+    .donate__img-abs--heart {
+      right: -100px;
+      top: -90px; }
+    .donate__img-abs--tree {
+      top: -65px;
+      left: -179px; }
+      @media only screen and (max-width: 992px) {
+        .donate__img-abs--tree {
+          display: none; } }
+    .donate__img-abs--trizub {
+      left: 50%;
+      top: -120px; }
   .donate__images {
     display: flex; }
     @media only screen and (max-width: 768px) {
@@ -2429,7 +2467,7 @@ html {
         border-radius: 50px; }
       @media only screen and (max-width: 768px) {
         .donate__images-box--390 {
-          width: 350px;
+          width: 100%;
           height: 282px; } }
     .donate__images-box--352 {
       border-radius: 40px;
@@ -2869,7 +2907,7 @@ html {
     left: 0;
     top: 0;
     z-index: 1; }
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 1332px) {
       .form__bg {
         display: none; } }
   .form__img {
@@ -2882,7 +2920,7 @@ html {
     z-index: 2;
     display: flex;
     justify-content: space-between; }
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 1332px) {
       .form__wrapper {
         flex-direction: column; } }
   .form__heart {
@@ -2896,7 +2934,7 @@ html {
     width: 100px;
     height: 100px;
     z-index: 3; }
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 1332px) {
       .form__heart {
         display: none; } }
   .form__content {
@@ -2906,7 +2944,7 @@ html {
     padding: 88px 122px 88px 122px;
     border-radius: 0px 75px 75px 0px;
     background: #736ECC; }
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 1332px) {
       .form__content {
         margin: 0px -10px 0px -10px;
         border-radius: 0;
