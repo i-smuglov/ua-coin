@@ -1,9 +1,9 @@
 .coin{
-	margin-top: 246px;
+	padding-top: 146px;
 	position: relative;
 
 	@include md-d{
-		margin-top: 80px;
+		padding-top: 40px;
 	}
 	&__bg{
 		height: 100%;

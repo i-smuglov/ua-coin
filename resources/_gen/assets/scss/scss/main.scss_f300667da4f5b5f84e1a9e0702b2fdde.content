@@ -1158,7 +1158,8 @@ html {
   .intro__downline {
     display: flex;
     align-items: center;
-    position: relative; }
+    position: relative;
+    margin-bottom: 100px; }
   .intro__markdown {
     font-size: 70px;
     line-height: 50px;
@@ -1234,11 +1235,11 @@ html {
         transform: rotate(180deg); }
 
 .coin {
-  margin-top: 246px;
+  padding-top: 146px;
   position: relative; }
   @media only screen and (max-width: 768px) {
     .coin {
-      margin-top: 80px; } }
+      padding-top: 40px; } }
   .coin__bg {
     height: 100%;
     width: 70px;
@@ -1462,10 +1463,15 @@ html {
           margin-top: 20px;
           margin-right: 0; } }
 .start {
+  background: url("/img/START.png") no-repeat;
+  background-position: center 100px;
+  padding-top: 1px;
   position: relative; }
   @media only screen and (max-width: 768px) {
     .start {
-      margin-top: 30px; } }
+      padding-top: 50px;
+      background-size: contain;
+      background-position: center 30px; } }
   .start__remark {
     font-size: 16px;
     line-height: 24px;
@@ -1864,8 +1870,7 @@ html {
 .token {
   background: #071448;
   background-image: url("/img/monik.png") no-repeat;
-  background-position: left;
-  margin-top: 170px; }
+  background-position: left; }
   @media only screen and (max-width: 992px) {
     .token {
       border-radius: 50px 0 50px 0;
@@ -1941,7 +1946,11 @@ html {
 .team__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 80px; }
+  margin-top: 80px;
+  margin: 0 -30px; }
+
+.team__content {
+  width: 100%; }
 
 .team__img {
   position: relative;
@@ -2030,7 +2039,8 @@ html {
 .team .slick-slide {
   display: flex  !important;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding: 0 15px; }
 
 .team .slick-dots {
   margin-top: 15px;
@@ -2053,10 +2063,14 @@ html {
 
 .market {
   position: relative;
-  margin-top: 70px; }
+  margin-top: 70px;
+  margin-bottom: 100px; }
+  @media only screen and (max-width: 768px) {
+    .market {
+      margin-bottom: 50px; } }
   .market__bg {
     height: 470px;
-    width: 100%;
+    width: 85%;
     background: #FEDC00;
     margin-left: 10%;
     position: absolute;
@@ -2074,7 +2088,8 @@ html {
         left: 0;
         margin-left: 0;
         border-radius: 0;
-        height: 87%; } }
+        height: 87%;
+        width: 100%; } }
   .market__title {
     margin-top: 350px;
     position: relative;
@@ -2126,9 +2141,10 @@ html {
     margin-top: 30px; }
 
 .city {
-  margin-top: 190px;
+  padding-top: 90px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 320px; }
   @media only screen and (max-width: 992px) {
     .city {
       margin-top: 100px; } }
@@ -2256,7 +2272,7 @@ html {
         .city__buttons a {
           justify-content: center; } }
 .donate {
-  margin-top: 418px;
+  padding-top: 98px;
   margin-left: 5px; }
   @media only screen and (max-width: 992px) {
     .donate {

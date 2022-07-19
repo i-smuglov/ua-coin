@@ -64,6 +64,7 @@ $(window).on('resize', function (e) {
 				dots: true,
 				arrows: false,
 				adaptiveHeight: true,
+								
 				responsive: [
 					{
 						breakpoint: 1070,

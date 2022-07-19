@@ -13,8 +13,13 @@ $arrowsColorClose: #071448;
 
 
 .start{
+	background: url('/img/START.png') no-repeat;
+	background-position: center 100px;
+	padding-top: 1px;
 	@include md-d{
-		margin-top: 30px;
+		padding-top: 50px;
+		background-size: contain;
+		background-position: center 30px;
 	}
 	position: relative;
 			&__remark{
