@@ -55,9 +55,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 400;
+		@extend %mont400;
 		font-size: 13.9747px;
 		line-height: 24px;
 		margin-top: 10px;

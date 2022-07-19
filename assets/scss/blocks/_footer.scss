@@ -46,9 +46,7 @@
 	}
 	&__menu{
 		a{
-			font-family: 'Hiragino Sans GB';
-			font-style: normal;
-			font-weight: 400;
+			@extend %mont400;
 			font-size: 16px;
 			line-height: 24px;
 			color: #FFFFFF;
@@ -94,26 +92,20 @@
 	}
 	&__wallet-content{
 		margin-top: 48px;
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 400;
+		@extend %mont400;
 		font-size: 17.817px;
 		line-height: 25px;
 		color: rgba(255, 255, 255, 0.75);
 	}
 	&__contacts-city{
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 400;
+		@extend %mont400;
 		font-size: 16px;
 		line-height: 24px;
 		color: #FFFFFF;
 		margin-top: 48px;
 	}
 	&__remark{
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 400;
+		@extend %mont400;
 		font-size: 16px;
 		line-height: 24px;
 		text-align: center;

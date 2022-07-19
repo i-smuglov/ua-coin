@@ -19,9 +19,7 @@
 		}
 	}
 	&__remark{
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 400;
+		@extend %mont400;
 		font-size: 16px;
 		line-height: 24px;
 		color: #404249;
@@ -58,9 +56,7 @@
 	}
 	&__copy{
 		display: flex;	
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 400;
+		@extend %mont400;
 		font-size: 35px;
 		line-height: 50px;
 		color: rgba(7, 20, 72, 0.75);

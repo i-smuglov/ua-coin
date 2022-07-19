@@ -57,8 +57,7 @@
 		}
 	}
 	&__check-status{
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
+		@extend %mont400;
 		display: flex;
 		justify-content: space-between;
 		width: 233px;	
@@ -111,9 +110,7 @@
 		color: rgba(7, 20, 72, 0.75);
 	}
 	&__check-answer{
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 300;
+		@extend %mont300;
 		font-size: 14px;
 		line-height: 24px;
 		color: #404249;
@@ -152,9 +149,7 @@
 	}
 	&__wallet-content{
 		width: 332px;
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 300;
+		@extend %mont300;
 		font-size: 18px;
 		line-height: 24px;
 		color: #FFFFFF;
@@ -209,8 +204,7 @@
 		}
 		p{
 			text-align: center;
-			font-family: 'Hiragino Sans GB';
-			font-style: normal;
+			@extend %mont400;
 			&:first-child{				
 				font-weight: 600;
 				font-size: 16px;
@@ -227,9 +221,7 @@
 		}
 	}
 	&__wallet-link{
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 300;
+		@extend %mont300;
 		font-size: 14px;
 		line-height: 24px;
 		text-align: center;		
@@ -274,18 +266,14 @@
 		color: rgba(7, 20, 72, 0.75);
 	}
 	&__content-subtitle{
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 600;
+		@extend %mont400;
 		font-size: 16px;
 		line-height: 24px;
 		color: rgba(7, 20, 72, 0.45);
 		margin-top: 15px;
 	}
 	&__content-text{
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 300;
+		@extend %mont300;
 		font-size: 14px;
 		align-self: center;
 		max-width: 380px;
@@ -326,9 +314,7 @@
 	}
 	&__content-percent{
 		margin-top: 5px;
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 300;
+		@extend %mont300;
 		font-size: 14px;
 		line-height: 24px;
 		color: #404249;
@@ -344,9 +330,7 @@
 		left: 50%;
 		bottom: 32px;
 		transform: translateX(-50%);
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 400;
+		@extend %mont400;
 		font-size: 16px;
 		line-height: 24px;
 		text-align: center;

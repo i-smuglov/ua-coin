@@ -61,10 +61,8 @@
 		color: #fff;
 	}
 	&__remark{
-		font-family: 'Hiragino Sans GB';
 		max-width: 525px;
-		font-style: normal;
-		font-weight: 400;
+		@extend %mont300;
 		font-size: 16px;
 		line-height: 24px;
 		text-align: center;

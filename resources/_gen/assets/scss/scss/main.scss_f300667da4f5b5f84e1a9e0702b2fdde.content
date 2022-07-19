@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -111,6 +112,16 @@ h6 {
 @font-face {
   font-family: "Hiragino Sans GB";
   src: url("/fonts/hiragino.otf") format("opentype"); }
+
+.footer__remark, .footer__contacts-city, .footer__wallet-content, .footer__menu a, .free__downline, .free__content-subtitle, .free__wallet-box p, .free__check-status, .partners__remark, .donate__copy, .donate__remark, .city__content p, .city__remark, .team__pos, .start__remark, .mission__text, .coin__remark, .coin__copy, .coin__text, .intro__save-title, .intro__text, .intro__total-end, .intro__timer .smalltext, .intro__timer #clockdiv, .header__social-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+
+.form__remark, .free__content-percent, .free__content-text, .free__wallet-link, .free__wallet-content, .free__check-answer, .start__box-text, .start__box-remark, .start__remark, .intro__total-price, .intro__total-goal, .intro__total-start, .header__account-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300; }
 
 body {
   font-family: "Ermilov";
@@ -616,9 +627,6 @@ html {
     z-index: 2; }
   .header__social-title {
     display: none;
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 30px;
@@ -651,9 +659,6 @@ html {
         flex-direction: column;
         margin-top: 40px; } }
   .header__account-title {
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 30px;
@@ -937,8 +942,6 @@ html {
       .intro__timer {
         margin-left: 20px; } }
     .intro__timer #clockdiv {
-      font-style: normal;
-      font-weight: 400;
       font-size: 27px;
       line-height: 40px;
       color: rgba(7, 20, 72, 0.75);
@@ -961,9 +964,6 @@ html {
       width: 55px; }
     .intro__timer .smalltext {
       margin-top: 6px;
-      font-family: 'Hiragino Sans GB';
-      font-style: normal;
-      font-weight: 400;
       font-size: 16px;
       line-height: 24px;
       color: rgba(7, 20, 72, 0.45); }
@@ -975,9 +975,6 @@ html {
       .intro__total {
         display: none; } }
   .intro__total-start {
-    font-family: "Ermilov";
-    font-style: normal;
-    font-weight: 300;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.05em;
@@ -987,16 +984,12 @@ html {
     margin-top: 20px; }
   .intro__total-end {
     font-family: "Ermilov";
-    font-style: normal;
-    font-weight: 600;
     font-size: 14px;
     line-height: 24px;
     color: #FFFFFF;
     display: flex;
     justify-content: space-between; }
   .intro__total-goal {
-    font-style: normal;
-    font-weight: 300;
     font-size: 12px;
     line-height: 24px;
     text-align: center;
@@ -1008,8 +1001,6 @@ html {
   .intro__total-price {
     background: rgba(255, 255, 255, 0.55);
     border-radius: 5px;
-    font-style: normal;
-    font-weight: 300;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
@@ -1038,9 +1029,6 @@ html {
         flex-direction: column;
         text-align: center; } }
   .intro__text {
-    font-family: "Ermilov";
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
@@ -1275,8 +1263,6 @@ html {
         align-items: center; } }
   .coin__text {
     max-width: 525px;
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #404249; }
@@ -1310,8 +1296,6 @@ html {
   .coin__copy {
     display: flex;
     position: relative;
-    font-style: normal;
-    font-weight: 400;
     font-size: 35px;
     line-height: 50px;
     color: rgba(7, 20, 72, 0.75); }
@@ -1362,8 +1346,6 @@ html {
   100% {
     opacity: 0; } }
   .coin__remark {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.26em;
@@ -1457,8 +1439,6 @@ html {
     z-index: 3;
     height: 70%; }
   .mission__text {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -1487,8 +1467,6 @@ html {
     .start {
       margin-top: 30px; } }
   .start__remark {
-    font-style: normal;
-    font-weight: 300;
     font-size: 16px;
     line-height: 24px;
     color: #404249; }
@@ -1538,7 +1516,6 @@ html {
           transform-style: preserve-3d; } }
   .start__box-remark {
     margin-left: 0;
-    font-style: normal;
     position: absolute;
     left: 50px;
     top: 130px;
@@ -1558,9 +1535,7 @@ html {
     line-height: 24px;
     color: #736ECC; }
   .start__box-text {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     color: #404249;
     position: relative;
@@ -1635,8 +1610,6 @@ html {
         left: 0px;
         top: -145px; } }
   .start__remark {
-    font-style: normal;
-    font-weight: 300;
     font-size: 16px;
     line-height: 24px;
     color: #404249; }
@@ -2011,9 +1984,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Hiragino Sans GB';
-  font-style: normal;
-  font-weight: 400;
   font-size: 13.9747px;
   line-height: 24px;
   margin-top: 10px; }
@@ -2181,9 +2151,6 @@ html {
     .city__img {
       margin-top: 68px; } }
   .city__remark {
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
@@ -2264,9 +2231,6 @@ html {
     margin-top: 60px;
     max-width: 525px; }
     .city__content p {
-      font-family: 'Hiragino Sans GB';
-      font-style: normal;
-      font-weight: 400;
       font-size: 16px;
       line-height: 24px;
       color: #404249;
@@ -2310,9 +2274,6 @@ html {
       .donate__content {
         max-width: 525px; } }
   .donate__remark {
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #404249;
@@ -2345,9 +2306,6 @@ html {
         align-items: center; } }
   .donate__copy {
     display: flex;
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 400;
     font-size: 35px;
     line-height: 50px;
     color: rgba(7, 20, 72, 0.75); }
@@ -2518,9 +2476,6 @@ html {
     text-align: center;
     max-width: 687px;
     margin: 0 auto;
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     color: rgba(7, 20, 72, 0.45);
@@ -2659,8 +2614,6 @@ html {
       .free__check-title {
         font-size: 28px; } }
   .free__check-status {
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
     display: flex;
     justify-content: space-between;
     width: 233px;
@@ -2702,9 +2655,6 @@ html {
     line-height: 36px;
     color: rgba(7, 20, 72, 0.75); }
   .free__check-answer {
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 300;
     font-size: 14px;
     line-height: 24px;
     color: #404249;
@@ -2738,9 +2688,6 @@ html {
     width: 159px; }
   .free__wallet-content {
     width: 332px;
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 300;
     font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
@@ -2787,9 +2734,7 @@ html {
       .free__wallet-box {
         width: 100%; } }
     .free__wallet-box p {
-      text-align: center;
-      font-family: 'Hiragino Sans GB';
-      font-style: normal; }
+      text-align: center; }
       .free__wallet-box p:first-child {
         font-weight: 600;
         font-size: 16px;
@@ -2802,9 +2747,6 @@ html {
         line-height: 24px;
         color: rgba(7, 20, 72, 0.45); }
   .free__wallet-link {
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 300;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
@@ -2843,17 +2785,11 @@ html {
     line-height: 42px;
     color: rgba(7, 20, 72, 0.75); }
   .free__content-subtitle {
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     color: rgba(7, 20, 72, 0.45);
     margin-top: 15px; }
   .free__content-text {
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 300;
     font-size: 14px;
     align-self: center;
     max-width: 380px;
@@ -2887,9 +2823,6 @@ html {
       margin-top: 30px; } }
   .free__content-percent {
     margin-top: 5px;
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 300;
     font-size: 14px;
     line-height: 24px;
     color: #404249;
@@ -2904,9 +2837,6 @@ html {
     left: 50%;
     bottom: 32px;
     transform: translateX(-50%);
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -2970,10 +2900,7 @@ html {
   .form__title {
     color: #fff; }
   .form__remark {
-    font-family: 'Hiragino Sans GB';
     max-width: 525px;
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -3105,9 +3032,6 @@ html {
     line-height: 24px;
     color: #FEDC00; }
   .footer__menu a {
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
@@ -3135,24 +3059,15 @@ html {
     margin-top: 100px; }
   .footer__wallet-content {
     margin-top: 48px;
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 400;
     font-size: 17.817px;
     line-height: 25px;
     color: rgba(255, 255, 255, 0.75); }
   .footer__contacts-city {
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
     margin-top: 48px; }
   .footer__remark {
-    font-family: 'Hiragino Sans GB';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     text-align: center;

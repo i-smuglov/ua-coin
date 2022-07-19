@@ -113,11 +113,7 @@
 			margin-left: 20px;
 		}    
 		#clockdiv{ 
-			// font-family: "Ermilov";
-
-			// font-family: 'Hiragino Sans GB';
-			font-style: normal;
-			font-weight: 400;
+			@extend %mont400;
 			font-size: 27px;
 			line-height: 40px;
 			color: rgba(7, 20, 72, 0.75);
@@ -147,9 +143,7 @@
 		}        
 		.smalltext{            
 				margin-top: 6px;
-				font-family: 'Hiragino Sans GB';
-				font-style: normal;
-				font-weight: 400;
+				@extend %mont400;
 				font-size: 16px;
 				line-height: 24px;
 				color: rgba(7, 20, 72, 0.45);         
@@ -164,10 +158,7 @@
 		flex-direction: column;
 	}
 	&__total-start{
-		font-family: "Ermilov";
-		// font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 300;
+		@extend %mont300;	
 		font-size: 12px;
 		line-height: 24px;
 		letter-spacing: 0.05em;
@@ -178,9 +169,7 @@
 	}
 	&__total-end{
 		font-family: "Ermilov";
-		// font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 600;
+		@extend %mont400;
 		font-size: 14px;
 		line-height: 24px;
 		color: #FFFFFF;
@@ -188,9 +177,7 @@
 		justify-content: space-between;
 	}
 	&__total-goal{
-		// font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 300;
+		@extend %mont300;
 		font-size: 12px;
 		line-height: 24px;
 		text-align: center;
@@ -203,9 +190,7 @@
 	&__total-price{
 		background: rgba(255, 255, 255, 0.55);
 		border-radius: 5px;
-		// font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 300;
+		@extend %mont300;
 		font-size: 14px;
 		line-height: 24px;
 		text-align: center;
@@ -236,10 +221,7 @@
 		}
 	}
 	&__text{
-		font-family: "Ermilov";
-		// font-family: "Hiragino Sans GB";
-		font-style: normal;
-		font-weight: 400;
+		@extend %mont400;
 		font-size: 16px;
 		line-height: 24px;
 		color: #FFFFFF;
@@ -323,7 +305,7 @@
 		}
 	}
 	&__save-title{
-		// font-family: 'Hiragino Sans GB';
+		@extend %mont400;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 14px;

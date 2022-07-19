@@ -28,9 +28,7 @@
 		}
 	}
 	&__remark{
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 400;
+		@extend %mont400;
 		font-size: 18px;
 		line-height: 27px;
 		text-align: center;
@@ -128,9 +126,7 @@
 		margin-top: 60px;
 		max-width: 525px;
 		p{
-			font-family: 'Hiragino Sans GB';
-			font-style: normal;
-			font-weight: 400;
+			@extend %mont400;
 			font-size: 16px;
 			line-height: 24px;
 			color: #404249;

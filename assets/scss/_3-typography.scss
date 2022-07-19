@@ -7,6 +7,19 @@
     src: url("/fonts/hiragino.otf") format("opentype");
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+
+%mont400{
+	font-family: 'Montserrat', sans-serif;	
+	font-style: normal;
+	font-weight: 400;
+  }
+  %mont300{
+	font-family: 'Montserrat', sans-serif;	
+	font-style: normal;
+	font-weight: 300;
+  }
 body {
     font-family: "Ermilov";
     font-style: normal;

@@ -41,9 +41,7 @@ $headerBurgerMenuBg: #ffffff;
     }
 	 &__social-title{
 		 	display: none;		
-			font-family: 'Hiragino Sans GB';
-			font-style: normal;
-			font-weight: 400;
+             @extend %mont400;
 			font-size: 14px;
 			line-height: 21px;
 			margin-bottom: 30px;
@@ -87,9 +85,7 @@ $headerBurgerMenuBg: #ffffff;
 		 }		 		 
 	 }
 	 &__account-title{
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 400;
+		@extend %mont300;
 		font-size: 14px;
 		line-height: 21px;
 		margin-bottom: 30px;

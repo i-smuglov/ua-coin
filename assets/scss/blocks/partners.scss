@@ -8,9 +8,7 @@
 		text-align: center;
 		max-width: 687px;
 		margin: 0 auto;
-		font-family: 'Hiragino Sans GB';
-		font-style: normal;
-		font-weight: 400;
+		@extend %mont400;
 		font-size: 18px;
 		line-height: 27px;
 		color: rgba(7, 20, 72, 0.45);
