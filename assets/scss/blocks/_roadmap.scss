@@ -279,9 +279,13 @@ $arrowsColorClose: #071448;
 		}
 		.block__text{
 			border-top: 2px solid $accent;
-			// box-shadow: inset 0px 4px 0px $accent;
-			box-shadow: 0px 150.705px 226.988px rgba(0, 0, 0, 0.07), 0px 45.4332px 68.4302px rgba(0, 0, 0, 0.0456112), 0px 18.8706px 28.4224px rgba(0, 0, 0, 0.035), 0px 6.82513px 10.2798px rgba(0, 0, 0, 0.0243888), inset 0px 3.72111px 0px $accent;
+			box-shadow: inset 0px 4px 0px $accent;
+			// box-shadow: 0px 150.705px 226.988px rgba(0, 0, 0, 0.07), 0px 45.4332px 68.4302px rgba(0, 0, 0, 0.0456112), 0px 18.8706px 28.4224px rgba(0, 0, 0, 0.035), 0px 6.82513px 10.2798px rgba(0, 0, 0, 0.0243888), inset 0px 3.72111px 0px $accent;
+			@include lg-d{
+				border-top: 2px solid $accent;
+				box-shadow: 0px 150.705px 226.988px rgba(0, 0, 0, 0.07), 0px 45.4332px 68.4302px rgba(0, 0, 0, 0.0456112), 0px 18.8706px 28.4224px rgba(0, 0, 0, 0.035), 0px 6.82513px 10.2798px rgba(0, 0, 0, 0.0243888), inset 0px 3.72111px 0px $accent;
 
+			}
 		}
 		&::before{
 			content: '';
@@ -313,12 +317,16 @@ $arrowsColorClose: #071448;
 	}
 	&:nth-child(2){
 		.block__text{
-			// border-top: 2px solid $accent;
-			// box-shadow: inset 0px 4px 0px $accent;
 			border-top: 2px solid $accent;
+			box-shadow: inset 0px 4px 0px $accent;
+
+			@include lg-d{
+				border-top: 2px solid $accent;
 
 			box-shadow: 0px 150.705px 226.988px rgba(0, 0, 0, 0.07), 0px 45.4332px 68.4302px rgba(0, 0, 0, 0.0456112), 0px 18.8706px 28.4224px rgba(0, 0, 0, 0.035), 0px 6.82513px 10.2798px rgba(0, 0, 0, 0.0243888), inset 0px 3.72111px 0px $accent;
 
+			}
+			
 		}
 		.start__box-title{
 			border: 1px solid $accent;
