@@ -11,7 +11,19 @@
 		font-size: 16px;
 		line-height: 24px;		
 		color: #071448;
-
+	 &--114{
+		width: 114px;
+		height: 54px;
+		background: $accent; 
+		&:hover{
+			background: #fff;
+			border: 2px solid $accent;
+		}
+		@include md-d{
+			width: 275px;
+			margin-bottom: 23px;
+		}
+	 }
 	 &--164{
 		width: 164px;
 		height: 55px;

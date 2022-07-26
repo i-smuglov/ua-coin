@@ -1,5 +1,5 @@
 .intro{
-	margin-top: 400px;	
+	margin-top: 244px;	
 	// padding-bottom: 100px;
 	background: linear-gradient(96.87deg, #736ECC -15.81%, #E2D77E 108.29%);
 	position: relative;	
@@ -12,7 +12,7 @@
 		margin-top: 350px;
 	}	
 	@include md-d{
-		margin-top: 340px;
+		margin-top: 175px;
 		min-height: 286px;
 	}
 	&__social{
@@ -116,50 +116,17 @@
 		@include xxl{
 			margin-left: 20px;
 		}    
-		#clockdiv{ 
-			@extend %mont400;
-			font-size: 27px;
-			line-height: 40px;
-			color: rgba(7, 20, 72, 0.75);
-			 text-align: center;			             
-			 display: flex; 
-			 flex-wrap: nowrap;  
-							
-		}        
 		
-		#clockdiv > div{	
-			 margin-right: 22px;
-			 display: inline-block;
-			 &:last-child{
-				  margin-right: 0;
-			 }
-		}        
-		#clockdiv div > span{
-			 padding: 11px;
-			 display: flex;
-			 justify-content: center;
-			 align-items: center;
-			 background: rgba(255, 255, 255, 0.5);
-			 border-radius: 20px;
-			 display: inline-block;
-			 width: 55px; 
-			 
-		}        
-		.smalltext{            
-				margin-top: 6px;
-				@extend %mont400;
-				font-size: 16px;
-				line-height: 24px;
-				color: rgba(7, 20, 72, 0.45);         
-		}
  	}
 	&__total{
-		@include md-d{
-			display: none;
-		}
-		width: 480px;
+		
+		margin-top: 2px;
+		width: 390px;
 		display: flex;
 		flex-direction: column;
+		@include sm-d{
+			width: 270px;
+		}
 	}
 	&__total-start{
 		@extend %mont300;	
@@ -176,7 +143,7 @@
 		@extend %mont400;
 		font-size: 14px;
 		line-height: 24px;
-		color: #FFFFFF;
+		color: rgba(7, 20, 72, 0.75);
 		display: flex;
 		justify-content: space-between;
 	}
@@ -229,11 +196,14 @@
 		font-size: 16px;
 		line-height: 24px;
 		color: #FFFFFF;
-		margin-top: 25px;
+		margin-top: 20px;
 		@include md-d{
 			font-size: 16px;
 			line-height: 24px;
 			color: #11131D;
+		}
+		&--yellow{
+			color: $accent;
 		}
 	}
 	&__img{
@@ -256,9 +226,13 @@
 		}
 	}
 	&__btn{
-		margin-top: 50px;
+		display: flex;		
+		margin-top: 40px;
 		@include md-d{
 		align-self: center;
+		}
+		img{
+			margin-left: 65px;
 		}
 	}
 	&__get{
@@ -281,70 +255,6 @@
 		}
 		@include xs-d{
 			top: 127px;
-		}
-	}
-	&__save{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-top: 30px;
-		margin-left: 100px;
-		@include md-d{
-			margin-top: 580px;
-			position: relative;
-			left: 50%;
-			transform: translateX(-50%);
-			margin-left: 0;
-		}
-	}
-	&__save-img{
-		background: #11131D;
-		border-radius: 50px;
-		padding: 42px;
-		min-width: 150px;
-		@include sm-d{
-			padding: 31px;
-			min-width: 98px;
-			border-radius: 39px;
-		}
-	}
-	&__save-title{
-		@extend %mont400;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 21px;
-		color: rgba(7, 20, 72, 0.35);
-		margin-top: 18px;
-		margin-bottom: 10px;
-		margin-left: 30px;
-		@include md-d{
-			margin-left: 54px;
-		}
-		@include sm-d{
-			margin-left: 41px;
-		}
-		}
-	&__save-wrapper{
-		margin-left: -20px;
-		@include sm-d{
-			margin-left: -35px;
-			margin-top: -37px;
-		}
-	}
-	&__download{
-		font-size: 24px;
-		line-height: 38px;
-		color: #11131D;
-		background: rgba(7, 20, 72, 0.05);
-		border-radius: 0 25px 25px 0;
-		padding: 12px 12px 12px 50px;	
-		display: flex;
-		align-items: center;	
-		justify-content: space-between;
-		@include sm-d{
-			font-size: 20px;
-			line-height: 30px;	
 		}
 	}
 	&__link{

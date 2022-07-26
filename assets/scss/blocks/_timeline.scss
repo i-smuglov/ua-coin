@@ -1,0 +1,204 @@
+.timeline{
+    margin-top: 122px;
+    @include md-d{
+        margin-top: 750px;
+    }
+    @include sm-d{
+        margin-top: 800px;
+    }
+    @include xs-d{
+        margin-top: 880px;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        width: 485px;
+        height: 444px;
+        padding: 56px 60px 0 60px;
+        background: #FFFFFF;
+        box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+        border-radius: 75px;
+        margin-right: 10px;
+        margin-top: 15px;
+        &--black{
+            padding: 0;
+            overflow: hidden;
+            @include sm-d{
+                padding-bottom: 30px;
+            }
+        }
+        &:last-child{
+            margin-right: 0;
+            @include sm-d{
+                padding: 0;
+            }
+        }
+        @include sm-d{
+            margin-right: 0;
+            margin-top: 30px;
+            width: 327px;
+            height: 379px;
+            padding: 29px 29px 23px 29px;
+            justify-content: space-between;
+            border-radius: 32px;
+        }
+    }
+    &__title{
+        white-space: nowrap;
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;        
+        &--black{color: #11131D;}
+        &--white{color: #FFFFFF;}
+        @include sm-d{
+            white-space: normal;
+            
+        }
+    }
+    &__text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #404249;
+        margin-top: 15px;
+    }
+    &__summ{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(7, 20, 72, 0.05);
+        border-radius: 19.8381px;
+        width: 100%;
+    }
+    &__number{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 31.741px;
+        line-height: 28px;
+        color: rgba(7, 20, 72, 0.75);
+        margin-right: 30px;
+    }
+    #clockdiv{ 
+        margin-top: 20px;
+        @extend %mont400;
+        font-size: 27px;
+        line-height: 40px;
+        color: rgba(7, 20, 72, 0.75);
+         text-align: center;
+         justify-content: space-between;			             
+         display: flex; 
+         flex-wrap: nowrap;  
+                        
+    }        
+    
+    #clockdiv > div{         
+         display: inline-block; 
+         &:first-child{
+            margin-right: 10px;
+         }       
+    }        
+    #clockdiv div > span{
+         padding: 11px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: rgba(17, 19, 29, 0.05);         
+         border: 1px solid rgba(7, 20, 72, 0.05);
+         border-radius: 15px;
+         display: inline-block;
+         width: 55px; 
+         
+    }        
+    .smalltext{            
+            margin-top: 6px;
+            @extend %mont400;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(7, 20, 72, 0.45);         
+    }
+    &__btn{
+        align-self: center;
+    }
+    &__black{
+        background: #11131D;
+        border-radius: 25px 25px 0px 0px;
+        padding: 56px 55px 87px 55px;
+        border-bottom: solid 6px $accent;
+        display: flex;
+        flex-direction: column;
+        @include sm-d{
+            padding: 40px;
+        }
+    }
+    &__partner{
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        img{
+            &:first-child{
+                margin-right: 30px;
+                @include sm-d{
+                    margin-right: 0;
+                    
+                }
+            }
+            @include sm-d{
+                margin-top: 20px;
+                
+            }
+        }
+        @include sm-d{
+            margin-top: 0;
+            flex-direction: column;
+        }
+    }
+    &__save{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(7, 20, 72, 0.05);
+        border-radius: 25px;
+        width: 382px;
+        align-self: center;
+        margin-top: 38px;
+        @include sm-d{
+            width: 272px;
+            margin-bottom: 30px;
+        }
+    }
+    &__save-text{
+        margin-left: 19px;
+    }
+    &__save-title{
+        font-family: 'Ermilov';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 38px;
+        color: #11131D;
+    }    
+    &__save-remark{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(7, 20, 72, 0.45);
+        @include sm-d{
+            display: none;
+        }
+    }
+    &__download{
+        margin-right: 12px;
+    }
+}
