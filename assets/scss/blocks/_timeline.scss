@@ -1,13 +1,13 @@
 .timeline{
     margin-top: 122px;
     @include md-d{
-        margin-top: 750px;
+        margin-top: 850px;
     }
     @include sm-d{
-        margin-top: 800px;
+        margin-top: 920px;
     }
     @include xs-d{
-        margin-top: 880px;
+        margin-top: 980px;
     }
     &__wrapper{
         display: flex;
@@ -42,10 +42,13 @@
             margin-right: 0;
             margin-top: 30px;
             width: 327px;
-            height: 379px;
+            height: 389px;
             padding: 29px 29px 23px 29px;
             justify-content: space-between;
             border-radius: 32px;
+        }
+        @include sm-d{
+            width: 100%;
         }
     }
     &__title{
@@ -128,6 +131,7 @@
     }
     &__btn{
         align-self: center;
+        margin-bottom: 10px;
     }
     &__black{
         background: #11131D;

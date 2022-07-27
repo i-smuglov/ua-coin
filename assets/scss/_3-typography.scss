@@ -31,12 +31,7 @@ h1 {
 	font-size: 45px;
 	line-height: 50px;
 	font-weight: 700;	
-	@include lg-d{
-		font-size: 35px;
-	}
-	@include md-d{
-		font-size: 35px;
-		line-height: 52px;
+	@include md-d{		
 		color: #11131D;
 	}
 }
