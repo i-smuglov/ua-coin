@@ -854,7 +854,7 @@ html {
   overflow: hidden; }
 
 .intro {
-  margin-top: 244px;
+  margin-top: 170px;
   background: linear-gradient(96.87deg, #736ECC -15.81%, #E2D77E 108.29%);
   position: relative; }
   @media only screen and (min-width: 1332px) {
@@ -873,8 +873,8 @@ html {
     position: fixed;
     left: 15px;
     top: 50px;
-    padding-top: 203px;
-    padding-bottom: 203px;
+    padding-top: 209px;
+    padding-bottom: 209px;
     z-index: 1000; }
     .intro__social::before, .intro__social::after {
       content: '';
@@ -909,7 +909,7 @@ html {
     display: flex;
     flex-direction: column; }
   .intro__social-icons {
-    margin-top: 36px; }
+    margin-top: 20px; }
     .intro__social-icons:first-child {
       margin-top: 0; }
     .intro__social-icons svg {
@@ -1078,7 +1078,7 @@ html {
   .intro__altruist {
     position: absolute;
     top: 55px;
-    right: -130px; }
+    right: -155px; }
     .intro__altruist div {
       margin-bottom: 20px; }
       .intro__altruist div:first-child, .intro__altruist div:last-child {
@@ -1838,8 +1838,8 @@ html {
     height: 30px;
     background: url("/img/Boots.svg") no-repeat;
     position: absolute;
-    left: 3px;
-    top: 35px; }
+    left: 26px;
+    top: 37px; }
     @media only screen and (max-width: 1332px) {
       .block__item:nth-child(1)::before {
         display: none; } }
@@ -1927,7 +1927,9 @@ html {
       width: 250px;
       transform-style: preserve-3d;
       height: 95px;
-      background: url("/img/Digger.svg") no-repeat;
+      background: url("/img/bg-coin-rm.png") no-repeat;
+      background-position: center;
+      background-size: cover;
       position: absolute;
       left: 136px;
       top: 0px; }
@@ -2121,7 +2123,7 @@ html {
   position: relative;
   width: 350px;
   height: 345px;
-  box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+  box-shadow: 0px 162px 244px rgba(0, 0, 0, 0), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
   border-radius: 50px;
   background-position: center;
   border-right: 3px solid yellow;
@@ -2303,7 +2305,11 @@ html {
   .market__text {
     font-size: 25px;
     line-height: 30px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    white-space: nowrap; }
+    @media only screen and (max-width: 992px) {
+      .market__text {
+        font-size: 22px; } }
     .market__text span {
       color: #FEDC00; }
   .market__button {
@@ -2313,7 +2319,7 @@ html {
   padding-top: 90px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 320px; }
+  margin-bottom: 180px; }
   @media only screen and (max-width: 992px) {
     .city {
       padding-top: 50px;

@@ -1,5 +1,5 @@
 .intro{
-	margin-top: 244px;	
+	margin-top: 170px;	
 	// padding-bottom: 100px;
 	background: linear-gradient(96.87deg, #736ECC -15.81%, #E2D77E 108.29%);
 	position: relative;	
@@ -18,9 +18,9 @@
 	&__social{
 		position: fixed;		
 		left: 15px;
-   	top: 50px;
-		padding-top: 203px;
-		padding-bottom: 203px;
+   		top: 50px;
+		padding-top: 209px;
+		padding-bottom: 209px;
 		z-index: 1000;
 		&::before,
 		&::after{
@@ -64,7 +64,7 @@
 		flex-direction: column;
 	}	
 	&__social-icons{
-		margin-top: 36px;
+		margin-top: 20px;
 		&:first-child{
 			margin-top: 0;
 		}
@@ -266,7 +266,7 @@
 	&__altruist{
 		position: absolute;
 		top: 55px;
-    	right: -130px;
+    	right: -155px;
 		div{
 			margin-bottom: 20px;
 			&:first-child,

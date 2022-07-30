@@ -293,8 +293,8 @@ $arrowsColorClose: #071448;
 			height: 30px;
 			background: url('/img/Boots.svg') no-repeat;				
 			position: absolute;
-			left: 3px;
-			top: 35px;
+			left: 26px;
+			top: 37px;
 			@include xl-d{
 				display: none;
 			}				
@@ -430,7 +430,9 @@ $arrowsColorClose: #071448;
 				width: 250px;
 				transform-style: preserve-3d;				
 				height: 95px;
-				background: url('/img/Digger.svg') no-repeat;				
+				background: url('/img/bg-coin-rm.png') no-repeat;
+				background-position: center;
+				background-size: cover;				
 				position: absolute;				
 				left: 136px;
    				top: 0px;

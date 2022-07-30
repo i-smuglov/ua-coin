@@ -56,10 +56,10 @@ $(window).on('resize', function (e) {
 
 	var init = $(".team__wrapper").data('init-slider');
 
-	if (window.innerWidth < 1400) {
+	if (window.innerWidth < 5000) {
 		if (init != 1) {
 			$('.team__wrapper').slick({
-				slidesToShow: 3,
+				slidesToShow: 4,
 				slidesToScroll: 1,
 				dots: true,
 				arrows: false,
