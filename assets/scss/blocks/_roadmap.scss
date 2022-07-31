@@ -437,13 +437,14 @@ $arrowsColorClose: #071448;
 				left: 136px;
    				top: 0px;
 				@include xl-d{
-				background: url('/img/coin-adapt.svg') no-repeat;
-				width: 200px;
+				background: url('/img/coin-adapt.png') no-repeat;
+				background-size: cover;
+				width: 400px;
 				height: 200px;
 				transform: translateZ(-10px);
 				transition: 0.3s linear;
-				top: 58px;
-				left: 26px;
+				top: 66px;
+   				 left: -29px;
 			}
 			}
 		}
@@ -454,7 +455,7 @@ $arrowsColorClose: #071448;
 				transition: 0.2s linear;
 				&::before{
 					transition: 0.2s linear;
-					top: 480px;
+					top: 447px;
 					z-index: 2;
 					
 				}

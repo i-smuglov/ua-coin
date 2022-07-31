@@ -8,11 +8,9 @@
 		border-radius: 75px 0px 0px 75px;
 		margin-left: 4%;
 	}
+	
 	@include md-d{
-		margin-top: 350px;
-	}	
-	@include md-d{
-		margin-top: 223px;
+		margin-top: 303px;
 		min-height: 286px;
 	}
 	&__social{
@@ -217,13 +215,28 @@
 			color: $accent;
 		}
 	}
+	&__get-coin{
+		position: absolute;
+		right: 220px;
+		top: -50px;
+		z-index: 6;
+		@include md-d{
+			max-width: 85px;
+			right: 272px;
+			top: -130px;
+		}
+		@include sm-d{
+			right: 100px;		
+		}
+	}
 	&__img{
 		
 		position: absolute;
-		bottom: -65px;
-		right: -30px;
+		bottom: -52px;
+		right: -213px;
 		z-index: 5;
-		svg{
+		width: 1048px;
+		img{
 			max-width: 100%;
 		}
 		@include xl-d{
@@ -235,9 +248,12 @@
 			right: -50px;
 		}
 		@include md-d{
-			width: 500px;
-			bottom: -546px;
+			width: 650px;
+			bottom: -317px;
 			right: 0px;
+		}
+		@include sm-d{
+			right: -187px;
 		}
 	}
 	&__btn{

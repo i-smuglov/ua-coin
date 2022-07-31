@@ -864,10 +864,7 @@ html {
       margin-left: 4%; } }
   @media only screen and (max-width: 768px) {
     .intro {
-      margin-top: 350px; } }
-  @media only screen and (max-width: 768px) {
-    .intro {
-      margin-top: 223px;
+      margin-top: 303px;
       min-height: 286px; } }
   .intro__social {
     position: fixed;
@@ -1036,12 +1033,26 @@ html {
         color: #11131D; } }
     .intro__text--yellow {
       color: #FEDC00; }
+  .intro__get-coin {
+    position: absolute;
+    right: 220px;
+    top: -50px;
+    z-index: 6; }
+    @media only screen and (max-width: 768px) {
+      .intro__get-coin {
+        max-width: 85px;
+        right: 272px;
+        top: -130px; } }
+    @media only screen and (max-width: 576px) {
+      .intro__get-coin {
+        right: 100px; } }
   .intro__img {
     position: absolute;
-    bottom: -65px;
-    right: -30px;
-    z-index: 5; }
-    .intro__img svg {
+    bottom: -52px;
+    right: -213px;
+    z-index: 5;
+    width: 1048px; }
+    .intro__img img {
       max-width: 100%; }
     @media only screen and (max-width: 1332px) {
       .intro__img {
@@ -1052,9 +1063,12 @@ html {
         right: -50px; } }
     @media only screen and (max-width: 768px) {
       .intro__img {
-        width: 500px;
-        bottom: -546px;
+        width: 650px;
+        bottom: -317px;
         right: 0px; } }
+    @media only screen and (max-width: 576px) {
+      .intro__img {
+        right: -187px; } }
   .intro__btn {
     display: flex;
     margin-top: 40px; }
@@ -1935,19 +1949,20 @@ html {
       top: 0px; }
       @media only screen and (max-width: 1332px) {
         .block__item:last-child .start__box-title::before {
-          background: url("/img/coin-adapt.svg") no-repeat;
-          width: 200px;
+          background: url("/img/coin-adapt.png") no-repeat;
+          background-size: cover;
+          width: 400px;
           height: 200px;
           transform: translateZ(-10px);
           transition: 0.3s linear;
-          top: 58px;
-          left: 26px; } }
+          top: 66px;
+          left: -29px; } }
     @media only screen and (max-width: 1332px) {
       .block__item:last-child .block__title.active .start__box-title {
         transition: 0.2s linear; }
         .block__item:last-child .block__title.active .start__box-title::before {
           transition: 0.2s linear;
-          top: 480px;
+          top: 447px;
           z-index: 2; } }
 .block__title {
   position: relative;
