@@ -864,7 +864,7 @@ html {
       margin-left: 4%; } }
   @media only screen and (max-width: 768px) {
     .intro {
-      margin-top: 303px;
+      margin-top: 230px;
       min-height: 286px; } }
   .intro__social {
     position: fixed;
