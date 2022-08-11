@@ -1081,8 +1081,14 @@ html {
     .intro__btn img {
       margin-left: 65px; }
       @media only screen and (max-width: 768px) {
-        .intro__btn img {
+        .intro__btn img:first-child {
           display: none; } }
+      .intro__btn img:last-child {
+        display: none; }
+        @media only screen and (max-width: 768px) {
+          .intro__btn img:last-child {
+            display: block;
+            margin-left: 0; } }
     .intro__btn svg {
       display: none; }
       @media only screen and (max-width: 768px) {
@@ -2138,7 +2144,9 @@ html {
   position: relative;
   width: 350px;
   height: 345px;
-  box-shadow: 0px 162px 244px rgba(0, 0, 0, 0), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+  -webkit-box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.17);
   border-radius: 50px;
   background-position: center;
   border-right: 3px solid yellow;

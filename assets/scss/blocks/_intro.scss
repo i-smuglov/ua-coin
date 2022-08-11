@@ -266,9 +266,18 @@
 		align-items: center;
 		}
 		img{
-			margin-left: 65px;
-			@include md-d {
+			margin-left: 65px;	
+			&:first-child{
+				@include md-d{
+					display: none;
+				}
+			}		
+			&:last-child{
 				display: none;
+				@include md-d{
+					display: block;
+					margin-left: 0;
+				}
 			}
 		}
 		svg{
