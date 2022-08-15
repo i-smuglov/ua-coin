@@ -540,7 +540,7 @@ html {
   margin-top: 15px;
   position: relative; }
   .progress-bar-wrap::before {
-    content: '$132.245';
+    content: '$39000';
     font-family: 'Hiragino Sans GB';
     font-style: normal;
     font-weight: 300;
@@ -927,6 +927,9 @@ html {
     @media only screen and (min-width: 1680px) {
       .intro__wrapper {
         padding-left: 20px; } }
+    @media only screen and (max-width: 768px) {
+      .intro__wrapper {
+        background: none; } }
   .intro__timer-title {
     font-weight: 700;
     font-size: 28px;
@@ -1046,6 +1049,15 @@ html {
     @media only screen and (max-width: 576px) {
       .intro__get-coin {
         right: 100px; } }
+  .intro__circle-bg {
+    display: none; }
+    @media only screen and (max-width: 576px) {
+      .intro__circle-bg {
+        display: block;
+        position: absolute;
+        z-index: 4;
+        right: 0;
+        bottom: -104px; } }
   .intro__img {
     position: absolute;
     bottom: -52px;
@@ -2129,6 +2141,7 @@ html {
   margin-bottom: 40px; }
 
 .team__wrapper {
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
@@ -2228,7 +2241,7 @@ html {
     .team .slick-track {
       flex-wrap: wrap; } }
 .team .slick-list {
-  padding: 0px 0px 0px 0px; }
+  padding: 15px 0px 0px 0px; }
 
 .team .slick-slide {
   display: flex  !important;

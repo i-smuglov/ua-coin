@@ -88,6 +88,9 @@
 		@include xxl{
 			padding-left: 20px;
 		}
+		@include md-d{
+			background: none;
+		}
 	}
 	&__timer-title{
 		font-weight: 700;
@@ -227,6 +230,16 @@
 		}
 		@include sm-d{
 			right: 100px;		
+		}
+	}
+	&__circle-bg{
+		display: none;
+		@include sm-d{
+			display: block;
+			position: absolute;
+			z-index: 4;
+			right: 0;
+			bottom: -104px;
 		}
 	}
 	&__img{
