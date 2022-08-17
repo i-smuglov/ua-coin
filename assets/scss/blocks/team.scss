@@ -32,7 +32,7 @@
 		border-radius: 50px;		
 		background-position: center;	
 		border-right: 3px solid yellow;
-		overflow: hidden;	
+		// overflow: hidden;	
 		img{
 			margin-left: 30px;
 			max-width: 80%;
@@ -125,6 +125,7 @@
  .slick-list {
 	// overflow: hidden;
 	padding: 15px 0px 0px 0px;	
+	height: 480px !important;
  }
  .slick-slide{
 	 display: flex  !important;

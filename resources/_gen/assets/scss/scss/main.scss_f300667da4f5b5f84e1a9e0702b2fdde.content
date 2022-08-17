@@ -1075,12 +1075,12 @@ html {
         right: -50px; } }
     @media only screen and (max-width: 768px) {
       .intro__img {
-        width: 650px;
+        width: 680px;
         bottom: -317px;
         right: 0px; } }
     @media only screen and (max-width: 576px) {
       .intro__img {
-        right: -187px; } }
+        right: -220px; } }
   .intro__btn {
     display: flex;
     margin-top: 40px; }
@@ -2162,8 +2162,7 @@ html {
   box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.17);
   border-radius: 50px;
   background-position: center;
-  border-right: 3px solid yellow;
-  overflow: hidden; }
+  border-right: 3px solid yellow; }
   .team__img img {
     margin-left: 30px;
     max-width: 80%;
@@ -2241,7 +2240,8 @@ html {
     .team .slick-track {
       flex-wrap: wrap; } }
 .team .slick-list {
-  padding: 15px 0px 0px 0px; }
+  padding: 15px 0px 0px 0px;
+  height: 480px !important; }
 
 .team .slick-slide {
   display: flex  !important;
@@ -2489,6 +2489,9 @@ html {
   @media only screen and (max-width: 992px) {
     .donate {
       margin-top: 152px; } }
+  @media only screen and (max-width: 768px) {
+    .donate {
+      margin-top: 50px; } }
   .donate__wrapper {
     display: flex;
     justify-content: space-between; }
@@ -2515,7 +2518,7 @@ html {
         transform: rotate(90deg); } }
     @media only screen and (max-width: 576px) {
       .donate__img-ua {
-        top: 150px; } }
+        top: 89px; } }
   .donate__remark {
     font-size: 16px;
     line-height: 24px;
@@ -3121,6 +3124,9 @@ html {
 .form {
   margin-top: 160px;
   position: relative; }
+  @media only screen and (max-width: 768px) {
+    .form {
+      background: #736ECC; } }
   .form__bg {
     position: absolute;
     width: 40vw;
@@ -3242,6 +3248,10 @@ html {
         align-items: center;
         padding: 0;
         margin: 0 -10px; } }
+    @media only screen and (max-width: 768px) {
+      .form__image {
+        margin: 0 -25px;
+        width: 100vw; } }
   .form__absolute {
     position: absolute; }
     .form__absolute--rocket {

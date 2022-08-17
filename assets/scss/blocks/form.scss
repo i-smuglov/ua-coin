@@ -1,6 +1,9 @@
 .form{
 	margin-top: 160px;
 	position: relative;
+	@include md-d{
+		background: #736ECC;
+	}
 	&__bg{
 		position: absolute;
 		width: 40vw;
@@ -9,9 +12,11 @@
 		left: 0;
 		top: 0;
 		z-index: 1;
+		
 		@include xl-d{
 			display: none;
 		}
+		
 	}	
 	&__img{
 		position: absolute;
@@ -26,7 +31,7 @@
 		justify-content: space-between;
 		@include xl-d{
 			flex-direction: column;
-		}
+		}		
 	}
 	&__heart{
 		position: absolute;
@@ -147,6 +152,10 @@
 			align-items: center;
 			padding: 0;
 			margin: 0 -10px;
+		}
+		@include md-d{
+			margin: 0 -25px;
+   			width: 100vw;
 		}
 	}
 	&__absolute{
