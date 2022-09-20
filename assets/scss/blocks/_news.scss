@@ -289,6 +289,102 @@
 }
 
 
+.info{
+  padding-top: 200px;
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    color: #11131D;
+  }
+  &__left{
+    width: 1042px;
+    margin-left: 80px;
+  }
+  &__image{
+    width: 100%;
+    height: 192px;
+    border-radius: 30px;
+    overflow: hidden;
+    img{
+      width: 100%;     
+    }
+  }
+  &__inform{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;    
+    margin-top: 50px;
+  }
+  &__tag{
+    margin-left: 0;
+    margin-top: 0;
+  }
+  &__date{
+    margin-top: 0;
+  }
+  &__person{
+    display: flex;  
+    align-items: center;  
+  }
+  &__person-line{
+    display: flex;
+    align-items: center;
+  }
+  &__person-img{
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__person-wrapper{
+    margin-left: 20px;
+  }
+  &__person-name{
+    font-family: 'Ermilov';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #11131D;
+  }
+  &__person-position{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: rgba(7, 20, 72, 0.45);
+  }
+  &__content{
+    margin-top: 60px;
+    
+  }
+  &__paragraph{
+    font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #11131D;
+      margin-top: 20px;
+      &:first-child{
+        margin-top: 0;
+      }
+    &--bold{
+      font-weight: 600;
+    }
+  }
+  &__capture{
+    margin-top: 56px;
+    border-radius: 30px;
+    width: 100%;
+    overflow: hidden;
+    height: 292px;
+  }
+}
+
   
    
   
