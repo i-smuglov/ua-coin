@@ -1,4 +1,4 @@
-                              //Preloader
+//Preloader
 var 	
   images = document.images,
   images_total_count = images.length,
@@ -17,7 +17,6 @@ function image_loaded() {
   var calc = ( ( (100 / images_total_count) * images_loaded_count) << 0);
   perc_display.innerHTML =  calc + '%';
   preloadProgress.css('width', calc + '%');
-//   console.log(images_loaded_count, images_total_count)
   if( images_loaded_count >= images_total_count ) {
     setTimeout(function() {
       if( !preloader.classList.contains('hidden') ) {
@@ -26,6 +25,25 @@ function image_loaded() {
     }, 1000);
   }
 }
+
+
+//TABS
+const buttons = document.querySelectorAll("button");
+const sections = document.querySelectorAll(".news__content");
+buttons.forEach((btn)=>{
+  btn.addEventListener("click", ()=>{
+    buttons.forEach((btn)=>{
+      btn.classList.remove("active");
+    });
+    btn.classList.add("active");
+    const id = btn.id;
+    sections.forEach((section)=>{
+      section.classList.remove("active");
+    });
+    const req = document.getElementsByClassName(`news__content${id}`);
+    req[0].classList.add("active");
+  })
+})
 
 // Anchor Slide
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
