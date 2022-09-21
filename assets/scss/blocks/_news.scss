@@ -10,6 +10,9 @@
       line-height: 50px;
       color: #11131D;
       text-transform: none;
+      @include lg-d{
+        margin-left: 0;
+      }
     }
     &__row{
       display: flex;
@@ -525,11 +528,8 @@
         display: flex;
       }
     }
-    &--lg{
-      display: none;
-      @include md-d{
-        display: flex;        
-      }
+    &--lg{      
+      
     }
     a{
       width: 103px;
