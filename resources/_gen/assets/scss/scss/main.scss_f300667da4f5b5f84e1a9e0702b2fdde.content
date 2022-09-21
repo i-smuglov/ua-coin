@@ -874,7 +874,8 @@ html {
     max-width: 1060px;
     display: flex;
     flex-direction: column;
-    margin-left: 80px; }
+    margin-left: 80px;
+    position: relative; }
     @media only screen and (max-width: 768px) {
       .news__wrapper {
         margin-left: 0; } }
@@ -908,6 +909,8 @@ html {
     margin-top: 40px; }
   .news__img {
     height: 132px; }
+    .news__img img {
+      height: 100%; }
   .news__tag {
     font-family: 'Montserrat';
     font-style: normal;
@@ -1086,7 +1089,7 @@ html {
   .news__social-list {
     display: flex;
     align-items: center;
-    margin-top: 24px; }
+    margin-top: 0; }
   .news__social-icons {
     width: 24px;
     height: 24px;
@@ -1106,11 +1109,25 @@ html {
   .info__wrapper {
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 992px) {
+      .info__wrapper {
+        flex-direction: column; } }
   .info__title {
     color: #11131D; }
+    @media only screen and (max-width: 992px) {
+      .info__title {
+        margin-top: 18px;
+        align-self: flex-start; } }
   .info__left {
     width: 1042px;
-    margin-left: 80px; }
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column; }
+    @media only screen and (max-width: 992px) {
+      .info__left {
+        width: 100%;
+        margin-left: 0;
+        align-items: center; } }
   .info__image {
     width: 100%;
     height: 192px;
@@ -1118,11 +1135,24 @@ html {
     overflow: hidden; }
     .info__image img {
       width: 100%; }
+    @media only screen and (max-width: 992px) {
+      .info__image {
+        height: 128px;
+        margin-top: 40px; }
+        .info__image img {
+          height: 100%;
+          object-fit: cover;
+          object-position: left; } }
   .info__inform {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 50px; }
+    @media only screen and (max-width: 992px) {
+      .info__inform {
+        flex-direction: column-reverse;
+        align-self: flex-start;
+        margin-top: 29px; } }
   .info__tag {
     margin-left: 0;
     margin-top: 0; }
@@ -1134,6 +1164,9 @@ html {
   .info__person-line {
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 992px) {
+      .info__person-line {
+        margin-top: 30px; } }
   .info__person-img {
     width: 63px;
     height: 63px;
@@ -1157,6 +1190,9 @@ html {
     color: rgba(7, 20, 72, 0.45); }
   .info__content {
     margin-top: 60px; }
+    @media only screen and (max-width: 992px) {
+      .info__content {
+        margin-top: 30px; } }
   .info__paragraph {
     font-family: 'Montserrat';
     font-style: normal;
@@ -1169,13 +1205,120 @@ html {
       margin-top: 0; }
     .info__paragraph--bold {
       font-weight: 600; }
+    @media only screen and (max-width: 992px) {
+      .info__paragraph {
+        margin-top: 15px; } }
+  @media only screen and (max-width: 992px) {
+    .info__bg {
+      left: -60%; } }
   .info__capture {
     margin-top: 56px;
     border-radius: 30px;
     width: 100%;
     overflow: hidden;
     height: 292px; }
-
+    @media only screen and (max-width: 992px) {
+      .info__capture {
+        height: 192px;
+        margin-top: 40px; } }
+    @media only screen and (max-width: 992px) {
+      .info__capture img {
+        height: 100%;
+        object-fit: cover;
+        object-position: left; } }
+  .info__social {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    border-top: 3px solid rgba(7, 20, 72, 0.05);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(7, 20, 72, 0.75); }
+    @media only screen and (max-width: 992px) {
+      .info__social {
+        flex-direction: column; } }
+  .info__statistik {
+    display: flex;
+    align-items: center; }
+  @media only screen and (max-width: 992px) {
+    .info__social-list {
+      margin-top: 45px; } }
+  .info__likes {
+    display: flex;
+    align-items: center; }
+    .info__likes svg {
+      margin-right: 16px;
+      transition: 0.3s linear; }
+      .info__likes svg:hover {
+        transition: 0.3s linear;
+        cursor: pointer; }
+        .info__likes svg:hover path {
+          transition: 0.3s linear;
+          fill: red; }
+  .info__watch {
+    display: flex;
+    align-items: center;
+    margin-left: 67px; }
+    .info__watch svg {
+      margin-right: 16px; }
+  .info__note {
+    width: 336px;
+    margin-left: 0;
+    margin-top: 40px;
+    height: auto; }
+  .info__right {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column; }
+    @media only screen and (max-width: 992px) {
+      .info__right {
+        margin-top: 69px;
+        align-items: center; } }
+    @media only screen and (max-width: 768px) {
+      .info__right {
+        margin-left: 0; } }
+  .info__buttons {
+    display: flex;
+    justify-content: space-between; }
+    .info__buttons a {
+      margin-right: 8px; }
+      .info__buttons a:last-child {
+        margin-right: 0; }
+    .info__buttons--md {
+      max-width: 370px; }
+    .info__buttons--lg {
+      display: none; }
+      @media only screen and (max-width: 768px) {
+        .info__buttons--lg {
+          display: flex; } }
+    .info__buttons a {
+      width: 103px;
+      height: 54px;
+      background: rgba(7, 20, 72, 0.05);
+      border-radius: 15px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(7, 20, 72, 0.75);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s linear; }
+      .info__buttons a:hover {
+        transition: 0.3s linear;
+        background: rgba(7, 20, 72, 0.1); }
+  .info__article {
+    margin-top: 40px; }
+    @media only screen and (max-width: 992px) {
+      .info__article {
+        display: none; } }
 .intro {
   margin-top: 170px;
   background: linear-gradient(96.87deg, #736ECC -15.81%, #E2D77E 108.29%);
