@@ -520,6 +520,10 @@
     }    
     &--md{
       max-width: 370px;
+      display: none;
+      @include lg-d{
+        display: flex;
+      }
     }
     &--lg{
       display: none;

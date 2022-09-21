@@ -1290,7 +1290,11 @@ html {
       .info__buttons a:last-child {
         margin-right: 0; }
     .info__buttons--md {
-      max-width: 370px; }
+      max-width: 370px;
+      display: none; }
+      @media only screen and (max-width: 992px) {
+        .info__buttons--md {
+          display: flex; } }
     .info__buttons--lg {
       display: none; }
       @media only screen and (max-width: 768px) {
