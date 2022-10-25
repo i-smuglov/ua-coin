@@ -1257,6 +1257,120 @@ html {
     text-align: center;
     color: #11131D;
     margin-top: 127px; }
+  .payment .transfer {
+    width: 1000px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+    border-radius: 30px;
+    padding: 50px 0 50px 50px; }
+    .payment .transfer__content.active {
+      display: block;
+      margin-top: 60px; }
+    .payment .transfer__content {
+      display: none; }
+    .payment .transfer .btttn {
+      cursor: pointer;
+      background: #fff;
+      padding-bottom: 7px;
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(7, 20, 72, 0.35);
+      width: 86px;
+      text-align: center; }
+    .payment .transfer .btttn.active {
+      border-bottom: 2px solid #FEDC00;
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #071448; }
+    .payment .transfer__title {
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: #11131D; }
+    .payment .transfer__remark {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #11131D;
+      margin-top: 15px; }
+    .payment .transfer__wrapper {
+      margin-top: 40px; }
+    .payment .transfer__upline {
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: #11131D; }
+    .payment .transfer__subtitle {
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: rgba(7, 20, 72, 0.35);
+      margin-top: 30px; }
+    .payment .transfer__props {
+      margin-top: 25px; }
+    .payment .transfer__problem {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #11131D;
+      margin-top: 60px; }
+      .payment .transfer__problem a {
+        color: #736ECC;
+        text-decoration: underline; }
+    .payment .transfer .props__title {
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(7, 20, 72, 0.75); }
+    .payment .transfer .props__content {
+      display: flex;
+      border: 1px solid rgba(7, 20, 72, 0.25);
+      border-radius: 15px;
+      padding-left: 30px;
+      align-items: center;
+      justify-content: space-between;
+      width: 597px;
+      margin-top: 5px; }
+    .payment .transfer .props__text {
+      font-family: 'Hiragino Sans GB';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #11131D; }
+    .payment .transfer .props__link {
+      background-color: rgba(7, 20, 72, 0.05);
+      border-radius: 15px;
+      background-image: url("/img/cube.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 48px;
+      height: 48px;
+      margin: 2px;
+      transition: 0.2s linear; }
+      .payment .transfer .props__link:hover {
+        cursor: pointer;
+        transition: 0.2s linear;
+        background-color: rgba(7, 20, 72, 0.1); }
   .payment .help {
     background: #FFFFFF;
     box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);

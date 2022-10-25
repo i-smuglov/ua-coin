@@ -28,7 +28,7 @@ function image_loaded() {
 
 
 //TABS
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".bttn");
 const sections = document.querySelectorAll(".payment__content");
 buttons.forEach((btn)=>{
   btn.addEventListener("click", ()=>{
@@ -42,6 +42,23 @@ buttons.forEach((btn)=>{
     });
     const req = document.getElementsByClassName(`payment__content${id}`);
     req[0].classList.add("active");
+  })
+})
+
+const transfer = document.querySelectorAll(".btttn");
+const transferSections = document.querySelectorAll(".transfer__content");
+transfer.forEach((btn)=>{
+  btn.addEventListener("click", ()=>{
+    transfer.forEach((btn)=>{
+      btn.classList.remove("active");
+    });
+    btn.classList.add("active");
+    const id = btn.id;
+    transferSections.forEach((section)=>{
+      section.classList.remove("active");
+    });
+    const reqs = document.getElementsByClassName(`transfer__content${id}`);
+    reqs[0].classList.add("active");
   })
 })
 

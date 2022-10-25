@@ -32,8 +32,7 @@
     &__content2{
         
     }
-    &__content {
-    
+    &__content {    
       display: none;
     }
  
@@ -472,6 +471,145 @@
         text-align: center;
         color: #11131D;
         margin-top: 127px;
+    }
+    .transfer{
+        width: 1000px;
+        margin: 0 auto;
+        background: #FFFFFF;
+        box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+        border-radius: 30px;
+        padding: 50px 0 50px 50px;
+        &__content.active {    
+            display: block;
+            margin-top: 60px;
+          }
+        &__content {    
+            display: none;
+        }
+       
+        .btttn {            
+            cursor: pointer;
+            background: #fff;
+            padding-bottom: 7px;
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(7, 20, 72, 0.35);
+            width: 86px;
+            text-align: center;
+           
+           
+          }
+        .btttn.active {
+            border-bottom: 2px solid #FEDC00;
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #071448;
+          }
+        &__title{
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            color: #11131D;
+        }
+        &__remark{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #11131D;
+            margin-top: 15px;
+        }
+        &__wrapper{
+            margin-top: 40px;
+        }
+        &__upline{
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            color: #11131D;
+        }
+        &__subtitle{
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            color: rgba(7, 20, 72, 0.35);
+            margin-top: 30px;
+        }
+        &__props{
+            margin-top: 25px;
+        }
+        &__problem{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #11131D;
+            margin-top: 60px;
+            a{
+                color: #736ECC;
+                text-decoration: underline;
+            }
+        }
+        .props{
+            &__title{
+                font-family: 'Ermilov';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(7, 20, 72, 0.75);
+            }
+            &__content{
+                display: flex;
+                border: 1px solid rgba(7, 20, 72, 0.25);
+                border-radius: 15px;
+                padding-left: 30px;
+                align-items: center;
+                justify-content: space-between;
+                width: 597px;
+                margin-top: 5px;
+            }
+            &__text{
+                font-family: 'Hiragino Sans GB';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                color: #11131D;
+            }
+            &__link{
+                background-color: rgba(7, 20, 72, 0.05);
+                border-radius: 15px;
+                background-image: url('/img/cube.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 48px;
+                height: 48px;
+                margin: 2px;
+                transition: 0.2s linear;
+
+                &:hover{
+                    cursor: pointer;
+                    transition: 0.2s linear;
+                    background-color: rgba(7, 20, 72, 0.1);
+
+                }
+            }
+        }
     }
     .help{
         background: #FFFFFF;
