@@ -154,7 +154,7 @@ h2 {
   opacity: 0.5; }
 
 .container {
-  max-width: 1550px;
+  max-width: 1590px;
   margin: 0 auto;
   padding: 0 20px; }
 
@@ -851,6 +851,510 @@ html {
         margin-left: 15px; } }
 .lock {
   overflow: hidden; }
+
+.payment {
+  padding-top: 200px;
+  background: url("/img/payment.png") no-repeat;
+  background-position: bottom; }
+  .payment__wrapper {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+    @media only screen and (max-width: 768px) {
+      .payment__wrapper {
+        margin-left: 0; } }
+  .payment__tabs {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    @media only screen and (max-width: 576px) {
+      .payment__tabs {
+        flex-wrap: wrap; } }
+  .payment__content.active {
+    display: block;
+    margin-top: 60px;
+    padding-bottom: 285px; }
+  .payment__content {
+    display: none; }
+  .payment .bttn {
+    padding: 15px 40px;
+    cursor: pointer;
+    border: 2px solid #FEDC00;
+    border-radius: 15px;
+    background: #fff;
+    font-family: 'Ermilov';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #071448;
+    margin-right: 25px; }
+    .payment .bttn:last-child {
+      margin-right: 0; }
+    .payment .bttn--last {
+      border: none;
+      padding: 0 40px; }
+  .payment .bttn.active {
+    background: #FEDC00; }
+  .payment .bttn--last.active {
+    background: none;
+    color: #FEDC00;
+    text-decoration: underline; }
+  .payment .bank {
+    display: flex;
+    justify-content: space-between; }
+    .payment .bank__wrapper {
+      box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+      border-radius: 30px;
+      padding: 30px 61px 57px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 749px; }
+    .payment .bank__img {
+      display: flex; }
+      .payment .bank__img img {
+        margin-right: 45px; }
+        .payment .bank__img img:last-child {
+          margin-right: 0; }
+    .payment .bank__btn {
+      background: #FEDC00;
+      border-radius: 15px;
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #071448;
+      width: 217px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .payment .bank__montly {
+      margin-top: 50px; }
+    .payment .bank__remark {
+      margin-top: 20px;
+      text-align: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      color: rgba(7, 20, 72, 0.45); }
+      .payment .bank__remark a {
+        text-decoration: underline;
+        font-weight: 500;
+        color: rgba(7, 20, 72, 0.45); }
+    .payment .bank__donate {
+      padding: 35px 18px 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      border: 1px solid rgba(7, 20, 72, 0.35);
+      border-radius: 25px;
+      margin-top: 56px; }
+    .payment .bank__or {
+      background: #fff;
+      padding: 10px 31px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -50%);
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 50px;
+      color: rgba(7, 20, 72, 0.35); }
+    .payment .bank__quick {
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      color: rgba(7, 20, 72, 0.35);
+      position: relative;
+      margin-top: 22px; }
+    .payment .bank__buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 27px; }
+    .payment .bank__link {
+      width: 280px;
+      height: 54px;
+      border: 2px solid #FEDC00;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #071448;
+      margin-bottom: 10px; }
+    .payment .bank__total {
+      max-width: 749px;
+      display: flex;
+      flex-direction: column;
+      padding: 30px 50px 47px 46px;
+      background: #FFFFFF;
+      box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+      border-radius: 30px; }
+    .payment .bank__price {
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 50px;
+      color: #071448; }
+    .payment .bank__date {
+      font-family: 'Hiragino Sans GB';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      color: rgba(7, 20, 72, 0.45); }
+    .payment .bank .progress {
+      margin-top: 40px;
+      position: relative;
+      height: 6px;
+      width: 653px;
+      background: rgba(7, 20, 72, 0.25);
+      border: 1px solid;
+      border-image-source: linear-gradient(269.91deg, rgba(7, 20, 72, 0.35) 1.15%, rgba(7, 20, 72, 0) 50.08%); }
+    .payment .bank .progress-done {
+      background: #FEDC00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 0;
+      opacity: 0;
+      transition: 2s ease 0.5s;
+      position: relative; }
+    .payment .bank__line-text {
+      margin-top: 5px;
+      text-align: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      color: rgba(7, 20, 72, 0.45); }
+    .payment .bank__latest {
+      background: rgba(7, 20, 72, 0.05);
+      border-radius: 25px;
+      padding: 23px 22px;
+      margin-top: 50px; }
+    .payment .bank__title {
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: rgba(7, 20, 72, 0.35); }
+    .payment .bank__contain {
+      display: flex;
+      flex-direction: column;
+      margin-top: 18px; }
+    .payment .bank__box {
+      background: rgba(7, 20, 72, 0.05);
+      border-radius: 15px;
+      padding: 15px 30px 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px; }
+      .payment .bank__box:first-child {
+        margin-top: 0; }
+    .payment .bank__box-wrapp {
+      display: flex;
+      align-items: center; }
+    .payment .bank__number {
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: rgba(7, 20, 72, 0.35); }
+    .payment .bank__summ {
+      margin-left: 20px; }
+    .payment .bank__uan {
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      color: #071448;
+      position: relative;
+      padding-left: 34px;
+      height: 24px;
+      display: flex;
+      align-items: center; }
+      .payment .bank__uan::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background: url("/img/bank-heart.png");
+        left: 0;
+        top: 0; }
+    .payment .bank__uan-date {
+      margin-top: 4px;
+      font-family: 'Hiragino Sans GB';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: rgba(7, 20, 72, 0.45); }
+  .payment .crypto {
+    display: flex;
+    justify-content: space-between; }
+    .payment .crypto__box {
+      width: 350px;
+      background: #FFFFFF;
+      box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 26px; }
+    .payment .crypto__qr {
+      margin-top: 60px; }
+    .payment .crypto__title {
+      margin-top: 55px;
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      color: #11131D; }
+    .payment .crypto__value {
+      margin-top: 17px;
+      display: flex;
+      align-items: center;
+      width: 297px;
+      margin-bottom: 32px; }
+    .payment .crypto__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      background: rgba(7, 20, 72, 0.05);
+      border-radius: 15px; }
+    .payment .crypto__number {
+      font-family: 'Hiragino Sans GB';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      width: 235px;
+      margin-left: 14px;
+      color: rgba(7, 20, 72, 0.75);
+      height: 100%;
+      word-wrap: break-word;
+      margin-top: 2px; }
+  .payment .paypal {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    background-image: url("/img/paypal-bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+    border-radius: 30px;
+    padding-top: 49px;
+    padding-bottom: 56px;
+    padding-left: 50px; }
+    .payment .paypal__title {
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: #11131D; }
+    .payment .paypal__img {
+      margin-top: 20px; }
+    .payment .paypal__value {
+      margin-top: 41px;
+      border: 1px solid rgba(7, 20, 72, 0.25);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 597px; }
+    .payment .paypal__text {
+      margin: 15px 0 15px 36px;
+      font-family: 'Hiragino Sans GB';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #11131D; }
+    .payment .paypal__link {
+      width: 48px;
+      height: 48px;
+      background: rgba(7, 20, 72, 0.05);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 3px; }
+    .payment .paypal__subtitle {
+      margin-top: 41px;
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: #11131D; }
+    .payment .paypal__remark {
+      margin-top: 15px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #11131D;
+      max-width: 557px; }
+    .payment .paypal__problems {
+      margin-top: 60px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #11131D; }
+      .payment .paypal__problems a {
+        color: #1435ba;
+        text-decoration: underline; }
+  .payment__thanks {
+    font-family: 'Ermilov';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    color: #11131D;
+    margin-top: 127px; }
+  .payment .help {
+    background: #FFFFFF;
+    box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+    border-radius: 30px;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px; }
+    .payment .help__title {
+      max-width: 557px;
+      text-align: center;
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: #11131D;
+      margin-top: 50px; }
+    .payment .help__remark {
+      text-align: center;
+      max-width: 557px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #11131D;
+      margin-top: 15px; }
+    .payment .help__wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 42px;
+      margin-top: 32px; }
+    .payment .help__box {
+      background: rgba(7, 20, 72, 0.05);
+      border-radius: 25px;
+      width: 405px;
+      height: 328px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .payment .help__contact {
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: rgba(7, 20, 72, 0.35);
+      margin-top: 18px;
+      margin-bottom: 19px; }
+    .payment .help__text {
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: #11131D;
+      margin-top: 25px; }
+    .payment .help__or {
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: rgba(7, 20, 72, 0.35); }
+    .payment .help a {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration-line: underline;
+      color: #736ECC;
+      margin-top: 10px; }
+    .payment .help__list {
+      display: flex;
+      align-items: center;
+      margin-top: 15px; }
+    .payment .help__social-icons {
+      margin-right: 30px;
+      transition: 0.3s linear; }
+      .payment .help__social-icons:last-child {
+        margin-right: 0; }
+      .payment .help__social-icons:hover {
+        transition: 0.3s linear; }
+        .payment .help__social-icons:hover svg {
+          transition: 0.3s linear; }
+          .payment .help__social-icons:hover svg path {
+            fill: #FEDC00;
+            transition: 0.3s linear; }
 
 .news {
   padding-top: 200px; }

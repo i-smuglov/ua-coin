@@ -29,7 +29,7 @@ function image_loaded() {
 
 //TABS
 const buttons = document.querySelectorAll("button");
-const sections = document.querySelectorAll(".news__content");
+const sections = document.querySelectorAll(".payment__content");
 buttons.forEach((btn)=>{
   btn.addEventListener("click", ()=>{
     buttons.forEach((btn)=>{
@@ -40,7 +40,7 @@ buttons.forEach((btn)=>{
     sections.forEach((section)=>{
       section.classList.remove("active");
     });
-    const req = document.getElementsByClassName(`news__content${id}`);
+    const req = document.getElementsByClassName(`payment__content${id}`);
     req[0].classList.add("active");
   })
 })

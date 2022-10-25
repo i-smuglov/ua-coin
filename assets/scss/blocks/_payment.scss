@@ -1,0 +1,592 @@
+.payment{
+    padding-top: 200px;  
+    background: url('/img/payment.png') no-repeat;
+    background-position: bottom;  
+    &__wrapper{
+        
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;       
+        position: relative;
+        @include md-d{
+          margin-left: 0;
+        }
+    }
+    &__tabs{      
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        @include sm-d{flex-wrap: wrap;}            
+    }
+    &__content.active {    
+      display: block;
+      margin-top: 60px;
+      padding-bottom: 285px;
+    }
+    &__row{
+       
+    }
+    &__content1{
+        // background: url('/img/payment.png') no-repeat;
+    }
+    &__content2{
+        
+    }
+    &__content {
+    
+      display: none;
+    }
+ 
+    .bttn {
+      padding: 15px 40px;
+      cursor: pointer;
+      border: 2px solid #FEDC00;
+      border-radius: 15px;
+      background: #fff;
+      font-family: 'Ermilov';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #071448; 
+      margin-right: 25px;
+      &:last-child{
+        margin-right: 0;
+      } 
+      &--last{
+        border: none;
+        padding: 0 40px;
+      }  
+    }
+    .bttn.active {
+      background: $accent;
+    }
+    .bttn--last.active{
+        background: none;
+        color: $accent;
+        text-decoration: underline;
+    }
+    .bank{
+        display: flex;
+        justify-content: space-between;
+        &__wrapper{
+            box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+            border-radius: 30px;
+            padding: 30px 61px 57px;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 749px;
+        }
+        &__img{
+            display: flex;
+            img{
+                margin-right: 45px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+        &__btn{
+            background: #FEDC00;
+            border-radius: 15px;
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #071448;
+            width: 217px;
+            height: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        &__montly{
+            margin-top: 50px;
+        }
+        &__remark{
+            margin-top: 20px;
+            text-align: center;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            color: rgba(7, 20, 72, 0.45);
+            a{
+                text-decoration: underline;
+                font-weight: 500;
+                color: rgba(7, 20, 72, 0.45);
+
+            }
+        }
+        &__donate{
+            padding: 35px 18px 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            border: 1px solid rgba(7, 20, 72, 0.35);
+            border-radius: 25px;
+            margin-top: 56px;
+        }
+        &__or{
+            background: #fff;
+            padding: 10px 31px;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%);
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 50px;
+            color: rgba(7, 20, 72, 0.35);
+        }       
+        &__quick{
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: 0.05em;
+            color: rgba(7, 20, 72, 0.35);
+            position: relative;
+            margin-top: 22px;
+        }
+        &__buttons{
+            display: flex;
+            flex-wrap: wrap;    
+            justify-content: space-between;
+            margin-top: 27px;        
+        }
+        &__link{
+            width: 280px;
+            height: 54px;
+            border: 2px solid #FEDC00;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #071448;
+            margin-bottom: 10px;
+        }
+        &__total{
+            max-width: 749px;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 50px 47px 46px;  
+            background: #FFFFFF;
+            box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+            border-radius: 30px;          
+        }
+        &__price{
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 50px;
+            color: #071448;
+        }
+        &__date{
+            font-family: 'Hiragino Sans GB';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            color: rgba(7, 20, 72, 0.45);
+        }
+        .progress {	
+            margin-top: 40px;	
+            position: relative;            
+            height: 6px;	
+            width: 653px;
+            background: rgba(7, 20, 72, 0.25);
+            border: 1px solid;
+            border-image-source: linear-gradient(269.91deg, rgba(7, 20, 72, 0.35) 1.15%, rgba(7, 20, 72, 0) 50.08%);
+        }        
+        .progress-done {
+            background: $accent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 0;
+            opacity: 0;
+            transition: 2s ease 0.5s;
+            position: relative;
+        }       
+        &__line-text{
+            margin-top: 5px;
+            text-align: center;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            color: rgba(7, 20, 72, 0.45);
+        }
+        &__latest{
+            background: rgba(7, 20, 72, 0.05);
+            border-radius: 25px;
+            padding: 23px 22px;
+            margin-top: 50px;
+        }
+        &__title{
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: rgba(7, 20, 72, 0.35);
+        }
+        &__contain{
+            display: flex;
+            flex-direction: column;
+            margin-top: 18px;
+        }
+        &__box{
+            background: rgba(7, 20, 72, 0.05);
+            border-radius: 15px;    
+            padding: 15px 30px 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 5px;
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+        &__box-wrapp{
+            display: flex;
+            align-items: center;
+        }
+        &__number{
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: rgba(7, 20, 72, 0.35);
+        }
+        &__summ{
+            margin-left: 20px;
+        }
+        &__uan{
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 14px;
+            letter-spacing: 0.05em;
+            color: #071448;
+            position: relative;
+            padding-left: 34px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                background: url('/img/bank-heart.png');
+                left: 0;
+                top: 0;
+            }
+        }
+        &__uan-date{
+            margin-top: 4px;
+            font-family: 'Hiragino Sans GB';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: rgba(7, 20, 72, 0.45);
+        }
+    }  
+    .crypto{
+        display: flex;
+        justify-content: space-between;
+        &__box{
+            width: 350px;
+            background: #FFFFFF;
+            box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 26px;
+        }
+        &__qr{
+            margin-top: 60px;            
+        }
+        &__title{
+            margin-top: 55px;
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            color: #11131D;
+        }
+        &__value{
+            margin-top: 17px;
+            display: flex;
+            align-items: center;
+            width: 297px;
+            margin-bottom: 32px;
+        }
+        &__btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: rgba(7, 20, 72, 0.05);
+            border-radius: 15px;
+        }
+        &__number{
+            font-family: 'Hiragino Sans GB';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 21px;
+            width: 235px;
+            margin-left: 14px;
+            color: rgba(7, 20, 72, 0.75);
+            height: 100%;
+            word-wrap: break-word;
+            margin-top: 2px;
+        }
+    }
+    .paypal{
+        width: 1000px;
+        margin: 0 auto;
+        background-color: #FFFFFF;  
+        background-image: url('/img/paypal-bg.png');
+        background-repeat: no-repeat;  
+        background-position: bottom right;   
+        box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+        border-radius: 30px;
+        padding-top: 49px;
+        padding-bottom: 56px;
+        padding-left: 50px;
+        &__title{
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            color: #11131D;
+        }
+        &__img{
+            margin-top: 20px;
+        }
+        &__value{
+            margin-top: 41px;
+            border: 1px solid rgba(7, 20, 72, 0.25);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 597px;
+        }
+        &__text{
+            margin: 15px 0 15px 36px;
+            font-family: 'Hiragino Sans GB';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            color: #11131D;
+        }
+        &__link{
+            width: 48px;
+            height: 48px;
+            background: rgba(7, 20, 72, 0.05);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 3px;
+        }
+        &__subtitle{
+            margin-top: 41px;
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            color: #11131D;
+        }
+        &__remark{
+            margin-top: 15px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #11131D;
+            max-width: 557px;
+        }
+        &__problems{
+            margin-top: 60px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #11131D;
+            a{
+                color: #1435ba;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__thanks{
+        font-family: 'Ermilov';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 50px;
+        text-align: center;
+        color: #11131D;
+        margin-top: 127px;
+    }
+    .help{
+        background: #FFFFFF;
+        box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
+        border-radius: 30px;
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        &__title{
+            max-width: 557px;
+            text-align: center;
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            color: #11131D;
+            margin-top: 50px;
+        }
+        &__remark{
+            text-align: center;
+            max-width: 557px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #11131D;
+            margin-top: 15px;
+        }
+        &__wrapper{
+            width: 100%;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            margin-bottom: 42px;
+            margin-top: 32px;
+        }
+        &__box{
+            background: rgba(7, 20, 72, 0.05);
+            border-radius: 25px;
+            width: 405px;
+            height: 328px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__contact{
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: rgba(7, 20, 72, 0.35);
+            margin-top: 18px;
+            margin-bottom: 19px;
+        }
+        &__text{
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #11131D;
+            margin-top: 25px;
+        }
+        &__or{
+            font-family: 'Ermilov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            color: rgba(7, 20, 72, 0.35);
+        }
+        a{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-decoration-line: underline;
+            color: #736ECC;
+            margin-top: 10px;
+        }
+        &__list{
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        &__social-icons{
+            margin-right: 30px;
+            transition: 0.3s linear;
+
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover{
+                transition: 0.3s linear;
+                svg{
+                    transition: 0.3s linear;
+
+                    path{
+                        fill: $accent;
+                        transition: 0.3s linear;
+                    }
+                }
+            }
+        }
+    }
+}
+
