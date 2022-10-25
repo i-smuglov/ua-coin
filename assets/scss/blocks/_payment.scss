@@ -16,7 +16,8 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        @include sm-d{flex-wrap: wrap;}            
+        @include sm-d{flex-wrap: wrap;}  
+        flex-wrap: wrap;          
     }
     &__content.active {    
       display: block;
@@ -49,6 +50,7 @@
       line-height: 24px;
       color: #071448; 
       margin-right: 25px;
+      margin-top: 25px;
       &:last-child{
         margin-right: 0;
       } 
@@ -56,6 +58,10 @@
         border: none;
         padding: 0 40px;
       }  
+      @include sm-d{
+        width: 100%;
+        margin-right: 0;
+      }
     }
     .bttn.active {
       background: $accent;
@@ -68,6 +74,9 @@
     .bank{
         display: flex;
         justify-content: space-between;
+        @include xl-d{
+            flex-direction: column;
+        }
         &__wrapper{
             box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
             border-radius: 30px;
@@ -77,6 +86,10 @@
             flex-direction: column;
             align-items: center;
             max-width: 749px;
+            @include xl-d{
+                max-width: 100%;
+                padding: 41px 20px 28px;
+            }
         }
         &__img{
             display: flex;
@@ -132,6 +145,9 @@
             border: 1px solid rgba(7, 20, 72, 0.35);
             border-radius: 25px;
             margin-top: 56px;
+            @include sm-d{
+                border: none;
+            }
         }
         &__or{
             background: #fff;
@@ -162,7 +178,10 @@
             display: flex;
             flex-wrap: wrap;    
             justify-content: space-between;
-            margin-top: 27px;        
+            margin-top: 27px;   
+            @include md-d{
+                justify-content: center;
+            }     
         }
         &__link{
             width: 280px;
@@ -179,6 +198,9 @@
             line-height: 24px;
             color: #071448;
             margin-bottom: 10px;
+            @include sm-d{
+                width: 100%;
+            }
         }
         &__total{
             max-width: 749px;
@@ -187,7 +209,12 @@
             padding: 30px 50px 47px 46px;  
             background: #FFFFFF;
             box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
-            border-radius: 30px;          
+            border-radius: 30px;  
+            @include xl-d{
+                max-width: 100%;
+                margin-top: 30px;
+                padding: 28px 17px 19px;
+            }        
         }
         &__price{
             font-family: 'Ermilov';
@@ -214,6 +241,10 @@
             background: rgba(7, 20, 72, 0.25);
             border: 1px solid;
             border-image-source: linear-gradient(269.91deg, rgba(7, 20, 72, 0.35) 1.15%, rgba(7, 20, 72, 0) 50.08%);
+            @include md-d{
+                width: 100%;
+                margin-top: 31px;
+            }
         }        
         .progress-done {
             background: $accent;
@@ -325,6 +356,10 @@
     .crypto{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        @include md-d{
+            flex-direction: column;
+        }
         &__box{
             width: 350px;
             background: #FFFFFF;
@@ -334,9 +369,17 @@
             flex-direction: column;
             align-items: center;
             padding: 0 26px;
+            margin-top: 20px;
+            @include md-d{
+                width: 100%;
+                margin-top: 30px;
+            }
         }
         &__qr{
-            margin-top: 60px;            
+            margin-top: 60px;
+            @include md-d{
+                margin-top: 44px;
+            }         
         }
         &__title{
             margin-top: 55px;
@@ -390,6 +433,13 @@
         padding-top: 49px;
         padding-bottom: 56px;
         padding-left: 50px;
+        @include xl-d{
+            width: 100%;
+            padding-top: 30px;
+            padding-right: 21px;
+            padding-bottom: 171px;
+            padding-left: 21px;
+        }
         &__title{
             font-family: 'Ermilov';
             font-style: normal;
@@ -409,6 +459,9 @@
             align-items: center;
             justify-content: space-between;
             width: 597px;
+            @include md-d{
+                width: 100%;
+            }
         }
         &__text{
             margin: 15px 0 15px 36px;
@@ -479,6 +532,10 @@
         box-shadow: 0px 162px 244px rgba(0, 0, 0, 0.07), 0px 48.8383px 73.5589px rgba(0, 0, 0, 0.0456112), 0px 20.2849px 30.5526px rgba(0, 0, 0, 0.035), 0px 7.33666px 11.0503px rgba(0, 0, 0, 0.0243888);
         border-radius: 30px;
         padding: 50px 0 50px 50px;
+        @include xl-d{
+            width: 100%;
+            padding: 30px 22px 51px;
+        }
         &__content.active {    
             display: block;
             margin-top: 60px;
@@ -499,7 +556,9 @@
             color: rgba(7, 20, 72, 0.35);
             width: 86px;
             text-align: center;
-           
+            @include sm-d{
+                width: 60px;
+            }
            
           }
         .btttn.active {
@@ -582,6 +641,9 @@
                 justify-content: space-between;
                 width: 597px;
                 margin-top: 5px;
+                @include md-d{
+                    width: 100%;
+                }
             }
             &__text{
                 font-family: 'Hiragino Sans GB';
@@ -590,6 +652,11 @@
                 font-size: 16px;
                 line-height: 24px;
                 color: #11131D;
+                @include md-d{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    margin-right: 20px;
+                }
             }
             &__link{
                 background-color: rgba(7, 20, 72, 0.05);
@@ -597,11 +664,11 @@
                 background-image: url('/img/cube.png');
                 background-repeat: no-repeat;
                 background-position: center;
-                width: 48px;
-                height: 48px;
+                overflow: hidden;
+                min-width: 48px;
+                min-height: 48px;
                 margin: 2px;
                 transition: 0.2s linear;
-
                 &:hover{
                     cursor: pointer;
                     transition: 0.2s linear;
@@ -622,6 +689,13 @@
         align-items: center;
         padding-left: 50px;
         padding-right: 50px;
+        @include xl-d{
+            width: 100%;            
+        }
+        @include md-d{
+            padding-left: 13px;
+            padding-right: 13px;
+        }
         &__title{
             max-width: 557px;
             text-align: center;
@@ -651,6 +725,9 @@
             align-items: center;
             margin-bottom: 42px;
             margin-top: 32px;
+            @include lg-d{
+                flex-direction: column;
+            }
         }
         &__box{
             background: rgba(7, 20, 72, 0.05);
@@ -661,6 +738,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 32px;
+            @include md-d{
+                width: 100%;
+                height: auto;
+                padding-bottom: 50px;
+            }
         }
         &__contact{
             font-family: 'Ermilov';
@@ -690,6 +775,8 @@
             font-size: 24px;
             line-height: 24px;
             color: rgba(7, 20, 72, 0.35);
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
         a{
             font-family: 'Montserrat';
@@ -701,15 +788,35 @@
             color: #736ECC;
             margin-top: 10px;
         }
+        &__contain{
+            width: 100%;
+        }
         &__list{
             display: flex;
             align-items: center;
+            justify-content: space-around;
             margin-top: 15px;
+            width: 100%;
+            @include md-d{
+                flex-wrap: wrap;               
+            }
+        }
+        &__social{
+            width: 240px;
+            @include xl-d{
+                width: 100%;
+            }
+            
         }
         &__social-icons{
-            margin-right: 30px;
+            // margin-right: 30px;
             transition: 0.3s linear;
-
+            
+            @include md-d{
+                margin-right: 0;
+                width: 52px;
+                margin-top: 10px;
+            }
             &:last-child{
                 margin-right: 0;
             }
