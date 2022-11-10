@@ -622,7 +622,11 @@
 <div class="overlay">
 
 	<div class="popup">
-		<div class="close-popup"></div>
+		<div class="close-popup">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="white"/>
+            </svg>
+        </div>
 					
 		
         <div class="popup__content">
@@ -679,7 +683,12 @@
                     <div class="form__message">
                         <input type="text" placeholder="Leave a comment" class="input__comment" />
                     </div>
-                    <div class="form__button"><button type="submit" class="btn btn--submit">залишити заявку</button></div>
+                    <div class="form__check">
+                        <input type="checkbox" class="form__checkbox" id="chekCoin" name="chekCoin" value="yes">
+                        <label for="chekCoin"></label>
+                        <div class="form__check-text">I agree that the amount paid by me is of an exclusively charitable nature, is non-refundable and can be transferred to other beneficiaries in accordance with the Rules and Regulations of the Foundation.</div>
+                    </div>
+                    ><button type="submit" class="form__button">залишити заявку</button>
                   </form>
             </div>			
 		</div>

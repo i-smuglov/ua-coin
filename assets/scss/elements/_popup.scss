@@ -1,20 +1,24 @@
 .overlay {
-	position: fixed;
+	padding-top: 117px;
+	padding-bottom: 80px;
+	position: absolute;
 	width: 100%;
-	height: 100vh;
+	height: auto;
 	top: 0;
 	left: 0;
 	display: none;
 	background: rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(37px);	
 	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .popup {
-	position: absolute;
+	
 	width: 681px;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);	
+	
+	position: relative;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
@@ -71,7 +75,32 @@
 	}
 	&__info{
 		width: 100%;
+		
 		.form{
+			display: flex;
+			flex-direction: column;
+			&__check{
+				display: flex;
+				margin-top: 42px;
+			}
+			&__button{
+				margin: 56px auto 0;
+				width: 326px;
+				height: 54px;
+				background: #FEDC00;
+				border-radius: 15px;
+				align-self: center;
+			}
+			&__check-text{
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 24px;
+				letter-spacing: 0.05em;
+				color: #FFFFFF;
+				margin-left: 20px;
+			}
 			margin-top: 40px;
 			&__contain{
 				background: #FFFFFF;
@@ -185,7 +214,46 @@
 			&__message{
 
 			}
+			.form__checkbox{
+				position: relative;
+				z-index: -1;
+				opacity: 0;
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 24px;
+				letter-spacing: 0.05em;
+				color: #FFFFFF;
+				width: 0;
+			}
+			.form__checkbox+label {
+				display: inline-block;
+				align-items: center;
+				user-select: none;
+				position: relative;
+				position: relative;
+				
+			  }
+			.form__checkbox+label::before {
+				content: '';
+				display: inline-block;
+				width: 27px;
+				height: 27px;			
+				background: white;
+				border-radius: 2px;
+				transition: 0.3s linear;
+
+			  }
+			  .form__checkbox:checked+label::before {
+				transition: 0.3s linear;
+				background: #ffffff;
+				background-color: #736ECC;
+				border: 2px $accent solid;
+			  }
+			  
 		}
+		
 	}
 	
 	input {		
@@ -194,41 +262,16 @@
 			
 		}
 	}
-	&__button {
-      margin-top: 40px;
-      align-self: center;
-         a{
-            font-size: 20px;
-            line-height: 18px;            
-            color: #071545;
-            background: #F9D800;
-            box-shadow: 0px 2px 3px 2px rgba(7, 21, 69, 0.6);
-            border-radius: 20px;
-            padding: 9px 31px;
-            width: 115px;
-		
-      }
-		
-	}
+	
 }
 
 .close-popup {
 	position: absolute;
-	top: -40px;
-	right: -40px;
-	width: 38px;
-	height: 38px;
-	cursor: pointer;
-   background: #071545;
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: #ffffff;
-   font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 20px;
-   line-height: 25px;
+	top: 53px;
+	right: 57px;
+	width: 14PX;
+	height: 14px;
+	cursor: pointer; 
+   
 }
 
