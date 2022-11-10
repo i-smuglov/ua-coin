@@ -411,12 +411,21 @@ html {
   background: rgba(7, 20, 72, 0.65);
   border: 1px solid rgba(7, 20, 72, 0.05);
   border-radius: 75px; }
+  @media only screen and (max-width: 768px) {
+    .popup {
+      width: 100%;
+      margin-left: 25px;
+      margin-right: 25px;
+      border-radius: 30px; } }
   .popup__content {
     padding: 60px 41px 55px 43px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%; }
+    @media only screen and (max-width: 768px) {
+      .popup__content {
+        padding: 44px 16px 21px; } }
   .popup__title {
     font-family: 'Ermilov';
     font-style: normal;
@@ -426,6 +435,10 @@ html {
     text-align: center;
     color: #FFFFFF;
     margin-top: 30px; }
+    @media only screen and (max-width: 768px) {
+      .popup__title {
+        font-size: 25px;
+        line-height: 37px; } }
   .popup__line {
     width: 100%;
     height: 6px;
@@ -487,6 +500,9 @@ html {
         letter-spacing: 0.05em;
         color: #FFFFFF;
         margin-left: 20px; }
+      @media only screen and (max-width: 768px) {
+        .popup__info .form {
+          margin-top: 30px; } }
       .popup__info .form__contain {
         background: #FFFFFF;
         border-radius: 15px;
@@ -502,6 +518,9 @@ html {
           right: 23px;
           top: 50%;
           transform: translateY(-50%); }
+        @media only screen and (max-width: 768px) {
+          .popup__info .form__contain {
+            width: 100%; } }
       .popup__info .form__text {
         position: absolute;
         display: flex;
@@ -579,6 +598,11 @@ html {
         display: flex;
         justify-content: space-between;
         margin-top: 20px; }
+        @media only screen and (max-width: 768px) {
+          .popup__info .form__double {
+            flex-direction: column; }
+            .popup__info .form__double .form__contain--mob {
+              margin-top: 20px; } }
       .popup__info .form .form__checkbox {
         position: relative;
         z-index: -1;
@@ -621,12 +645,21 @@ html {
   background: rgba(7, 20, 72, 0.65);
   border: 1px solid rgba(7, 20, 72, 0.05);
   border-radius: 75px; }
+  @media only screen and (max-width: 768px) {
+    .popupSec {
+      width: 100%;
+      margin-left: 25px;
+      margin-right: 25px;
+      border-radius: 30px; } }
   .popupSec__content {
     padding: 60px 41px 55px 43px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%; }
+    @media only screen and (max-width: 768px) {
+      .popupSec__content {
+        padding: 44px 16px 21px; } }
   .popupSec__title {
     font-family: 'Ermilov';
     font-style: normal;
@@ -636,6 +669,10 @@ html {
     text-align: center;
     color: #FFFFFF;
     margin-top: 30px; }
+    @media only screen and (max-width: 768px) {
+      .popupSec__title {
+        font-size: 25px;
+        line-height: 37px; } }
   .popupSec__line {
     width: 100%;
     height: 6px;
@@ -697,6 +734,9 @@ html {
         letter-spacing: 0.05em;
         color: #FFFFFF;
         margin-left: 20px; }
+      @media only screen and (max-width: 768px) {
+        .popupSec__info .form {
+          margin-top: 30px; } }
       .popupSec__info .form__contain {
         background: #FFFFFF;
         border-radius: 15px;
@@ -712,6 +752,9 @@ html {
           right: 23px;
           top: 50%;
           transform: translateY(-50%); }
+        @media only screen and (max-width: 768px) {
+          .popupSec__info .form__contain {
+            width: 100%; } }
       .popupSec__info .form__text {
         position: absolute;
         display: flex;
@@ -733,6 +776,9 @@ html {
         .popupSec__info .form__text--lg {
           width: 117px;
           color: rgba(7, 20, 72, 0.45); }
+        @media only screen and (max-width: 768px) {
+          .popupSec__info .form__text--mob {
+            width: 85px; } }
       .popupSec__info .form input {
         width: 100%;
         height: 100%; }
@@ -753,6 +799,8 @@ html {
         line-height: 24px;
         color: rgba(7, 20, 72, 0.25);
         padding-left: 142px; }
+        .popupSec__info .form .input__name--lg {
+          padding-left: 100px; }
         .popupSec__info .form .input__name::placeholder {
           font-family: 'Hiragino Sans GB';
           font-style: normal;
@@ -789,6 +837,11 @@ html {
         display: flex;
         justify-content: space-between;
         margin-top: 20px; }
+        @media only screen and (max-width: 768px) {
+          .popupSec__info .form__double {
+            flex-direction: column; }
+            .popupSec__info .form__double .form__contain--mob {
+              margin-top: 20px; } }
       .popupSec__info .form .form__checkbox {
         position: relative;
         z-index: -1;

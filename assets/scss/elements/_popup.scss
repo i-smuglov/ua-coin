@@ -41,8 +41,7 @@
 }
 .popup {
 	
-	width: 681px;
-	
+	width: 681px;	
 	position: relative;
 	box-sizing: border-box;
 	display: flex;
@@ -51,14 +50,21 @@
 	background: rgba(7, 20, 72, 0.65);
 	border: 1px solid rgba(7, 20, 72, 0.05);
 	border-radius: 75px;
-	
+	@include md-d{
+		width: 100%;
+		margin-left: 25px;
+		margin-right: 25px;
+		border-radius: 30px;
+	}
 	&__content {
 		padding: 60px 41px 55px 43px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-			
+		@include md-d{
+			padding: 44px 16px 21px;
+		}
 	}
 	&__title{
 		font-family: 'Ermilov';
@@ -69,6 +75,10 @@
 		text-align: center;
 		color: #FFFFFF;
 		margin-top: 30px;
+		@include md-d{
+		font-size: 25px;
+		line-height: 37px;
+		}
 	}
 	&__line{
 		width: 100%;
@@ -139,6 +149,9 @@
 				margin-left: 20px;
 			}
 			margin-top: 40px;
+			@include md-d{
+				margin-top: 30px;
+			}
 			&__contain{
 				background: #FFFFFF;
 				border-radius: 15px;
@@ -158,7 +171,9 @@
 						transform: translateY(-50%);
 					}
 				}
-				
+				@include md-d{
+					width: 100%;
+				}
 			}
 			&__text{
 				position: absolute;
@@ -253,7 +268,13 @@
 				display: flex;
 				justify-content: space-between;
 				margin-top: 20px;
-
+				@include md-d{
+					flex-direction: column;
+					.form__contain--mob{
+						margin-top: 20px;
+					}
+				}
+				
 			}
 			&__message{
 
@@ -308,10 +329,10 @@
 	}
 	
 }
+
 .popupSec {
 	
-	width: 681px;
-	
+	width: 681px;	
 	position: relative;
 	box-sizing: border-box;
 	display: flex;
@@ -320,14 +341,21 @@
 	background: rgba(7, 20, 72, 0.65);
 	border: 1px solid rgba(7, 20, 72, 0.05);
 	border-radius: 75px;
-	
+	@include md-d{
+		width: 100%;
+		margin-left: 25px;
+		margin-right: 25px;
+		border-radius: 30px;
+	}
 	&__content {
 		padding: 60px 41px 55px 43px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-			
+		@include md-d{
+			padding: 44px 16px 21px;
+		}
 	}
 	&__title{
 		font-family: 'Ermilov';
@@ -338,6 +366,10 @@
 		text-align: center;
 		color: #FFFFFF;
 		margin-top: 30px;
+		@include md-d{
+		font-size: 25px;
+		line-height: 37px;
+		}
 	}
 	&__line{
 		width: 100%;
@@ -408,6 +440,9 @@
 				margin-left: 20px;
 			}
 			margin-top: 40px;
+			@include md-d{
+				margin-top: 30px;
+			}
 			&__contain{
 				background: #FFFFFF;
 				border-radius: 15px;
@@ -427,7 +462,9 @@
 						transform: translateY(-50%);
 					}
 				}
-				
+				@include md-d{
+					width: 100%;
+				}
 			}
 			&__text{
 				position: absolute;
@@ -452,6 +489,11 @@
 					width: 117px;
 					
 					color: rgba(7, 20, 72, 0.45);
+				}
+				&--mob{
+					@include md-d{
+						width: 85px;
+					}
 				}
 			}
 			input{
@@ -478,7 +520,7 @@
 				color: rgba(7, 20, 72, 0.25);
 				padding-left: 142px;
 				&--lg{
-					
+					padding-left: 100px;
 				}
 				&::placeholder{
 					font-family: 'Hiragino Sans GB';
@@ -522,7 +564,13 @@
 				display: flex;
 				justify-content: space-between;
 				margin-top: 20px;
-
+				@include md-d{
+					flex-direction: column;
+					.form__contain--mob{
+						margin-top: 20px;
+					}
+				}
+				
 			}
 			&__message{
 
@@ -577,7 +625,6 @@
 	}
 	
 }
-
 .close-popup {
 	position: absolute;
 	top: 53px;
