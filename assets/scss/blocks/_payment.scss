@@ -102,6 +102,7 @@
         }
         &__btn{
             background: #FEDC00;
+            border: 2px solid $accent;
             border-radius: 15px;
             font-family: 'Ermilov';
             font-style: normal;
@@ -114,7 +115,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
+            transition: 0.3s linear;
+            &:hover{
+                transition: 0.3s linear;
+                cursor: pointer;
+                background: #fff;
+            }
         }
         &__montly{
             margin-top: 50px;

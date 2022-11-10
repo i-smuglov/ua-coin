@@ -27,7 +27,9 @@ function image_loaded() {
 }
 
     // Popup button
-    $('a[href^="popup-btn"]').bind("click", function (e) {
+	var popupBg = $('.popup-btn');
+	var popupBgSec = $('.popup-btnSec');
+    popupBg.bind("click", function (e) {
         $('.overlay').fadeIn();
         e.preventDefault();
     });
@@ -39,6 +41,21 @@ function image_loaded() {
 		var popup = $('.popup');
 		if (e.target != popup[0] && popup.has(e.target).length === 0) {
 			$('.overlay').fadeOut();
+		}
+	});
+
+	popupBgSec.bind("click", function (e) {
+        $('.overlaySec').fadeIn();
+        e.preventDefault();
+    });
+
+    $('.close-popup').click(function () {
+        $('.overlaySec').fadeOut();
+    });
+	$(document).mouseup(function (es) {
+		var popupS = $('.popupSec');
+		if (es.target != popupS[0] && popupS.has(es.target).length === 0) {
+			$('.overlaySec').fadeOut();
 		}
 	});
 
@@ -172,16 +189,16 @@ $(window).on('resize', function (i) {
 
 
                               //TIMER
-var deadline = '2022-09-15T12:00:00+0300'; 
-function time_remaining(endtime){
-	var t = Date.parse(endtime) - Date.parse(new Date());
-	var seconds = Math.floor( (t/1000) % 60 );
-	var minutes = Math.floor( (t/1000/60) % 60 );
-	var hours = Math.floor( (t/(1000*60*60)) % 24 );
-	var days = Math.floor( t/(1000*60*60*24) );	
-	return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
+// var deadline = '2022-09-15T12:00:00+0300'; 
+// function time_remaining(endtime){
+// 	var t = Date.parse(endtime) - Date.parse(new Date());
+// 	var seconds = Math.floor( (t/1000) % 60 );
+// 	var minutes = Math.floor( (t/1000/60) % 60 );
+// 	var hours = Math.floor( (t/(1000*60*60)) % 24 );
+// 	var days = Math.floor( t/(1000*60*60*24) );	
+// 	return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
 
-}
+// }
 // function run_clock(id,endtime){
 // 	var clock = document.getElementById('clockdiv');	
 // 	var days_span = clock.querySelector('.days');
