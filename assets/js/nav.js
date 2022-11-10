@@ -26,6 +26,22 @@ function image_loaded() {
   }
 }
 
+    // Popup button
+    $('a[href^="popup-btn"]').bind("click", function (e) {
+        $('.overlay').fadeIn();
+        e.preventDefault();
+    });
+
+    $('.close-popup').click(function () {
+        $('.overlay').fadeOut();
+    });
+	$(document).mouseup(function (e) {
+		var popup = $('.popup');
+		if (e.target != popup[0] && popup.has(e.target).length === 0) {
+			$('.overlay').fadeOut();
+		}
+	});
+
 
 //TABS
 const buttons = document.querySelectorAll(".bttn");
@@ -166,24 +182,24 @@ function time_remaining(endtime){
 	return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
 
 }
-function run_clock(id,endtime){
-	var clock = document.getElementById('clockdiv');	
-	var days_span = clock.querySelector('.days');
-	var hours_span = clock.querySelector('.hours');
-	var minutes_span = clock.querySelector('.minutes');
-	var seconds_span = clock.querySelector('.seconds');
-	function update_clock(){
-		var t = time_remaining(endtime);		
-		days_span.innerHTML = t.days;
-		hours_span.innerHTML = ('0' + t.hours).slice(-2);
-		minutes_span.innerHTML = ('0' + t.minutes).slice(-2);
-		seconds_span.innerHTML = ('0' + t.seconds).slice(-2);		
-		if(t.total<=0){ clearInterval(timeinterval); }
-	}
-	update_clock();
-	var timeinterval = setInterval(update_clock,1000);	
-}
-run_clock('clockdiv',deadline);
+// function run_clock(id,endtime){
+// 	var clock = document.getElementById('clockdiv');	
+// 	var days_span = clock.querySelector('.days');
+// 	var hours_span = clock.querySelector('.hours');
+// 	var minutes_span = clock.querySelector('.minutes');
+// 	var seconds_span = clock.querySelector('.seconds');
+// 	function update_clock(){
+// 		var t = time_remaining(endtime);		
+// 		days_span.innerHTML = t.days;
+// 		hours_span.innerHTML = ('0' + t.hours).slice(-2);
+// 		minutes_span.innerHTML = ('0' + t.minutes).slice(-2);
+// 		seconds_span.innerHTML = ('0' + t.seconds).slice(-2);		
+// 		if(t.total<=0){ clearInterval(timeinterval); }
+// 	}
+// 	update_clock();
+// 	var timeinterval = setInterval(update_clock,1000);	
+// }
+// run_clock('clockdiv',deadline);
 
 // accordeon
 $(document).ready(function () {
@@ -225,7 +241,7 @@ $(".coin__link").click(function(){
 
 
  //progressbar
- var progress = $(".progress-done");
+var progress = $(".progress-done");
 progress.css("width", progress.attr("data-done") + "%");
 progress.css("opacity", "5");
 
